@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ubuntu: ['Ubuntu', 'sans-serif'],
+        karma: ['Karma', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

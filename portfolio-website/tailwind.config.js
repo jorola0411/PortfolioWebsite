@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '8xl': '96rem',
+      },
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],
         karma: ['Karma', 'sans-serif'],

@@ -14,9 +14,9 @@ function Layout() {
 
 
             <div className="text-black flex space-x-8 font-karma font-semibold">
-                <Link to ="/about" className="hover:underline">About</Link>
-                <Link to ="/projects" className="hover:underline">Projects</Link>
-                <a href="#contact" className="hover:underline">Resume</a>
+                <Link to ="/about" className="text-2xl hover:underline">About</Link>
+                <Link to ="/projects" className="text-2xl hover:underline">Projects</Link>
+                <a href="#contact" className="text-2xl hover:underline">Resume</a>
             </div>
 
             </div>
@@ -28,7 +28,7 @@ function Layout() {
         </main>
         <footer className="py-4">
       <div className="container mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
-        <span className="text-black">Jose Alejandro Orola</span>
+        <span className="text-2xl text-black">Jose Alejandro Orola</span>
     
         <div className="flex space-x-4 justify-center">
             <a href="https://github.com/jorola0411" target="_blank">
@@ -39,7 +39,7 @@ function Layout() {
             </a>
           </div>
 
-        <span className="text-black font-karma">jorola0411@gmail.com</span>
+        <span className="text-2xl text-black font-karma">jorola0411@gmail.com</span>
 
       </div>
     </footer>

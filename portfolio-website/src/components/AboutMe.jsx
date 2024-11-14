@@ -3,10 +3,10 @@ import React from "react";
 function AboutMe(){
   return(
     
-      <div className="items-center justify-center ">
-        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className="flex items-center justify-center ">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
               
-          <div className="md:col-span-2 space-y-4">
+          <div className="md:col-span-3 space-y-4">
             <h1 className="font-karma text-3xl font-bold">
               Hi, I'm Jose!
             </h1>
@@ -34,18 +34,36 @@ function AboutMe(){
                   <p className="mt-2 font-medium font-ubuntu">Jao</p>
                 </div>
               </div>
-              <div className="md:col-span-3 space-y-2">
+              <div className="md:col-span-4 space-y-2">
                 <h1 className="font-karma text-3xl font-bold">
                 When I’m not working, I’m most likely..
                 </h1>
                 <hr className="border-t-2 border-black  mt-2 mb-4" />
               </div>
-              
-              <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center ">
+              <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 ">
                 
                    <p className=" text-5xl mb-2 rounded-sm object-cover w-full h-64">📝</p> 
-                  <p className="mt-2 font-medium font-ubuntu">Writing </p>
+                  <p className="mt-2 font-medium font-ubuntu">Listening to music </p>
                 </div>
+              <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 ">
+                
+                   <p className=" text-5xl mb-2 rounded-sm object-cover w-full h-64">📝</p> 
+                  <p className="mt-2 font-medium font-ubuntu">Gaming </p>
+                </div>
+              <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 ">
+                
+                   <p className=" text-5xl mb-2 rounded-sm object-cover w-full h-64">📝</p> 
+                  <p className="mt-2 font-medium font-ubuntu">Drawing </p>
+                </div>
+              <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 ">
+                
+                   <p className=" text-5xl mb-2 rounded-sm object-cover w-full h-64">📝</p> 
+                  <p className="mt-2 font-medium font-ubuntu">Writing</p>
+                </div>
+                
+
+              
+              
                 
         </div>
       </div>

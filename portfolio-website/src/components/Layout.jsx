@@ -67,7 +67,7 @@ function Layout() {
             <Outlet />
         </main>
         <footer className="py-4">
-      <div className="container mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
+      <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
         <span className="text-2xl text-black">Jose Alejandro Orola</span>
     
         <div className="flex space-x-4 justify-center">

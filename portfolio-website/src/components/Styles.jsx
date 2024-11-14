@@ -6,7 +6,7 @@ function Styles(){
         <>
         <MediaQuery minWidth={1024}>
         <div className="items-center justify-center ">
-        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               
         <div className="md:col-span-3 space-y-2">
         <h1 className="font-karma text-3xl font-bold">styles by jao</h1>

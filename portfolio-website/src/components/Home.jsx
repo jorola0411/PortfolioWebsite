@@ -14,7 +14,7 @@ function Home(){
           </p>
 
           <h2 className="font-semibold text-3xl font-karma text-center py-12">Featured Works</h2>
-    
+          
       </main>
     </div>
         

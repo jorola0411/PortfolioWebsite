@@ -8,6 +8,15 @@ export default {
     extend: {
       maxWidth: {
         '8xl': '96rem',
+        'md': '40rem'
+      },
+      width: {
+        '96': '80rem',
+        '70': '60rem',
+      },
+      height: {
+        '96': '80rem',
+        '70': '60rem',
       },
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],

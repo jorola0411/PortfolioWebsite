@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from './components/Home'
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import Styles from './components/Styles';
 import './App.css'
 
 
@@ -18,6 +19,7 @@ function App() {
     <Route index element={ <Home /> }/>
     <Route path="about" element={ <AboutMe />} />
     <Route path="projects" element={ <Projects />} />
+    <Route path="projects/styles" element={ <Styles />} />
 
     </Route>
     </Routes>

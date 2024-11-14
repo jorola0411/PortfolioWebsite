@@ -11,7 +11,7 @@ function AboutMe(){
               Hi, I'm Jose!
             </h1>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <p className="font-ubuntu">
+            <p className="font-ubuntu text-lg">
               I'm a UI/UX designer and Front-end developer currently residing in Vancouver, BC.
             </p>
             <p className="font-ubuntu">
@@ -44,8 +44,9 @@ function AboutMe(){
               <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center ">
                 
                    <p className=" text-5xl mb-2 rounded-sm object-cover w-full h-64">📝</p> 
-                  <p className="mt-2 font-medium font-ubuntu">Jao</p>
+                  <p className="mt-2 font-medium font-ubuntu">Writing </p>
                 </div>
+                
         </div>
       </div>
 

@@ -10,7 +10,7 @@ export default {
         '8xl': '96rem',
         '7xl': '85rem',
         'md': '40rem',
-        'screen-lg': '88rem',
+        'screen-lg': '64rem',
      
       },
       width: {

@@ -8,7 +8,10 @@ export default {
     extend: {
       maxWidth: {
         '8xl': '96rem',
-        'md': '40rem'
+        '7xl': '85rem',
+        'md': '40rem',
+        'screen-lg': '88rem',
+     
       },
       width: {
         '96': '80rem',

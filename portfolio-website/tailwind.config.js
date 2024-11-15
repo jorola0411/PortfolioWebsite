@@ -25,8 +25,11 @@ export default {
         ubuntu: ['Ubuntu', 'sans-serif'],
         karma: ['Karma', 'sans-serif'],
       },
+      colors: {
+        'sunset': '#fed8aa',
+        'light-grey': "#F2F2F2",
+      },
     },
   },
   plugins: [],
 }
-

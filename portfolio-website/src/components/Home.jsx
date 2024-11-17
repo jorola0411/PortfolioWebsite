@@ -2,7 +2,7 @@ import React from "react";
 function Home(){
 
     return(
-        <div className="min-h-screen flex items-center justify-center">
+        <div className="min-h-screen flex items-center justify-center ">
         <main className="container mx-auto flex-grow">
         <div className="text-center">
           <h1 className="text-5xl font-semibold text-gray-800 font-karma ">

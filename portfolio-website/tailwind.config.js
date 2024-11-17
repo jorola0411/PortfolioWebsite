@@ -28,6 +28,7 @@ export default {
       colors: {
         'sunset': '#fed8aa',
         'light-grey': "#F2F2F2",
+        'beige': "#FFF8EF ;"
       },
     },
   },

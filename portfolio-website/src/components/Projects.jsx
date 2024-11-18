@@ -16,7 +16,7 @@ const tilt = {
 	reset:          true,    // If the tilt effect has to be reset on exit.
 	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 }
-function Lelem() {
+function Project() {
     
     return(
         <>
@@ -135,7 +135,7 @@ function Lelem() {
                 </div>
             <div className="group flex flex-col items-center">
             <Tilt options={tilt} style={{ height: 240, width: 190 }}>
-            <Link to ="styles">   
+            <Link to ="poster">   
     <motion.button  initial={{ "--x": "100%", scale: 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}
@@ -182,4 +182,4 @@ function Lelem() {
     )
 }
 
-export default Lelem
+export default Project

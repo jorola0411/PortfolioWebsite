@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Styles from './components/Styles';
 import Lelem from './components/Lelem';
+import Poster from './components/Poster';
 import './App.css'
 
 
@@ -23,6 +24,7 @@ function App() {
     <Route path="projects" element={ <Projects />} />
     <Route path="projects/styles" element={ <Styles />} />
     <Route path="projects/lelem" element={ <Lelem />} />
+    <Route path="projects/poster" element={ <Poster />} />
 
     </Route>
     </Routes>

@@ -63,7 +63,7 @@ function Poster() {
                                     </div>
                                 </div>
                                 <div
-                                    whileHover={{ scale: 1.05 }}
+                                    
                                     className="relative overflow-hidden rounded-lg shadow-md"
                                 >
                                     <img
@@ -104,7 +104,7 @@ function Poster() {
                 </div>
             </MediaQuery>
             <MediaQuery maxWidth={768}>
-                <div className="bg-bridal-heath-50 p-4 space-y-6">
+                <div className="p-4 space-y-6">
                   
                     <div className="text-center">
                         <h1 className="font-karma text-3xl font-bold">Poster Redesign</h1>

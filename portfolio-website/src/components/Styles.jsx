@@ -6,7 +6,7 @@ function Styles() {
     return (
         <>
             <MediaQuery minWidth={769}>
-                <div className="items-center justify-center bg-bridal-heath-50 min-h-screen">
+                <div className="items-center justify-center min-h-screen">
                     <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-6">
                     
                         <div className="md:col-span-4 mb-8">
@@ -85,12 +85,12 @@ function Styles() {
                 </div>
             </MediaQuery>
             <MediaQuery maxWidth={768}>
-                <div className="items-center justify-center bg-bridal-heath-50 min-h-screen p-4">
+                <div className="items-center justify-center  min-h-screen p-4">
                     <div className="space-y-8">
                         {/* Header */}
                         <div>
-                            <h1 className="font-karma text-3xl font-bold text-center">styles by jao</h1>
-                            <h2 className="font-karma text-lg font-semibold text-center">Mobile and UI/UX design</h2>
+                            <h1 className="font-karma text-2xl font-bold text-center">styles by jao</h1>
+                            <h2 className="font-karma text-md font-semibold text-center">Mobile and UI/UX design</h2>
                             <hr className="border-t-2 border-black mt-2 mb-4" />
                             <img src="../src/assets/stylemockup.jpg" alt="style mockup" className="w-full mx-auto rounded" />
                         </div>

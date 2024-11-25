@@ -22,7 +22,7 @@ function Project() {
         <>
         <MediaQuery minWidth={1024}>
         <div className="items-center justify-center ">
-        <div className="w-full bg-sunset py-10 mt-10">
+        <div className="w-full bg-beige-200 py-10 mt-10">
         <div className="max-w-screen-lg mx-auto space-y-4 p-4">
         <h1 className="font-karma text-3xl font-bold">Projects</h1>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
@@ -49,7 +49,7 @@ function Project() {
           mass: 0.1,
         },
       }}
-      className=" rounded-md relative radial-gradient"
+      className="rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
            <img src="../src/assets/stylespolaroid.png"></img>

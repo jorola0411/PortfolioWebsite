@@ -26,7 +26,6 @@ export default {
         karma: ['Karma', 'sans-serif'],
       },
       colors: {
-        'sunset': '#fed8aa',
         'light-grey': "#F2F2F2",
         'beige-50': "#FFF8EF",
         'beige-100': "#FFEDD5",

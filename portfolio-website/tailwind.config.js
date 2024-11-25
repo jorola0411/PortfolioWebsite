@@ -28,7 +28,16 @@ export default {
       colors: {
         'sunset': '#fed8aa',
         'light-grey': "#F2F2F2",
-        'beige': "#FFF8EF ;"
+        'beige-50': "#FFF8EF",
+        'beige-100': "#FFEDD5",
+        'beige-200': "#FED8AA",
+        'beige-300': "#FDBB74",
+        'beige-400': "#FB933C",
+        'beige-500': "#F97516",
+        'beige-600': "#EA5A0C",
+        'beige-700': "#C2420C",
+        'beige-800': "#9A3512",
+        'beige-900': "#7C2E12",
       },
     },
   },

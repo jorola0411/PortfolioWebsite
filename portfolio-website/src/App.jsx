@@ -6,8 +6,9 @@ import Home from './components/Home'
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Styles from './components/Styles';
-import Lelem from './components/Lelem';
+import Lelem from './components/lelem';
 import Poster from './components/Poster';
+import Burger from './components/Burger';
 import './App.css'
 
 
@@ -25,6 +26,7 @@ function App() {
     <Route path="projects/styles" element={ <Styles />} />
     <Route path="projects/lelem" element={ <Lelem />} />
     <Route path="projects/poster" element={ <Poster />} />
+    <Route path="projects/burger" element={ <Burger />} />
 
     </Route>
     </Routes>

@@ -100,7 +100,7 @@ function Project() {
                 </div>
             <div className="group flex flex-col items-center">
             <Tilt options={tilt} style={{ height: 240, width: 190 }}>
-            <Link to ="styles">   
+            <Link to ="burger">   
     <motion.button  initial={{ "--x": "100%", scale: 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}

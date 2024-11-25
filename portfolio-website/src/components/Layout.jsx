@@ -34,7 +34,7 @@ function Layout() {
             <div className="px-10 mx-auto flex justify-between items-center">
             <Link to ="/"><img src="../src/assets/logo.png" alt="Logo" className="w-20"/></Link>
 
-            <MediaQuery minWidth={1024}>
+            <MediaQuery minWidth={769}>
             <div className="text-black flex space-x-8 font-karma font-semibold md:flex">
                 <Link to ="/about" className="text-2xl hover:underline">About</Link>
                 <Link to ="/projects" className="text-2xl hover:underline">Projects</Link>
@@ -42,7 +42,7 @@ function Layout() {
             </div>
             </MediaQuery>
 
-            <MediaQuery maxWidth={1023}>
+            <MediaQuery maxWidth={768}>
 
             <button className="text-black "  onClick={() => setIsOpen(!isOpen)}>
             <IonIcon name="menu" style={{ fontSize: 24, color: 'black' }}></IonIcon>
@@ -66,6 +66,7 @@ function Layout() {
             {/* Thisis where the child routes of <Layout> will be rendered when the page changes*/}
             <Outlet />
         </main>
+        <MediaQuery minWidth={769}>
         <footer className="py-4">
       <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
         <span className="text-2xl text-black">Jose Alejandro Orola</span>
@@ -83,7 +84,28 @@ function Layout() {
 
       </div>
     </footer>
-        
+    </MediaQuery>
+
+    <MediaQuery maxWidth={768}>
+              
+    <footer className="p-4">
+      <div className="container mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
+        <span className="text-md text-black">Jose Alejandro Orola</span>
+    
+        <div className="flex space-x-4 justify-center">
+            <a href="https://github.com/jorola0411" target="_blank">
+              <img src="../src/assets/githublogo.png" alt="GitHub Logo" className="w-10 h-10" />
+            </a>
+            <a href="https://linkedin.com/in/jose-orola" target="_blank">
+            <img src="../src/assets/linkedinlogo.png" alt="Linkedin Logo" className="w-10 h-10" />
+            </a>
+          </div>
+
+        <span className="text-md text-black font-karma">jorola0411@gmail.com</span>
+
+      </div>
+    </footer>
+      </MediaQuery>
         </>
     );
 }

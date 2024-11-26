@@ -1,6 +1,6 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-import { motion } from "motion/react"
+
 
 function AboutMe(){
   return(
@@ -27,26 +27,7 @@ function AboutMe(){
               From there, my goal is to create solutions that are made with passion and aesthetically pleasing.
             </p>
           </div>
-          <motion.div 
-              initial={{ "--x": "100%", scale: 1 }}
-              animate={{ "--x": "-100%" }}
-              whileTap={{ scale: 0.97 }}
-              transition={{
-                repeat: Infinity,
-                repeatType: "loop",
-                repeatDelay: 1,
-                type: "spring",
-                stiffness: 20,
-                damping: 15,
-                mass: 2,
-                scale: {
-                  type: "spring",
-                  stiffness: 10,
-                  damping: 5,
-                  mass: 0.1,
-                },
-              }}
-              className="rounded-md relative radial-gradient">
+          
               <div className="flex justify-center md:justify-end">
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center ">
                   <img
@@ -56,7 +37,7 @@ function AboutMe(){
                   <p className="mt-2 font-medium font-ubuntu">Jao</p>
                 </div>
               </div>
-              </motion.div>
+    
         </div>
         </div>      
               <div className="w-full bg-beige-200 py-10 mt-10">
@@ -68,31 +49,12 @@ function AboutMe(){
                
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <motion.div 
-              initial={{ "--x": "100%", scale: 1 }}
-              animate={{ "--x": "-100%" }}
-              whileTap={{ scale: 0.97 }}
-              transition={{
-                repeat: Infinity,
-                repeatType: "loop",
-                repeatDelay: 1,
-                type: "spring",
-                stiffness: 20,
-                damping: 15,
-                mass: 2,
-                scale: {
-                  type: "spring",
-                  stiffness: 10,
-                  damping: 5,
-                  mass: 0.1,
-                },
-              }}
-              className="rounded-md relative radial-gradient">
+             
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 ">
                    <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">📝</p> 
                   <p className="mt-2 font-medium font-ubuntu">Listening to music </p>
                   </div>
-                </motion.div>
+      
                 
               <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 ">
                 

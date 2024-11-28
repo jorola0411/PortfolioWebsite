@@ -35,7 +35,7 @@ function Layout() {
             <Link to ="/"><img src="../src/assets/logo.png" alt="Logo" className="w-20"/></Link>
 
             <MediaQuery minWidth={769}>
-            <div className="text-black flex space-x-8 font-karma font-semibold md:flex">
+            <div className="text-black flex space-x-8 font-ubuntumono  md:flex">
                 <Link to ="/about" className="text-2xl hover:underline">About</Link>
                 <Link to ="/projects" className="text-2xl hover:underline">Projects</Link>
                 <a href="#contact" className="text-2xl hover:underline">Resume</a>

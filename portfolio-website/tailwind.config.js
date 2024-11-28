@@ -23,6 +23,7 @@ export default {
       },
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],
+        ubuntumono: ['Ubuntu Mono', 'sans-serif'],
         karma: ['Karma', 'sans-serif'],
       },
       colors: {

@@ -7,7 +7,15 @@
   body {
     background-color:#FFF8EF ;
 }
-
+h1 {
+    font-family: 'Ubuntu Mono', 'sans-serif';
+}
+h2 {
+    font-family: 'Ubuntu Mono', 'sans-serif';
+}
+p {
+    font-family: 'Ubuntu', 'sans-serif';
+}
 .radial-gradient {
     background: radial-gradient(
             circle at 50% 0%,
@@ -48,3 +56,6 @@
     mask-composite: exclude;
     -webkit-mask-composite: xor;
 }
+
+
+

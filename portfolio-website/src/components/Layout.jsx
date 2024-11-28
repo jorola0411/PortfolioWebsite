@@ -52,7 +52,7 @@ function Layout() {
             
             {isOpen && (
               <div className="flex justify-center mt-4">
-            <div className="text-black flex flex-col items-center space-y-2 font-karma font-semibold">
+            <div className="text-black flex flex-col items-center space-y-2">
                 <Link to ="/about" className="text-lg hover:underline" onClick={toggleMenu}>About</Link>
                 <Link to ="/projects" className="text-lg hover:underline" onClick={toggleMenu}>Projects</Link>
                 <a href="#contact" className="text-lg hover:underline" onClick={toggleMenu}>Resume</a>
@@ -68,7 +68,7 @@ function Layout() {
         </main>
         <MediaQuery minWidth={769}>
         <footer className="py-4">
-      <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
+      <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-ubuntumono ">
         <span className="text-2xl text-black">Jose Alejandro Orola</span>
     
         <div className="flex space-x-4 justify-center">
@@ -80,7 +80,7 @@ function Layout() {
             </a>
           </div>
 
-        <span className="text-2xl text-black font-karma">jorola0411@gmail.com</span>
+        <span className="text-2xl text-black ">jorola0411@gmail.com</span>
 
       </div>
     </footer>
@@ -89,7 +89,7 @@ function Layout() {
     <MediaQuery maxWidth={768}>
               
     <footer className="p-4">
-      <div className="container mx-auto flex justify-between items-center border-t border-black pt-2 font-karma">
+      <div className="container mx-auto flex justify-between items-center border-t border-black pt-2 font-ubuntumono">
         <span className="text-md text-black">Jose Alejandro Orola</span>
     
         <div className="flex space-x-4 justify-center">
@@ -101,7 +101,7 @@ function Layout() {
             </a>
           </div>
 
-        <span className="text-md text-black font-karma">jorola0411@gmail.com</span>
+        <span className="text-md text-black">jorola0411@gmail.com</span>
 
       </div>
     </footer>

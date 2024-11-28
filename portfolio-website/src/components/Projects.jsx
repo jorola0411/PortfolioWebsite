@@ -24,7 +24,7 @@ function Project() {
         <div className="items-center justify-center ">
         <div className="w-full bg-beige-200 py-10 mt-10">
         <div className="max-w-screen-lg mx-auto space-y-4 p-4">
-        <h1 className="font-karma text-3xl font-bold">Projects</h1>
+        <h1 className="text-3xl font-bold">Projects</h1>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

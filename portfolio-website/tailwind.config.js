@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       maxWidth: {
         '8xl': '96rem',
         '7xl': '85rem',
@@ -43,3 +44,4 @@ export default {
   },
   plugins: [],
 }
+

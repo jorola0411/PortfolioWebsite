@@ -69,14 +69,14 @@ function Layout() {
         <MediaQuery minWidth={769}>
         <footer className="py-4">
       <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-ubuntumono ">
-        <span className="text-2xl text-black">Jose Alejandro Orola</span>
+        <span className="text-2xl text-black">Jose Alejandro Orola aaaaaaaaaaaa</span>
     
         <div className="flex space-x-4 justify-center">
             <a href="https://github.com/jorola0411" target="_blank">
               <img src="../src/assets/githublogo.png" alt="GitHub Logo" className="w-10 h-10" />
             </a>
             <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src="/src/assets/linkedinlogo.png" alt="Linkedin Logo" className="w-10 h-10" />
+            <img src="../src/assets/linkedinlogo.png" alt="Linkedin Logo" className="w-10 h-10" />
             </a>
           </div>
 

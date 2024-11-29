@@ -5,7 +5,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
-import logo from  "../src/assets/logo.png";
+import logo from  '../src/assets/logo.png';
 function Layout() {
   
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ function Layout() {
           <nav className="py-4">
 
             <div className="px-10 mx-auto flex justify-between items-center">
-            <img src={logo} alt="Logo" className="w-20"/>
+            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
 
             <MediaQuery minWidth={769}>
             <div className="text-black flex space-x-8 font-ubuntumono  md:flex">

@@ -76,7 +76,7 @@ function Layout() {
               <img src="../src/assets/githublogo.png" alt="GitHub Logo" className="w-10 h-10" />
             </a>
             <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src="../src/assets/linkedinlogo.png" alt="Linkedin Logo" className="w-10 h-10" />
+            <img src="/src/assets/linkedinlogo.png" alt="Linkedin Logo" className="w-10 h-10" />
             </a>
           </div>
 

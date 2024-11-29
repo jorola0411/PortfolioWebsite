@@ -29,7 +29,7 @@ function Home(){
           </div>
           
           <div className="mx-auto space-y-2 max-w-screen-lg mt-20 md:col-span-4">
-          <h2 className="text-3xl text-center">Featured Projects and experimenting lol</h2>
+          <h2 className="text-3xl text-center">Featured Projects</h2>
           <hr className="border-t-2 border-black  mt-2 mb-4" />
           </div>
 

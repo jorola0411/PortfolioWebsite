@@ -5,7 +5,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
-import logo from  '../src/assets/logo.png';
+import logo from  '/src/assets/logo.png';
 function Layout() {
   
   const [isOpen, setIsOpen] = useState(false);

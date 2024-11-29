@@ -1,5 +1,7 @@
 import React from "react";
 import MediaQuery from "react-responsive";
+import jose from '/src/assets/jose.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -34,7 +36,7 @@ function AboutMe(){
               <div className="flex justify-center md:justify-end">
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center" data-aos="flip-left">
                   <img
-                    src="src/assets/jose.jpg"
+                    src={jose}
                     className="mb-2 rounded-sm object-cover w-full h-64"
                   />
                   <p className="mt-2 font-medium">Jao</p>

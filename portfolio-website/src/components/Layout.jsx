@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import IonIcon from '@reacticons/ionicons';
 import MediaQuery from 'react-responsive';
 import { Outlet, Link } from "react-router-dom";
+
 import githublogo from '/src/assets/githublogo.png';
+import linkedinlogo from '/src/assets/linkedinlogo.png';
+
 function Layout() {
   
   const [isOpen, setIsOpen] = useState(false);
@@ -76,7 +79,7 @@ function Layout() {
               <img src={githublogo} alt="GitHub Logo" className="w-10 h-10" />
             </a>
             <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src="../src/assets/linkedinlogo.png" alt="Linkedin Logo" className="w-10 h-10" />
+            <img src={linkedinlogo} alt="Linkedin Logo" className="w-10 h-10" />
             </a>
           </div>
 

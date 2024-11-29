@@ -35,7 +35,7 @@ function Layout() {
           <nav className="py-4">
 
             <div className="px-10 mx-auto flex justify-between items-center">
-            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
+            <img src={logo} alt="Logo" className="w-20"/>
 
             <MediaQuery minWidth={769}>
             <div className="text-black flex space-x-8 font-ubuntumono  md:flex">

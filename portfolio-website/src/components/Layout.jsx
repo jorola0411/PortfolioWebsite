@@ -39,7 +39,7 @@ function Layout() {
           <nav className="py-4">
 
             <div className="px-10 mx-auto flex justify-between items-center">
-            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
+            <Link to ="/"><img src={logo} alt="Logo" className="w-10"/></Link>
 
             <MediaQuery minWidth={769}>
             <div className="text-black flex space-x-8 font-ubuntumono md:flex"  data-aos="fade-down">
@@ -96,19 +96,19 @@ function Layout() {
     <MediaQuery maxWidth={768}>
               
     <footer className="p-4">
-      <div className="container mx-auto flex justify-between items-center border-t border-black pt-2 font-ubuntumono">
+      <div className="container mx-auto flex flex-col justify-between items-center border-t border-black pt-2 font-ubuntumono">
         <span className="text-md text-black">Jose Alejandro Orola</span>
-    
-        <div className="flex space-x-4 justify-center">
-            <a href="https://github.com/jorola0411" target="_blank">
-            <img src={githublogo} alt="GitHub Logo" className="w-10 h-10" />
-            </a>
-            <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src={linkedinlogo} alt="Linkedin Logo" className="w-10 h-10" />
-            </a>
-          </div>
 
         <span className="text-md text-black">jorola0411@gmail.com</span>
+
+        <div className="flex space-x-4 justify-center">
+            <a href="https://github.com/jorola0411" target="_blank">
+            <img src={githublogo} alt="GitHub Logo" className="w-5 h-5" />
+            </a>
+            <a href="https://linkedin.com/in/jose-orola" target="_blank">
+            <img src={linkedinlogo} alt="Linkedin Logo" className="w-5 h-5" />
+            </a>
+          </div>
 
       </div>
     </footer>

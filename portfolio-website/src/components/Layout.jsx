@@ -39,7 +39,7 @@ function Layout() {
           <nav className="py-4">
 
             <div className="px-10 mx-auto flex justify-between items-center">
-            <Link to ="/"><img src={logo} alt="Logo" className="w-10"/></Link>
+            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
 
             <MediaQuery minWidth={769}>
             <div className="text-black flex space-x-8 font-ubuntumono md:flex"  data-aos="fade-down">
@@ -50,7 +50,7 @@ function Layout() {
             </MediaQuery>
 
             <MediaQuery maxWidth={768}>
-
+            <Link to ="/"><img src={logo} alt="Logo" className="w-10"/></Link>
             <button className="text-black "  onClick={() => setIsOpen(!isOpen)}> {/* on click toggles the state variable*/}
             <IonIcon name="menu" style={{ fontSize: 24, color: 'black' }}></IonIcon>
             </button>

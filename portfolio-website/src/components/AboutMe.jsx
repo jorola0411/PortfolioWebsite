@@ -35,7 +35,7 @@ function AboutMe(){
           
               <div className="flex justify-center md:justify-end">
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center" data-aos="flip-left">
-                  <img src={jose} className="mb-2 rounded-sm object-cover w-full h-64"/>
+                  <img src={jose} alt="Jose" className="mb-2 rounded-sm object-cover w-full h-64"/>
                   <p className="mt-2 font-medium">Jao</p>
                 </div>
               </div>
@@ -102,11 +102,7 @@ function AboutMe(){
   
           <div className="flex justify-center">
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center">
-              <img
-                src="src/assets/jose.jpg"
-                className="mb-2 rounded-sm object-cover w-48 h-48"
-                alt="Jose"
-              />
+            <img src={jose} alt="Jose" className="mb-2 rounded-sm object-cover w-full h-64"/>
               <p className="mt-2 font-medium">Jao</p>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-
+import mockuphero from '/src/assets/mockuphero.jpg';
+import original from '/src/assets/originalposter.jpg';
+import redesign from '/src/assets/newposter.jpg';
 
 function Poster() {
     return (
@@ -13,7 +15,7 @@ function Poster() {
                         <h1 className="font-bold text-center text-4xl">Poster Redesign</h1>
         <h2 className="font-semibold text-center text-xl">Graphic Design and Branding</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <img src="../src/assets/mockuphero.jpg" alt="hello" className="w-96 mx-auto"></img>
+            <img src={mockuphero} alt="Mockup Hero" className="w-96 mx-auto"></img>
             </div>       
                      
 
@@ -53,24 +55,14 @@ function Poster() {
                             <hr className="border-t-2 border-black mt-2 mb-4" />
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="relative overflow-hidden rounded-lg shadow-md">
-                                    <img
-                                        src="../src/assets/originalposter.jpg"
-                                        alt="Original Poster"
-                                        className="w-full h-full object-cover"
-                                    />
+                                <img src={original} alt="Original Poster"className="w-full h-full object-cover"></img>
+                
                                     <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
                                         <span className="text-white text-xl">Original</span>
                                     </div>
                                 </div>
-                                <div
-                                    
-                                    className="relative overflow-hidden rounded-lg shadow-md"
-                                >
-                                    <img
-                                        src="../src/assets/newposter.jpg"
-                                        alt="New Poster"
-                                        className="w-full h-full object-cover"
-                                    />
+                                <div className="relative overflow-hidden rounded-lg shadow-md">
+                                <img src={redesign} alt="New Poster"className="w-full h-full object-cover"></img>
                                     <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
                                         <span className="text-white text-xl">Redesign</span>
                                     </div>
@@ -110,11 +102,7 @@ function Poster() {
                         <h1 className="text-3xl font-bold">Poster Redesign</h1>
                         <h2 className="text-lg font-semibold mt-1">Graphic Design and Branding</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4" />
-                        <img
-                            src="../src/assets/mockuphero.jpg"
-                            alt="Hero Mockup"
-                            className="w-full mx-auto rounded-lg"
-                        />
+                        <img src={mockuphero} alt="Mockup Hero" className="w-full mx-auto rounded-lg"></img>
                     </div>
 
                  
@@ -143,14 +131,13 @@ function Poster() {
                         <hr className="border-t-2 border-black mt-2 mb-4" />
                         <div className="grid grid-cols-1 gap-4">
                             <div className="relative overflow-hidden rounded-lg shadow-md">
-                                <img src="../src/assets/originalposter.jpg" alt="Original Poster" className="w-full"/>
+                                 <img src={original} alt="Original Poster" className="w-full"></img>
                                 <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
                                     <span className="text-white text-lg">Original</span>
                                 </div>
                             </div>
                             <div className="relative overflow-hidden rounded-lg shadow-md">
-                                <img src="../src/assets/newposter.jpg" alt="New Poster" className="w-full"
-                                />
+                                  <img src={redesign} alt="New Poster"className="w-full"></img>
                                 <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
                                     <span className="text-white  text-lg">Redesign</span>
                                 </div>

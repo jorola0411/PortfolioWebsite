@@ -3,7 +3,10 @@ import MediaQuery from "react-responsive";
 import {  Link } from "react-router-dom";
 import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
-
+import spolaroid from '/src/assets/stylespolaroid.png';
+import lpolaroid from '/src/assets/lelempolaroid.png';
+import bpolaroid from '/src/assets/burgerpolaroid.png';
+import ppolaroid from '/src/assets/redesignpolaroid.png';
 
 const tilt = { //This contains the tilt settings as well as defining the tilt when we use it for the images later on
 	reverse:        false,  // reverse the tilt direction
@@ -52,7 +55,7 @@ function Project() {
       className="rounded-md relative radial-gradient" //this class is essential, and without the radial-gradient, it nulls the animation useless, as well as radial gradient containing the css settings in app.css. No radial gradient, no animation and no visual effects.
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/stylespolaroid.png"></img>
+        <img src={spolaroid} alt="Styles Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>  {/* I had trouble setting the button, link, and tilt, because earlier, I had motion.button wrapped around tilt, and not the other way around, and the buttons didn't work the way I had it before.*/}
@@ -87,7 +90,7 @@ function Project() {
       className=" rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/lelempolaroid.png"></img>
+        <img src={lpolaroid} alt="Lelem Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>
@@ -122,7 +125,7 @@ function Project() {
       className=" rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/burgerpolaroid.png"></img>
+        <img src={bpolaroid} alt="Burger Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>
@@ -157,7 +160,7 @@ function Project() {
       className=" rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/redesignpolaroid.png"></img>
+        <img src={ppolaroid} alt="Redesign Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>
@@ -206,7 +209,7 @@ function Project() {
       className="rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/stylespolaroid.png"></img>
+        <img src={spolaroid} alt="Styles Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>
@@ -241,7 +244,7 @@ function Project() {
       className=" rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/lelempolaroid.png"></img>
+        <img src={lpolaroid} alt="Lelem Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>
@@ -276,7 +279,7 @@ function Project() {
       className=" rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/burgerpolaroid.png"></img>
+        <img src={bpolaroid} alt="Burger Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>
@@ -311,7 +314,7 @@ function Project() {
       className=" rounded-md relative radial-gradient"
     >
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-           <img src="../src/assets/redesignpolaroid.png"></img>
+        <img src={ppolaroid} alt="Redesign Polaroid"></img>
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
             </motion.button>

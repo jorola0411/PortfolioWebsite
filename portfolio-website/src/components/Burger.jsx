@@ -1,6 +1,7 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-
+import burgerhero from '/src/assets/burgerhero.jpg';
+import burgerwf from '/src/assets/burgerwireframe.png';
 
 function Burger(){
     return(
@@ -13,7 +14,7 @@ function Burger(){
         <h1 className=" text-3xl font-bold text-center text-4xl">Jao's Burgers</h1>
         <h2 className="font-semibold text-center text-xl">Front-End Development</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <img src="../src/assets/burgerhero.jpg" alt="Burger Hero" className="w-96 mx-auto rounded"></img>
+            <img src={burgerhero} alt="Burger Hero" className="w-96 mx-auto rounded"></img>
             </div>
           
             <div className="md:col-span-4 space-y-6">
@@ -46,7 +47,7 @@ function Burger(){
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Wireframing</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
-                                <img src="../src/assets/burgerwireframe.png" alt="Burger Wireframe" className="w-96 mx-auto"></img>
+                                <img src={burgerwf} alt="Burger Wireframe" className="w-96 mx-auto rounded"></img>
                                 <p className="py-2">
                                 First, I created high fidelity wireframes with the topic of a burger restaurant in mind; I looked at other restaurants for reference on designing,
                                 as well as taking to account my current skill level of coding, and finalized the design above.
@@ -91,7 +92,7 @@ function Burger(){
                             <h1 className="text-2xl font-bold text-center">Jao's Burgers</h1>
                             <h2 className="text-md font-semibold text-center">Front-End Development</h2>
                             <hr className="border-t-2 border-black mt-2 mb-4" />
-                            <img src="../src/assets/burgerhero.jpg" alt="Burger Hero" className="w-full mx-auto rounded" />
+                            <img src={burgerhero} alt="Burger Hero" className="w-96 mx-auto rounded"></img>
                         </div>
 
                         <div className="space-y-6">
@@ -120,7 +121,7 @@ function Burger(){
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-xl font-bold">Wireframing</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
-                                <img src="../src/assets/burgerwireframe.png" alt="Burger Wireframe" className="w-full mx-auto"></img>
+                                <img src={burgerhero} alt="Burger Hero" className="w-96 mx-auto rounded"></img>
                                 <p className="py-2 text-sm">
                                 First, I created high fidelity wireframes with the topic of a burger restaurant in mind; I looked at other restaurants for reference on designing,
                                 as well as taking to account my current skill level of coding, and finalized the design above.

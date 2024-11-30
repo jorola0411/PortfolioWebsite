@@ -76,7 +76,7 @@ function Home(){
           </p>
           </div>
           <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center col-span-2" data-aos="flip-left">
-                <img src={homepolaroid} className="rounded-sm object-cover w-full h-80 "/>
+                <img src={homepolaroid} alt="Jose" className="rounded-sm object-cover w-full h-80 "/>
                   <p className="mt-2">Hi there!</p>
                 </div>
                 </div>

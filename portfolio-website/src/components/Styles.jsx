@@ -1,6 +1,8 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-
+import stylemockup from '/src/assets/stylemockup.jpg';
+import upersona from '/src/assets/userpersona.png';
+import emap from '/src/assets/empathymap.png';
 
 function Styles() {
     return (
@@ -13,7 +15,7 @@ function Styles() {
                         <h1 className="text-center text-4xl">styles by jao</h1>
         <h2 className=" text-center text-xl">Mobile and UI/UX design</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <img src="../src/assets/stylemockup.jpg" alt="hello" className="w-96 mx-auto"></img>
+            <img src={stylemockup} alt="Style Heros" className="w-96 mx-auto"></img>
             </div>       
                      
 
@@ -64,7 +66,7 @@ function Styles() {
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
               <div className="col-span-2">
-            <img src="../src/assets/userpersona.jpg" alt="UserPersona"></img>
+            <img src={upersona} alt="User Persona" ></img>
             </div>
             <div className="col-span-1">
             <p className="mb-3">Matthew Thompson, a 23-year-old graphic designer living in Vancouver, BC, leads a hectic life balancing his job, social activities, and personal projects. With a growing interest in streetwear fashion, Matthew often finds himself frustrated with the limited time he has to curate stylish outfits that reflect his personality outside of work. His mornings are rushed, leaving him with no time to choose his clothes, and ends up creating outfits that don’t match. Matthew wants to effortlessly maintain a trendy and cohesive look without sacrificing too much of his precious time.</p>
@@ -78,7 +80,7 @@ function Styles() {
                                 <h1 className="text-2xl font-bold">Empathy Map</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
                                 <p>Empathy maps helps the designer see how the user feels or thinks when using the app. It helps the designer by focusing on the user needs. In this case, it highlights various concerns regarding if clothes match, app usability, and highlights of the app.</p>
-                                <img src="../src/assets/empathymap.png" alt="hello" className="w-70 mx-auto"></img>
+                                <img src={emap} alt="Empathy Map" className="w-70 mx-auto"></img>
                             </div>
                         </div>                   
                     </div>
@@ -92,7 +94,7 @@ function Styles() {
                             <h1 className="text-2xl font-bold text-center">styles by jao</h1>
                             <h2 className="text-md font-semibold text-center">Mobile and UI/UX design</h2>
                             <hr className="border-t-2 border-black mt-2 mb-4" />
-                            <img src="../src/assets/stylemockup.jpg" alt="style mockup" className="w-full mx-auto rounded" />
+                            <img src={stylemockup} alt="style mockup" className="w-full mx-auto rounded" />
                         </div>
 
                     
@@ -169,11 +171,7 @@ function Styles() {
         </p>
       </div>
       <div className="col-span-1 md:col-span-2">
-        <img
-          src="../src/assets/userpersona.jpg"
-          alt="User Persona"
-          className="w-full rounded-lg"
-        />
+      <img src={upersona} alt="User Persona" className="w-full rounded-lg" />
       </div>
 
 
@@ -187,7 +185,7 @@ function Styles() {
                         <hr className="border-t-2 border-black mt-2 mb-4" />
 
                                 <p>Empathy maps helps the designer see how the user feels or thinks when using the app. It helps the designer by focusing on the user needs. In this case, it highlights various concerns regarding if clothes match, app usability, and highlights of the app.</p>
-                                <img src="../src/assets/empathymap.png" alt="hello" className="w-35 mx-auto"></img>
+                                <img src={emap} alt="hello" className="w-35 mx-auto"></img>
                             </div>
                     </div>
                 </div>

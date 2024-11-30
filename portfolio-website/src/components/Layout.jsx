@@ -6,6 +6,10 @@ import { Outlet, Link } from "react-router-dom";
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
 import logo from  '/src/assets/logo.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+// ..
+AOS.init();
 function Layout() {
   
   const [isOpen, setIsOpen] = useState(false); //is open is a state variable that tracks whether the hamburger menu was open or closed, usestate(false) means the menu is closed by default
@@ -38,7 +42,7 @@ function Layout() {
             <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
 
             <MediaQuery minWidth={769}>
-            <div className="text-black flex space-x-8 font-ubuntumono  md:flex">
+            <div className="text-black flex space-x-8 font-ubuntumono md:flex"  data-aos="fade-down">
                 <Link to ="/about" className="text-2xl hover:underline">About</Link>
                 <Link to ="/projects" className="text-2xl hover:underline">Projects</Link>
                 <a href="#contact" className="text-2xl hover:underline">Resume</a>

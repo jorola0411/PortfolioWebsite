@@ -4,6 +4,9 @@ import stylemockup from '/src/assets/stylemockup.jpg';
 import upersona from '/src/assets/userpersona.png';
 import emap from '/src/assets/empathymap.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init(); 
 function Styles() {
     return (
         <>
@@ -12,15 +15,15 @@ function Styles() {
                     <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-6">
                     
                         <div className="md:col-span-4 mb-8">
-                        <h1 className="text-center text-4xl">styles by jao</h1>
-        <h2 className=" text-center text-xl">Mobile and UI/UX design</h2>
+                        <h1 className="text-center text-4xl" data-aos="fade-down">styles by jao</h1>
+        <h2 className=" text-center text-xl" data-aos="fade-down">Mobile and UI/UX design</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
             <img src={stylemockup} alt="Style Heros" className="w-96 mx-auto"></img>
             </div>       
                      
 
                    
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Overview</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -41,7 +44,7 @@ function Styles() {
 </div>
 
 
-<div className="space-y-4">
+<div className="space-y-4" data-aos="flip-right">
 <p className="text-lg leading-relaxed">
     <span className="font-bold">Duration:</span> 14 hours
   </p>
@@ -60,7 +63,7 @@ function Styles() {
 </div>
 </div>
 
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">User Persona & Scenario</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />

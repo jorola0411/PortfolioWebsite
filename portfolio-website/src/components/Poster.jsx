@@ -4,23 +4,27 @@ import mockuphero from '/src/assets/mockuphero.jpg';
 import original from '/src/assets/originalposter.jpg';
 import redesign from '/src/assets/newposter.jpg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init(); 
+
 function Poster() {
     return (
         <>
             <MediaQuery minWidth={769}>
-                <div className="items-center justify-center  min-h-screen">
+                <div className="items-center justify-center  min-h-screen" >
                     <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-6">
                     
                         <div className="md:col-span-4 mb-8">
-                        <h1 className="font-bold text-center text-4xl">Poster Redesign</h1>
-        <h2 className="font-semibold text-center text-xl">Graphic Design and Branding</h2>
+                        <h1 className="font-bold text-center text-4xl" data-aos="fade-down">Poster Redesign</h1>
+        <h2 className="font-semibold text-center text-xl" data-aos="fade-down">Graphic Design and Branding</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
             <img src={mockuphero} alt="Mockup Hero" className="w-96 mx-auto"></img>
             </div>       
                      
 
                    
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Overview</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -31,7 +35,7 @@ function Poster() {
                             </div>
                         </div>
 
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Original Ad</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -39,7 +43,7 @@ function Poster() {
                                 The original ad had the main message on in a straightforward matter, however, many areas needed improvement like a lack of visuals, more striking typography, and a lack of hierarchy makes the main message somewhat confusing.
 
                                 </p>
-                                <div className="mt-4">
+                                <div className="mt-4" data-aos="flip-right">
                                     <h2 className="text-lg font-bold">Redesign Goals:</h2>
                                     <ul className="list-disc list-inside pl-4">
                                         <li>Add visuals and colors to enhance the poster</li>
@@ -50,7 +54,7 @@ function Poster() {
                             </div>
                         </div>
 
-                        <div className="md:col-span-4">
+                        <div className="md:col-span-4" data-aos="flip-right">
                             <h1 className="text-2xl font-bold">Before and After</h1>
                             <hr className="border-t-2 border-black mt-2 mb-4" />
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -70,7 +74,7 @@ function Poster() {
                             </div>
                         </div>
 
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Creative Process</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -81,7 +85,7 @@ function Poster() {
                         </div>
 
                       
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Challenges and Solutions</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />

@@ -4,7 +4,6 @@ import jose from '/src/assets/jose.jpg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-// ..
 AOS.init();
 
 function AboutMe(){

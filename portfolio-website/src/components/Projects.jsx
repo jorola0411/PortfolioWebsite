@@ -7,6 +7,10 @@ import spolaroid from '/src/assets/stylespolaroid.png';
 import lpolaroid from '/src/assets/lelempolaroid.png';
 import bpolaroid from '/src/assets/burgerpolaroid.png';
 import ppolaroid from '/src/assets/redesignpolaroid.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+// ..
+AOS.init();
 
 const tilt = { //This contains the tilt settings as well as defining the tilt when we use it for the images later on
 	reverse:        false,  // reverse the tilt direction
@@ -27,11 +31,11 @@ function Project() {
         <div className="items-center justify-center ">
         <div className="w-full bg-beige-200 py-10 mt-20 mb-20">
         <div className="max-w-screen-lg mx-auto space-y-4 p-4">
-        <h1 className="text-3xl font-bold text-center">Projects</h1>
+        <h1 className="text-3xl font-bold text-center"  data-aos="fade-down">Projects</h1>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="group flex flex-col items-center">
+            <div className="group flex flex-col items-center" data-aos="flip-left">
             <Tilt options={tilt} style={{ height: 240, width: 190 }}>
             <Link to ="styles">   
     <motion.button  initial={{ "--x": "100%", scale: 1 }} //using framer motion, this is the animation that plays for the "shine" effect on the polaroids; this is the settings part.
@@ -66,7 +70,8 @@ function Project() {
     <p className="text-sm">UI/UX focused project on a niche app idea.</p>
               </div>
                 </div>
-            <div className="group flex flex-col items-center">
+
+            <div className="group flex flex-col items-center" data-aos="flip-left">
             <Tilt options={tilt} style={{ height: 240, width: 190 }}>
             <Link to ="lelem">   
     <motion.button  initial={{ "--x": "100%", scale: 1 }}
@@ -101,7 +106,9 @@ function Project() {
     <p className="text-sm">A fictional zoo focusing on front-end development.</p>
               </div>
                 </div>
-            <div className="group flex flex-col items-center">
+
+
+            <div className="group flex flex-col items-center" data-aos="flip-left">
             <Tilt options={tilt} style={{ height: 240, width: 190 }}>
             <Link to ="burger">   
     <motion.button  initial={{ "--x": "100%", scale: 1 }}
@@ -136,7 +143,8 @@ function Project() {
     <p className="text-sm">Responsive website focused on learning responsiveness.</p>
               </div>
                 </div>
-            <div className="group flex flex-col items-center">
+
+            <div className="group flex flex-col items-center" data-aos="flip-left">
             <Tilt options={tilt} style={{ height: 240, width: 190 }}>
             <Link to ="poster">   
     <motion.button  initial={{ "--x": "100%", scale: 1 }}
@@ -157,8 +165,7 @@ function Project() {
           mass: 0.1,
         },
       }}
-      className=" rounded-md relative radial-gradient"
-    >
+      className=" rounded-md relative radial-gradient">
         <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
         <img src={ppolaroid} alt="Redesign Polaroid"></img>
             </span>

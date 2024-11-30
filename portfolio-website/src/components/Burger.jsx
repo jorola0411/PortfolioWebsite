@@ -3,6 +3,9 @@ import MediaQuery from "react-responsive";
 import burgerhero from '/src/assets/burgerhero.jpg';
 import burgerwf from '/src/assets/burgerwireframe.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init(); 
 function Burger(){
     return(
         <>
@@ -11,13 +14,13 @@ function Burger(){
         <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
               
         <div className="md:col-span-4 space-y-2">
-        <h1 className=" text-3xl font-bold text-center text-4xl">Jao's Burgers</h1>
-        <h2 className="font-semibold text-center text-xl">Front-End Development</h2>
+        <h1 className=" text-3xl font-bold text-center text-4xl" data-aos="fade-down">Jao's Burgers</h1>
+        <h2 className="font-semibold text-center text-xl"  data-aos="fade-down">Front-End Development</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
             <img src={burgerhero} alt="Burger Hero" className="w-96 mx-auto rounded"></img>
             </div>
           
-            <div className="md:col-span-4 space-y-6">
+            <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Overview</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -28,7 +31,7 @@ function Burger(){
                         </div>
 
                        
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Project Goals</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -43,7 +46,7 @@ function Burger(){
                         
                        
                         
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Wireframing</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -55,7 +58,7 @@ function Burger(){
                             </div>
                         </div>
 
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-2xl font-bold">Challenges</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -69,7 +72,7 @@ function Burger(){
 
 
 
-                        <div className="md:col-span-4 space-y-6">
+                        <div className="md:col-span-4 space-y-6" data-aos="flip-right">
                             <div  className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className=" text-2xl font-bold">Takeaways</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -86,7 +89,7 @@ function Burger(){
             </MediaQuery>
 
         <MediaQuery maxWidth={768}>
-        <div className="items-center justify-center  min-h-screen p-4">
+        <div className="items-center justify-center  min-h-screen p-4" data-aos="flip-right">
                     <div className="space-y-8">
                         <div>
                             <h1 className="text-2xl font-bold text-center">Jao's Burgers</h1>
@@ -95,7 +98,7 @@ function Burger(){
                             <img src={burgerhero} alt="Burger Hero" className="w-96 mx-auto rounded"></img>
                         </div>
 
-                        <div className="space-y-6">
+                        <div className="space-y-6" data-aos="flip-right">
                             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                                 <h1 className="text-xl font-bold">Overview</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -105,8 +108,8 @@ function Burger(){
                             </div>
                         </div>
 
-                        <div className="space-y-6">
-                            <div className="bg-beige-100 rounded-lg shadow-lg p-6">
+                        <div className="space-y-6" data-aos="flip-right">
+                            <div className="bg-beige-100 rounded-lg shadow-lg p-6" data-aos="flip-right">
                                 <h1 className="text-xl font-bold">Project Goals</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
                                 <ul className="list-disc list-inside pl-4 text-sm">
@@ -117,8 +120,8 @@ function Burger(){
                             </div>
                         </div>
 
-                        <div className=" space-y-6">
-                            <div className="bg-beige-100 rounded-lg shadow-lg p-6">
+                        <div className="space-y-6" data-aos="flip-right">
+                            <div className="bg-beige-100 rounded-lg shadow-lg p-6" data-aos="flip-right">
                                 <h1 className="text-xl font-bold">Wireframing</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
                                 <img src={burgerhero} alt="Burger Hero" className="w-96 mx-auto rounded"></img>
@@ -129,8 +132,8 @@ function Burger(){
                             </div>
                         </div>
 
-                        <div className="space-y-6">
-                            <div className="bg-beige-100 rounded-lg shadow-lg p-6">
+                        <div className="space-y-6" data-aos="flip-right">
+                            <div className="bg-beige-100 rounded-lg shadow-lg p-6" data-aos="flip-right">
                                 <h1 className="text-xl font-bold">Challenges</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
                                 <p className="py-2 text-sm">
@@ -140,8 +143,8 @@ function Burger(){
                             </div>
                         </div>
 
-                        <div className=" space-y-6">
-                            <div  className="bg-beige-100 rounded-lg shadow-lg p-6">
+                        <div className=" space-y-6" data-aos="flip-right">
+                            <div  className="bg-beige-100 rounded-lg shadow-lg p-6" data-aos="flip-right">
                                 <h1 className="text-xl font-bold">Takeaways</h1>
                                 <hr className="border-t-2 border-black mt-2 mb-4" />
                                 <p className="text-sm">

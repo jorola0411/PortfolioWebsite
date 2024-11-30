@@ -16,7 +16,7 @@ AOS.init();
 function Lelem() {
   return (
     <>
-    <MediaQuery minWidth={1024}>
+    <MediaQuery minWidth={769}>
     <div className="items-center justify-center ">
         <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
               

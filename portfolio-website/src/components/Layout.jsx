@@ -103,10 +103,10 @@ function Layout() {
 
         <div className="flex space-x-4 justify-center">
             <a href="https://github.com/jorola0411" target="_blank">
-            <img src={githublogo} alt="GitHub Logo" className="w-5 h-5" />
+            <img src={githublogo} alt="GitHub Logo" className="w-10 h-10" />
             </a>
             <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src={linkedinlogo} alt="Linkedin Logo" className="w-5 h-5" />
+            <img src={linkedinlogo} alt="Linkedin Logo" className="w-10 h-10" />
             </a>
           </div>
 

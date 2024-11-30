@@ -87,7 +87,7 @@ function Styles() {
             <MediaQuery maxWidth={768}>
                 <div className="items-center justify-center  min-h-screen p-4">
                     <div className="space-y-8">
-                        {/* Header */}
+                 
                         <div>
                             <h1 className="text-2xl font-bold text-center">styles by jao</h1>
                             <h2 className="text-md font-semibold text-center">Mobile and UI/UX design</h2>
@@ -95,7 +95,7 @@ function Styles() {
                             <img src="../src/assets/stylemockup.jpg" alt="style mockup" className="w-full mx-auto rounded" />
                         </div>
 
-                        {/* Overview Section */}
+                    
                         <div className="bg-beige-100 rounded-lg shadow-lg p-4">
                             <h1 className="text-xl font-bold">Overview</h1>
                             <hr className="border-t-2 border-black mt-2 mb-4" />

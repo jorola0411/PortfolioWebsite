@@ -8,24 +8,24 @@ import linkedinlogo from '/src/assets/linkedinlogo.png';
 import logo from  '/src/assets/logo.png';
 function Layout() {
   
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); //is open is a state variable that tracks whether the hamburger menu was open or closed, usestate(false) means the menu is closed by default
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); //this toggles the state between opened and closed menu. If isOpen is true (menu is open), then clicking it will make it false (menu is closed), and vice versa
   };
 
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 1024) { //this is used to detect when the window size is under 1024, then sets the menu as false, AKA closed.
         setIsOpen(false);
       }
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize); //this adds an event listener to execute the actual function
     
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
 
@@ -47,7 +47,7 @@ function Layout() {
 
             <MediaQuery maxWidth={768}>
 
-            <button className="text-black "  onClick={() => setIsOpen(!isOpen)}>
+            <button className="text-black "  onClick={() => setIsOpen(!isOpen)}> {/* on click toggles the state variable*/}
             <IonIcon name="menu" style={{ fontSize: 24, color: 'black' }}></IonIcon>
             </button>
             </MediaQuery>
@@ -66,11 +66,11 @@ function Layout() {
             </nav>
         </header>
         <main>
-            {/* Thisis where the child routes of <Layout> will be rendered when the page changes*/}
+            {/* This is where the child routes of <Layout> will be rendered when the page changes*/}
             <Outlet />
         </main>
         <MediaQuery minWidth={769}>
-        <footer className="py-4">
+        <footer className="py-4 ">
       <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-ubuntumono ">
         <span className="text-2xl text-black">Jose Alejandro Orola</span>
     

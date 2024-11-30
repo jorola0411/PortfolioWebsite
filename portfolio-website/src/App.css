@@ -3,10 +3,12 @@
   --solid-color-background:  255, 255, 255;
   --overlay-color: 255, 255, 255;
   background-color:#FFF8EF ;
+  min-height: 100%;
   }
   body {
     background-color:#FFF8EF ;
 }
+
 h1 {
     font-family: 'Ubuntu Mono', 'sans-serif';
 }
@@ -14,6 +16,9 @@ h2 {
     font-family: 'Ubuntu Mono', 'sans-serif';
 }
 p {
+    font-family: 'Ubuntu', 'sans-serif';
+}
+li {
     font-family: 'Ubuntu', 'sans-serif';
 }
 .radial-gradient {

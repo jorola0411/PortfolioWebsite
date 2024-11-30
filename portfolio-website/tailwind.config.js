@@ -6,13 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      
       maxWidth: {
         '8xl': '96rem',
         '7xl': '85rem',
         'md': '40rem',
         'screen-lg': '64rem',
-     
       },
       width: {
         '96': '80rem',

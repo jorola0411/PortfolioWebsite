@@ -6,6 +6,7 @@ import redesign from '/src/assets/newposter.jpg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+// ..
 AOS.init(); 
 
 function Poster() {

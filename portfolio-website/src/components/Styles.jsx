@@ -6,6 +6,7 @@ import emap from '/src/assets/empathymap.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+// ..
 AOS.init(); 
 function Styles() {
     return (

@@ -11,6 +11,7 @@ import schedule from '/src/assets/sprintschedule.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+// ..
 AOS.init();
 
 function Lelem() {

@@ -39,9 +39,9 @@ function Layout() {
           <nav className="py-4">
 
             <div className="px-10 mx-auto flex justify-between items-center">
-            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
 
             <MediaQuery minWidth={769}>
+            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
             <div className="text-black flex space-x-8 font-ubuntumono md:flex"  data-aos="fade-down">
                 <Link to ="/about" className="text-2xl hover:underline">About</Link>
                 <Link to ="/projects" className="text-2xl hover:underline">Projects</Link>

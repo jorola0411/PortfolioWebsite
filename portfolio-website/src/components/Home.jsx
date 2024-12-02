@@ -50,7 +50,7 @@ function Home(){
           </Link>
           
           <Link to ="projects/styles" className="relative group">
-          <img src={featuredproject2} alt="Styles" className="border rounded-3xl mt-5 transition duration-300 ease-in-out" data-aos="flip-right" />
+          <img src={featuredproject2} alt="Styles" className=" rounded-3xl mt-5 transition duration-300 ease-in-out" data-aos="flip-right" />
           <div className="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 text-black bg-gradient-to-t from-beige-50 via-transparent to-transparent">
             <div className="p-5 text-center">
               <h1 className="text-3xl">styles by jao</h1>

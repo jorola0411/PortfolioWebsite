@@ -1,7 +1,7 @@
 import React from "react";
 import MediaQuery from "react-responsive";
 import burgerhero from '/src/assets/burgerhero.jpg';
-import burgerwf from '/src/assets/burgerwireframe.png';
+import burgerwf from '/src/assets/burgerwireframe.jpg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 

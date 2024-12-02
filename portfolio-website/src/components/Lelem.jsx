@@ -57,12 +57,14 @@ function Lelem() {
                   <p>Web Developer & UI Designer</p>
               </div>
               </a>
-
+            
+                <a href="https://lilyzvillage.ca/"  target="_blank">
               <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 " data-aos="flip-right">
               <img src={yurino} className="mb-2 rounded-sm object-cover w-full h-64"/>
                   <p className="mt-2 font-medium">Yurino Murakami </p>
                   <p>Graphic and UI Designer</p>
               </div>
+              </a>
 
               <a href="https://denisgurcu.com/" target="_blank">
               <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 " data-aos="flip-right">

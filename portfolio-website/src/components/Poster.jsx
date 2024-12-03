@@ -1,6 +1,6 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-import mockuphero from './src/assets/mockuphero.jpg'
+import posterhero from '/src/assets/posterhero.jpg';
 import original from '/src/assets/originalposter.jpg';
 import redesign from '/src/assets/newposter.jpg';
 
@@ -20,7 +20,7 @@ function Poster() {
                 <h1 className="font-bold text-center text-4xl" data-aos="fade-down">Poster Redesign</h1>
             <h2 className="font-semibold text-center text-xl" data-aos="fade-down">Graphic Design and Branding</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <img src={mockuphero} alt="Mockup Hero" className="w-96 mx-auto"></img>
+            <img src={posterhero} alt="Poster Hero" className="w-96 mx-auto"></img>
             </div>       
                      
 
@@ -107,7 +107,7 @@ function Poster() {
                     <h1 className="text-3xl font-bold">Poster Redesign</h1>
                     <h2 className="text-lg font-semibold mt-1">Graphic Design and Branding</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
-                    <img src={mockuphero} alt="Mockup Hero" className="w-full mx-auto rounded-lg"></img>
+                    <img src={posterhero} alt="Poster Hero" className="w-full mx-auto rounded-lg"></img>
                 </div>
 
                 

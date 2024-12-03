@@ -1,6 +1,6 @@
 import React from "react";
 import MediaQuery from "react-responsive";
-import mockuphero from '/src/assets/mockuphero.jpg';
+import mockuphero from './src/assets/mockuphero.jpg'
 import original from '/src/assets/originalposter.jpg';
 import redesign from '/src/assets/newposter.jpg';
 

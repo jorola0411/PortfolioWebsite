@@ -94,8 +94,8 @@ function Layout() {
       </main>
 
 
-      <footer className="py-4 border-t border-black font-ubuntumono">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:pt-2">
+      <footer>
+        <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black p-3 mt-5 font-ubuntumono">
           <span className="text-md md:text-2xl text-black">Jose Alejandro Orola</span>
 
           <div className="flex space-x-4 justify-center">

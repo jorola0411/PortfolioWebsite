@@ -24,7 +24,7 @@ function Home(){
               </h1>
             
               <p className="md:text-2xl sm:text-md mt-5 max-w-3xl" data-aos="fade-right">
-                I'm a UI/UX designer and front-end developer located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company.
+                I'm a <span className="bg-gradient-to-r from-beige-400 to-beige-500 bg-clip-text text-transparent font-bold">UI/UX designer</span> and <span className="bg-gradient-to-r from-beige-400 to-beige-500 bg-clip-text text-transparent font-bold">Front-End developer</span> located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company.
               </p>
             </div>
 
@@ -34,7 +34,7 @@ function Home(){
             </div>
 
             <div className="mx-auto space-y-2 max-w-screen-lg mt-10 sm:col-span-4 md:col-span-4">
-              <h2 className="md:text-5xl sm:text-2xl text-center">Featured Projects</h2>
+              <h2 className="md:text-4xl sm:text-2xl text-center">Featured Projects</h2>
                 <hr className="border-t-2 border-black  mt-2 mb-4" />
                 <Link to="projects/lelem" className="relative group">
                   <img src={featuredproject1} alt="Lelem Natural Park" className="border rounded-3xl mt-5 transition duration-300 ease-in-out" data-aos="flip-right" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project."/>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import IonIcon from '@reacticons/ionicons';
 import MediaQuery from 'react-responsive';
 import { Outlet, Link } from "react-router-dom";
-
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
 import logo from  '/src/assets/logo.png';
@@ -59,7 +58,7 @@ function Layout() {
             
             {isOpen && (
               <div className="flex justify-center mt-4">
-            <div className="text-black flex flex-col items-center space-y-2">
+            <div className="text-black flex flex-col items-center space-y-2 font-ubuntumono">
                 <Link to ="/about" className="text-lg hover:underline" onClick={toggleMenu}>About</Link>
                 <Link to ="/projects" className="text-lg hover:underline" onClick={toggleMenu}>Projects</Link>
                 <a href="#contact" className="text-lg hover:underline" onClick={toggleMenu}>Resume</a>

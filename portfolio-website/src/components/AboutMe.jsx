@@ -86,7 +86,7 @@ function AboutMe(){
             <div className="relative">
               <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">✍️</p> 
               <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-              <p className="md:text-md sm:text-sm"> While not as often, sometimes I write! If I have</p>
+              <p className="md:text-md sm:text-sm"> While not as often, sometimes I write! If I have something that comes to mind for a story I'm writing, i'll jot it down, but writing is also another way I keep my creative side going.</p>
               </div>
             </div>
             <p className="mt-2 font-medium">Writing</p>

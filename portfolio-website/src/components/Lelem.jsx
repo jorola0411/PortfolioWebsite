@@ -22,7 +22,7 @@ function Lelem() {
               <h1 className="sm:text-xl md:text-4xl font-bold text-center" data-aos="fade-down"> Lelem Natural Park</h1>
               <h2 className="sm:text-md md:text-xl font-semibold text-center" data-aos="fade-down">Front-End Development</h2>
               <hr className="border-t-2 border-black  mt-2 mb-4" />
-              <img src={lelemhero} alt="Lelem Hero" description="This is the hero image for the Lelem project, which showcases the website in laptop mockups" className="w-96 mx-auto"></img>
+              <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank"><img src={lelemhero} alt="Lelem Hero" description="This is the hero image for the Lelem project, which showcases the website in laptop mockups" className="w-96 mx-auto"></img></a>
             </div>
   
             <div className="sm:col-span-5 md:col-span-5 space-y-6"data-aos="flip-right">

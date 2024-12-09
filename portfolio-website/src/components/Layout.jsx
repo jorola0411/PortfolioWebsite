@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import IonIcon from '@reacticons/ionicons';
-import MediaQuery from 'react-responsive';
 import { Outlet, Link } from "react-router-dom";
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
-import logo from  '/src/assets/logo.png';
+import logo from '/src/assets/logo.png';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 // ..
 AOS.init();
 function Layout() {
-  
+
   const [isOpen, setIsOpen] = useState(false); //is open is a state variable that tracks whether the hamburger menu was open or closed, usestate(false) means the menu is closed by default
 
   const toggleMenu = () => {
@@ -26,94 +25,94 @@ function Layout() {
     };
 
     window.addEventListener("resize", handleResize); //this adds an event listener to execute the actual function
-    
 
-    return () => window.removeEventListener("resize", handleResize); 
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
 
-    return(
-        <>
-        <header>
-          <nav className="py-4">
+  return (
+    <>
+      <header>
+        <nav className="py-4">
+          <div className="px-4 md:px-10 mx-auto flex justify-between items-center">
 
-            <div className="px-10 mx-auto flex justify-between items-center">
+            <Link to="/">
+              <img src={logo} alt="Logo" description="The logo depicts a sun, over a bridge with chains as it's handle bars."className="w-10 md:w-20" />
+            </Link>
 
-            <MediaQuery minWidth={769}>
-            <Link to ="/"><img src={logo} alt="Logo" className="w-20"/></Link>
-            <div className="text-black flex space-x-8 font-ubuntumono md:flex"  data-aos="fade-down">
-                <Link to ="/about" className="text-2xl hover:underline">About</Link>
-                <Link to ="/projects" className="text-2xl hover:underline">Projects</Link>
-                <a href="#contact" className="text-2xl hover:underline">Resume</a>
+
+            <div className="hidden md:flex text-black space-x-8 font-ubuntumono" data-aos="fade-down">
+              <Link to="/about" className="text-lg md:text-2xl hover:underline">About</Link>
+              <Link to="/projects" className="text-lg md:text-2xl hover:underline">Projects</Link>
+              <a href="#contact" className="text-lg md:text-2xl hover:underline">Resume</a>
             </div>
-            </MediaQuery>
 
-            <MediaQuery maxWidth={768}>
-            <Link to ="/"><img src={logo} alt="Logo" className="w-10"/></Link>
-            <button className="text-black "  onClick={() => setIsOpen(!isOpen)}> {/* on click toggles the state variable*/}
-            <IonIcon name="menu" style={{ fontSize: 24, color: 'black' }}></IonIcon>
+
+            <button
+              className="text-black md:hidden"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <IonIcon name="menu" style={{ fontSize: 24, color: 'black' }}></IonIcon>
             </button>
-            </MediaQuery>
+          </div>
+
+
+          {isOpen && (
+            <div className="flex md:hidden justify-center mt-4">
+              <div className="text-black flex flex-col items-center space-y-2 font-ubuntumono">
+                <Link
+                  to="/about"
+                  className="text-lg hover:underline"
+                  onClick={toggleMenu}
+                >
+                  About
+                </Link>
+                <Link
+                  to="/projects"
+                  className="text-lg hover:underline"
+                  onClick={toggleMenu}
+                >
+                  Projects
+                </Link>
+                <a
+                  href="#contact"
+                  className="text-lg hover:underline"
+                  onClick={toggleMenu}
+                >
+                  Resume
+                </a>
+              </div>
             </div>
-            
-            {isOpen && (
-              <div className="flex justify-center mt-4">
-            <div className="text-black flex flex-col items-center space-y-2 font-ubuntumono">
-                <Link to ="/about" className="text-lg hover:underline" onClick={toggleMenu}>About</Link>
-                <Link to ="/projects" className="text-lg hover:underline" onClick={toggleMenu}>Projects</Link>
-                <a href="#contact" className="text-lg hover:underline" onClick={toggleMenu}>Resume</a>
-            </div>
-            </div>
-            )}
-  
-            </nav>
-        </header>
-        <main>
-            {/* This is where the child routes of <Layout> will be rendered when the page changes*/}
-            <Outlet />
-        </main>
-        <MediaQuery minWidth={769}>
-        <footer className="py-4 ">
-      <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black pt-2 font-ubuntumono ">
-        <span className="text-2xl text-black">Jose Alejandro Orola</span>
-    
-        <div className="flex space-x-4 justify-center">
+          )}
+        </nav>
+      </header>
+
+      <main>
+
+        <Outlet />
+      </main>
+
+
+      <footer className="py-4 border-t border-black font-ubuntumono">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:pt-2">
+          <span className="text-md md:text-2xl text-black">Jose Alejandro Orola</span>
+
+          <div className="flex space-x-4 justify-center">
             <a href="https://github.com/jorola0411" target="_blank">
-              <img src={githublogo} alt="GitHub Logo" className="w-10 h-10" />
+              <img src={githublogo} alt="GitHub Logo"description="custom logo, used for the user to click to GitHub."  className="w-8 h-8 md:w-10 md:h-10" />
             </a>
             <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src={linkedinlogo} alt="Linkedin Logo" className="w-10 h-10" />
+              <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn."className="w-8 h-8 md:w-10 md:h-10" />
             </a>
           </div>
 
-        <span className="text-2xl text-black ">jorola0411@gmail.com</span>
+          <span className="text-md md:text-2xl text-black">jorola0411@gmail.com</span>
+        </div>
+      </footer>
+    </>
+  );
 
-      </div>
-    </footer>
-    </MediaQuery>
-
-    <MediaQuery maxWidth={768}>
-              
-    <footer className="p-4">
-      <div className="container mx-auto flex flex-col justify-between items-center border-t border-black pt-2 font-ubuntumono">
-        <span className="text-md text-black">Jose Alejandro Orola</span>
-
-        <span className="text-md text-black">jorola0411@gmail.com</span>
-
-        <div className="flex space-x-4 justify-center">
-            <a href="https://github.com/jorola0411" target="_blank">
-            <img src={githublogo} alt="GitHub Logo" className="w-10 h-10" />
-            </a>
-            <a href="https://linkedin.com/in/jose-orola" target="_blank">
-            <img src={linkedinlogo} alt="Linkedin Logo" className="w-10 h-10" />
-            </a>
-          </div>
-
-      </div>
-    </footer>
-      </MediaQuery>
-        </>
-    );
 }
 
 export default Layout;

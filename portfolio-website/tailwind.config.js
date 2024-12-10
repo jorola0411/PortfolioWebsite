@@ -15,7 +15,7 @@ export default {
       maxWidth: {
         '8xl': '96rem',
         '7xl': '85rem',
-        'md': '40rem',
+        'md': '52rem',
         'screen-lg': '64rem',
       },
       width: {

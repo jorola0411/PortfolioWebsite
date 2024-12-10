@@ -25,7 +25,7 @@ function Lelem() {
               <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank"><img src={lelemhero} alt="Lelem Hero" description="This is the hero image for the Lelem project, which showcases the website in laptop mockups" className="w-96 mx-auto"></img></a>
             </div>
   
-            <div className="sm:col-span-5 md:col-span-5 space-y-6"data-aos="flip-right">
+            <div className="sm:col-span-5 md:col-span-5 space-y-6"data-aos="flip-right" data-aos-anchor-placement="center-center">
               <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                 <h1 className="sm:text-xl md:text-2xl font-bold">Overview</h1>
                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -43,14 +43,14 @@ function Lelem() {
                 <hr className="border-t-2 border-black mt-2 mb-4" />
                 <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-6">
                     
-                  <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right">
+                  <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="center-center">
                     <img src={jose} alt="Jose Orola" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64"/>
                     <p className="mt-2 font-medium">Jose Orola</p>
                     <p>Web Developer & UI Designer</p>
                   </div>
   
                   <a href="https://karleilvillareal.ca/" target="_blank">
-                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right">
+                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="center-center">
                       <img src={leil} alt="Karleil Villareal" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64"/>
                       <p className="mt-2 font-medium">Karleil Villareal </p>
                       <p>Web Developer & UI Designer</p>
@@ -58,7 +58,7 @@ function Lelem() {
                   </a>
   
                   <a href="https://lilyzvillage.ca/" target="_blank">
-                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1"data-aos="flip-right">
+                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1"data-aos="flip-right" data-aos-anchor-placement="center-center">
                       <img src={yurino} alt="Yurino Murakami" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64"/>
                       <p className="mt-2 font-medium">Yurino Murakami </p>
                       <p>Graphic and UI Designer</p>
@@ -66,7 +66,7 @@ function Lelem() {
                   </a>
   
                   <a href="https://denisgurcu.com/" target="_blank">
-                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1"data-aos="flip-right">
+                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1"data-aos="flip-right" data-aos-anchor-placement="center-center">
                       <img src={denis} alt="Denis Gurcu" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64"/>
                       <p className="mt-2 font-medium">Denis Gurcu</p>
                       <p>Graphic Designer</p>
@@ -74,7 +74,7 @@ function Lelem() {
                   </a>
   
                   <a href="https://samanthaluk.ca/" target="_blank">
-                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right">
+                    <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="center-center">
                       <img src={sam} alt="Sam Luk" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64"/>
                       <p className="mt-2 font-medium">Samantha Luk </p>
                       <p>Content Writer</p>
@@ -84,7 +84,7 @@ function Lelem() {
               </div>
             </div>
   
-            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right">
+            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right" data-aos-anchor-placement="center-center">
               <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                 <h1 className="sm:text-xl md:text-2xl font-bold">Role duties</h1>
                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -110,7 +110,7 @@ function Lelem() {
               </div>
             </div>
   
-            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right">
+            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right" data-aos-anchor-placement="center-center">
               <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                 <h1 className="sm:text-xl md:text-2xl font-bold">Agile process</h1>
                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -124,7 +124,7 @@ function Lelem() {
               </div>
             </div>
   
-            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right">
+            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right" data-aos-anchor-placement="center-center">
               <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                 <h1 className="sm:text-xl md:text-2xl font-bold">Team Dynamic</h1>
                 <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -149,7 +149,20 @@ function Lelem() {
               </div>
             </div>
   
-            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right">
+            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right" data-aos-anchor-placement="center-center">
+              <div className="bg-beige-100 rounded-lg shadow-lg p-6">
+                <h1 className="sm:text-xl md:text-2xl font-bold">Challenges</h1>
+                <hr className="border-t-2 border-black mt-2 mb-4" />
+                <p className="sm:text-sm md:text-base mb-3">
+                  Some challenges I had during this project was the coding. In combination of some last minute changes or requests from the design team, I felt a bigger weight on my shoulders just to fulfill the designers requests.
+                  It was also hard because this was the first project where I coded with another person, and I had to get adjusted to how they code and communicate with them on who should do what,
+                  as well as getting the code to work before the next sprints started. I also had to make sure if a certain section was okay by the design team or my fellow coder. Communication was nescessary.
+                </p>
+          
+              </div>
+            </div>
+
+            <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right" data-aos-anchor-placement="center-center">
               <div className="bg-beige-100 rounded-lg shadow-lg p-6">
                 <h1 className="sm:text-xl md:text-2xl font-bold">Takeaways</h1>
                 <hr className="border-t-2 border-black mt-2 mb-4" />

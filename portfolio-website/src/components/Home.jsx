@@ -33,7 +33,7 @@ function Home(){
                 <p className="mt-2">Hi there!</p>
             </div>
 
-            <div className="mx-auto space-y-2 max-w-screen-lg mt-10 sm:col-span-4 md:col-span-4">
+            <div className="mx-auto space-y-2 max-w-screen-md mt-10 sm:col-span-4 md:col-span-4">
               <h2 className="md:text-4xl sm:text-2xl text-center">Featured Projects</h2>
                 <hr className="border-t-2 border-black  mt-2 mb-4" />
                 <Link to="projects/lelem" className="relative group">

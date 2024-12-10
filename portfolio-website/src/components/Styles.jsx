@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import stylemockup from '/src/assets/stylemockup.jpg';
 import upersona from '/src/assets/userpersona.png';
 import emap from '/src/assets/empathymap.png';
@@ -8,6 +8,14 @@ import 'aos/dist/aos.css';
 // ..
 AOS.init();
 function Styles() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 300, // Duration of animation in milliseconds
+      easing: 'ease-in-out', // Easing function
+    });
+  }, []);
+
   return (
     <>
 
@@ -21,7 +29,7 @@ function Styles() {
             <img src={stylemockup} alt="Style Hero" description="This showcases various screencaps from Figma, in phone mockups." className="w-96 mx-auto"></img>
           </div>
 
-          <div className="md:col-span-4 space-y-6" data-aos="flip-right">
+          <div className="md:col-span-4 space-y-6" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Overview</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -42,7 +50,7 @@ function Styles() {
                 </div>
 
 
-                <div className="space-y-4" data-aos="flip-right">
+                <div className="space-y-4" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
                   <p className="sm:text-sm md:text-base leading-relaxed">
                     <span className="font-bold">Duration:</span> 14 hours
                   </p>
@@ -61,7 +69,7 @@ function Styles() {
             </div>
           </div>
 
-          <div className="md:col-span-4 space-y-6" data-aos="flip-right">
+          <div className="md:col-span-4 space-y-6" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">User Persona & Scenario</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
@@ -76,7 +84,7 @@ function Styles() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-4 space-y-6">
+          <div className="md:col-span-4 space-y-6" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Empathy Map</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />

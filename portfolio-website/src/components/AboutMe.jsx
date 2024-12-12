@@ -7,7 +7,7 @@ import jslogo from '/src/assets/jslogo.svg';
 import html5 from '/src/assets/HTML5.svg';
 import python from '/src/assets/python.svg';
 import illustrator from '/src/assets/illustrator.svg';
-import photoshop from '/src/assets/Photoshop.svg';
+import photoshop from '/src/assets/photoshop.svg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

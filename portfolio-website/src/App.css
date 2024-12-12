@@ -62,12 +62,5 @@ li {
     -webkit-mask-composite: xor;
 }
 
-img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    -webkit-transform: scale(1); /* Safari-specific */
-  }
-
 
 

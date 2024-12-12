@@ -55,7 +55,7 @@ function Home() {
             </p>
           </div>
 
-          <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-2 md:col-span-1" data-aos="flip-left">
+          <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-2 md:col-span-1 " data-aos="flip-left">
             <img src={homepolaroid} className="rounded-sm object-cover w-full h-80" alt="Jose Home Polaroid" description="Small picture featuring me, as a quick visual introduction beside the written description." />
             <p className="mt-2">Hi there!</p>
           </div>

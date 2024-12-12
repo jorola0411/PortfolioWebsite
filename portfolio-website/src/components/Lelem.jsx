@@ -23,20 +23,45 @@ function Lelem() {
 
   return (
     <>
+
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Lelem Natural Park - Jose Orola </title>
+
+      <meta name="description" content="Lelem Natural Park is a project that involved creating a website for a fictional
+                organization for a client, and to showcase proper usage of the
+                Agile project management methodology." />
+
+      <meta name="keywords" content="Jose, UI/UX Designer, Front-End Developer, Vancouver, Design, Web Development, User Interface Designer, User Experience Designer, Portfolio, Agile, Agile Methology, Team, Collab, client, Project Management" />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Lelem Natural Park - Jose Orola" />
+      <meta property="og:description" content="Lelem Natural Park is a project that involved creating a website for a fictional
+                organization for a client, and to showcase proper usage of the
+                Agile project management methodology." />
+      <meta property="og:url" content="https://joseorola.ca/projects/lelem" />
+
+      <meta name="twitter:title" content="ALelem Natural Park - Jose Orola" />
+      <meta name="twitter:description" content="Lelem Natural Park is a project that involved creating a website for a fictional
+                organization for a client, and to showcase proper usage of the
+                Agile project management methodology." />
+      <meta name="twitter:url" content="https://joseorola.ca/projects/lelem" />
+
       <div className="items-center justify-center sm:px-4">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
-          <div className="sm:col-span-5 md:col-span-5 mb-8">
+        <div className="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
+          <div className="sm:col-span-5 md:col-span-5 mb-4">
             <h1 className="sm:text-xl md:text-4xl font-bold text-center" data-aos="fade-down"> Lelem Natural Park</h1>
             <h2 className="sm:text-md md:text-xl font-semibold text-center" data-aos="fade-down">Front-End Development</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank"><img src={lelemhero} alt="Lelem Hero" description="This is the hero image for the Lelem project, which showcases the website in laptop mockups" className="w-96 mx-auto"></img></a>
+            <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank"><img src={lelemhero} alt="Lelem Hero" description="This is the hero image for the Lelem project, which showcases the website in laptop mockups" className=" mx-auto"></img></a>
           </div>
 
           <div className="sm:col-span-5 md:col-span-5 space-y-6" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Overview</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
-              <p className="sm:text-sm md:text-base">
+              <p className="sm:text-sm md:text-lg ">
                 This project involved creating a website for a fictional
                 organization for a client, and to showcase proper usage of the
                 Agile project management methodology.
@@ -95,10 +120,10 @@ function Lelem() {
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Role duties</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
-              <span className="sm:text-sm md:text-base font-semibold">
+              <span className="sm:text-sm md:text-lg  font-semibold">
                 Along with another front end developer, we were tasked with:
               </span>
-              <ul className="sm:text-sm md:text-base list-disc list-inside pl-4">
+              <ul className="sm:text-sm md:text-lg  list-disc list-inside pl-4">
                 <li>
                   Designing the UI along with medium fidelity wireframes and
                   sitemap
@@ -121,7 +146,7 @@ function Lelem() {
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Agile process</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
-              <p className="sm:text-sm md:text-base">
+              <p className="sm:text-sm md:text-lg ">
                 This was the first time using the methology, and it proved
                 useful for everyone in the team, I felt that having weekly goals
                 and deadlines meant I could spread my work evenly and focus on
@@ -135,11 +160,11 @@ function Lelem() {
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Team Dynamic</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
-              <span className="sm:text-sm md:text-base">
+              <span className="sm:text-sm md:text-lg ">
                 Working with group members was a unique experience as it changed
                 the way how i approached coding:
               </span>
-              <ul className="sm:text-sm md:text-base list-disc list-inside pl-4">
+              <ul className="sm:text-sm md:text-lg  list-disc list-inside pl-4">
                 <li>
                   Working with the graphic designers and see how they would
                   approach building a website
@@ -160,7 +185,7 @@ function Lelem() {
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Challenges</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
-              <p className="sm:text-sm md:text-base mb-3">
+              <p className="sm:text-sm md:text-lg  mb-3">
                 Some challenges I had during this project was the coding. In combination of some last minute changes or requests from the design team, I felt a bigger weight on my shoulders just to fulfill the designers requests.
                 It was also hard because this was the first project where I coded with another person, and I had to get adjusted to how they code and communicate with them on who should do what,
                 as well as getting the code to work before the next sprints started. I also had to make sure if a certain section was okay by the design team or my fellow coder. Communication was nescessary.
@@ -173,7 +198,7 @@ function Lelem() {
             <div className="bg-beige-100 rounded-lg shadow-lg p-6">
               <h1 className="sm:text-xl md:text-2xl font-bold">Takeaways</h1>
               <hr className="border-t-2 border-black mt-2 mb-4" />
-              <p className="sm:text-sm md:text-base mb-3">
+              <p className="sm:text-sm md:text-lg mb-3">
                 Working in a team environment was rewarding and unique. The
                 biggest takeaway I got from this project was communication.
                 Communication is the utmost priority for the team and client, as

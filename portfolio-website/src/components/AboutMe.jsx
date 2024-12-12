@@ -1,5 +1,14 @@
 import React, { useEffect } from 'react';
 import jose from '/src/assets/jose.jpg';
+import css3 from '/src/assets/CSS3_logo.svg';
+import reactlogo from '/src/assets/React-icon.svg';
+import figma from '/src/assets/Figma-logo.svg';
+import jslogo from '/src/assets/jslogo.svg';
+import html5 from '/src/assets/HTML5.svg';
+import python from '/src/assets/python.svg';
+import illustrator from '/src/assets/illustrator.svg';
+import photoshop from '/src/assets/Photoshop.svg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // ..
@@ -16,25 +25,46 @@ function AboutMe() {
 
   return (
     <>
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>About Me - Jose Orola </title>
+
+      <meta name="description" content="I'm a Front-end developer and UI/UX designer currently residing in Vancouver, BC.
+        I've always loved analyzing the nuances behind many things. Whether it be media, art, UI, or just about anything, I've found joy in how design influences the perception and interaction of people.
+        Wanting to embrace my creative side, I took on the New Media Design and Web Development Course at BCIT.
+        From there, my goal is to create solutions that are made with passion and aesthetically pleasing." />
+
+      <meta name="keywords" content="Jose, UI/UX Designer, Front-End Developer, Vancouver, Design, Web Development, User Interface Designer, User Experience Designer, Portfolio" />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="About Me - Jose Orola" />
+      <meta property="og:description" content="I'm Jose, a UI/UX designer and front-end developer based in Vancouver, BC. I create passionate and meaningful solutions with my clients." />
+      <meta property="og:url" content="https://joseorola.ca/about" />
+
+      <meta name="twitter:title" content="About Me - Jose Orola" />
+      <meta name="twitter:description" content="Learn more about Jose Orola, a UI/UX designer and front-end developer based in Vancouver, BC. Learn more about his hobbies, and why he's persuing the industry." />
+      <meta name="twitter:url" content="https://joseorola.ca/about" />
+
 
       <div className="flex items-center justify-center sm:px-4">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+        <div className="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
 
           <div className="md:col-span-3 space-y-4">
             <h1 className="sm:text-2xl md:text-3xl font-bold">
               Hi, I'm Jose!
             </h1>
             <hr className="border-t-2 border-black mt-2 mb-4" />
-            <p className="sm:text-md" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
               I'm a Front-end developer and UI/UX designer  currently residing in Vancouver, BC.
             </p>
-            <p className="sm:text-md" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
               I've always loved analyzing the nuances behind many things. Whether it be media, art, UI, or just about anything, I've found joy in how design influences the perception and interaction of people.
             </p>
-            <p className="sm:text-md" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
               Wanting to embrace my creative side, I took on the New Media Design and Web Development Course at BCIT.
             </p>
-            <p className="sm:text-md" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
               From there, my goal is to create solutions that are made with passion and aesthetically pleasing.
             </p>
           </div>
@@ -50,7 +80,7 @@ function AboutMe() {
       </div>
 
       <div className="w-full bg-beige-200 py-10 mt-10">
-        <div className="max-w-screen-lg mx-auto space-y-4 p-4">
+        <div className="max-w-[80%] mx-auto space-y-4 p-4">
           <h1 className="sm:text-2xl md:text-3xl font-bold">
             When I’m not working, I’m most likely..
           </h1>
@@ -63,7 +93,7 @@ function AboutMe() {
               <div className="relative">
                 <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">🎧</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-                  <p className="md:text-md sm:text-sm">Music has helps me focus on my work and relax when things are hectic. In my current rotation, I'm playing some DPR Ian, Kendrick Lamar, and kpop.</p>
+                  <p className="md:text-md sm:text-sm">Music helps me focus on my work and relax when things are hectic. In my current rotation, I'm playing some DPR Ian, Kendrick Lamar, and kpop.</p>
                 </div>
               </div>
               <p className="mt-2 font-medium">Listening to music </p>
@@ -73,7 +103,7 @@ function AboutMe() {
               <div className="relative">
                 <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">🎮</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-                  <p className="md:text-md sm:text-sm">I've been a avid gamer since I was 4, and it's been a huge influence in my life. I love the design of various aspects of video games as a whole, and from a UI perspective, video games offer more than enough ways to show interesting ways to implement UI for the user.</p>
+                  <p className="md:text-md sm:text-sm">I've been a avid gamer since I was 4, and it's been a huge influence in my life. I love the design of various aspects of video games as a whole, and from a UI perspective, video games offer many creative ways to implement UI for the user.</p>
                 </div>
               </div>
               <p className="mt-2 font-medium">Gaming </p>
@@ -97,6 +127,74 @@ function AboutMe() {
                 </div>
               </div>
               <p className="mt-2 font-medium">Writing</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div className="w-full bg-beige-200 py-10 mt-10">
+        <div className="max-w-[80%] mx-auto space-y-4 p-4">
+          <h1 className="sm:text-2xl md:text-3xl font-bold">
+            Tools
+          </h1>
+          <hr className="border-t-2 border-black  mt-2 mb-4" />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
+              <div className="relative flex justify-center items-center">
+                <img src={html5} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">HTML5</p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div className="relative flex justify-center items-center">
+                <img src={css3} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">CSS</p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div className="relative flex justify-center items-center">
+                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">Javascript </p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
+              <div className="relative flex justify-center items-center">
+                <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">React.js </p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div className="relative flex justify-center items-center">
+                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">Figma</p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div className="relative flex justify-center items-center">
+                <img src={python} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">Python</p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div className="relative flex justify-center items-center">
+                <img src={illustrator} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">Adobe Illustrator</p>
+            </div>
+
+            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div className="relative flex justify-center items-center">
+                <img src={photoshop} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+              </div>
+              <p className="mt-2 font-medium">Adobe Photoshop</p>
             </div>
           </div>
         </div>

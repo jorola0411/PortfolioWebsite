@@ -95,7 +95,7 @@ function Layout() {
 
 
       <footer>
-        <div className="container max-w-screen-lg mx-auto flex justify-between items-center border-t border-black p-3 mt-5 font-ubuntumono">
+        <div className="container max-w-[80%] mx-auto flex justify-between items-center border-t border-black p-3 mt-5 font-ubuntumono">
           <span className="text-md md:text-2xl text-black">Jose Alejandro Orola</span>
 
           <div className="flex space-x-4 justify-center">

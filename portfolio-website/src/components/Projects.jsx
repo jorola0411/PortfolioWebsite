@@ -7,28 +7,47 @@ import lpolaroid from '/src/assets/lelempolaroid.png';
 import bpolaroid from '/src/assets/burgerpolaroid.png';
 import ppolaroid from '/src/assets/redesignpolaroid.png';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 // ..
 AOS.init();
 
 const tilt = { //This contains the tilt settings as well as defining the tilt when we use it for the images later on
-	reverse:        false,  // reverse the tilt direction
-	max:            35,     // max tilt rotation (degrees)
-	perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-	scale:          1.2,    // 2 = 200%, 1.5 = 150%, etc..
-	speed:          500,   // Speed of the enter/exit transition
-	transition:     true,   // Set a transition on enter/exit.
-	axis:           'y',   // What axis should be disabled. Can be X or Y.
-	reset:          true,    // If the tilt effect has to be reset on exit.
-	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+  reverse: false,  // reverse the tilt direction
+  max: 35,     // max tilt rotation (degrees)
+  perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.2,    // 2 = 200%, 1.5 = 150%, etc..
+  speed: 500,   // Speed of the enter/exit transition
+  transition: true,   // Set a transition on enter/exit.
+  axis: 'y',   // What axis should be disabled. Can be X or Y.
+  reset: true,    // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 }
 
 function Project() {
   return (
     <>
+
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Projects - Jose Orola </title>
+
+      <meta name="description" content="Project page featuring various projects by Jose Orola, a UI/UX Designer and Front-End Developer based in Vancouver, BC." />
+
+      <meta name="keywords" content="Jose, UI/UX Designer, Front-End Developer, Vancouver, Design, Web Development, User Interface Designer, User Experience Designer, Portfolio" />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Projects - Jose Orola" />
+      <meta property="og:description" content="Projects created by Jose Orola, a UI/UX Designer and Front-End Developer based in Vancouver, BC." />
+      <meta property="og:url" content="https://joseorola.ca/" />
+
+      <meta name="twitter:title" content="Projects - Jose Orola" />
+      <meta name="twitter:description" content="Projects created by Jose Orola, a UI/UX Designer and Front-End Developer based in Vancouver, BC." />
+      <meta name="twitter:url" content="https://joseorola.ca/" />
+
       <div className="items-center justify-center">
         <div className="w-full bg-beige-200 py-10 mt-20 mb-20">
-          <div className="max-w-screen-lg mx-auto space-y-4 p-4">
+          <div className="max-w-[80%] mx-auto space-y-4 p-4">
             <h1 className="text-3xl font-bold text-center" data-aos="fade-down">
               Projects
             </h1>

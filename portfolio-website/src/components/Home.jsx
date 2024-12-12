@@ -12,7 +12,7 @@ import "../App.css";
 
 
 function Home() {
-  
+
   useEffect(() => {
     AOS.init({
       duration: 300, // Duration of animation in milliseconds
@@ -21,8 +21,29 @@ function Home() {
   }, []);
   return (
     <>
+
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+      <title>Jose Orola - UI/UX Designer & Front-End Developer</title>
+
+      <meta name="description" content="Hello, I'm Jose. I'm a UI/UX designer and Front-End developer located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company." />
+
+      <meta name="keywords" content="Jose, UI/UX Designer, Front-End Developer, Vancouver, Design, Web Development, User Interface Designer, User Experience Designer, Portfolio" />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Jose - UI/UX Designer & Front-End Developer" />
+      <meta property="og:description" content="I'm Jose, a UI/UX designer and front-end developer based in Vancouver, BC. I create passionate and meaningful solutions with my clients." />
+      <meta property="og:url" content="https://joseorola.ca/" />
+
+      <meta name="twitter:title" content="Jose - UI/UX Designer & Front-End Developer" />
+      <meta name="twitter:description" content="Explore the portfolio of Jose, a UI/UX designer and front-end developer, featuring projects like Lelem Natural Park and Styles." />
+      <meta name="twitter:url" content="https://joseorola.ca/" />
+
+
       <div className="flex flex-col items-center justify-center sm:px-4">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4 items-start pt-10">
+        <div className="max-w-[80%] mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4 items-start pt-10">
 
           <div className="container mx-auto pt-10 sm:col-span-2 md:col-span-3 flex-grow mt-10">
             <h1 className="md:text-5xl sm:text-2xl" data-aos="fade-left">
@@ -39,7 +60,7 @@ function Home() {
             <p className="mt-2">Hi there!</p>
           </div>
 
-          <div className="mx-auto space-y-2 max-w-screen-md mt-10 sm:col-span-4 md:col-span-4">
+          <div className="mx-auto space-y-2  mt-10 sm:col-span-4 md:col-span-4">
             <h2 className="md:text-4xl sm:text-2xl text-center">Featured Projects</h2>
             <hr className="border-t-2 border-black  mt-2 mb-4" />
             <Link to="projects/lelem" className="relative group">

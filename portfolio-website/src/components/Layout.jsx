@@ -3,7 +3,7 @@ import IonIcon from '@reacticons/ionicons';
 import { Outlet, Link } from "react-router-dom";
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
-import logo from '/src/assets/logo.png';
+import newlogo from '/src/assets/newlogo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // ..
@@ -38,7 +38,7 @@ function Layout() {
           <div className="px-4 md:px-10 mx-auto flex justify-between items-center">
 
             <Link to="/">
-              <img src={logo} alt="Logo" description="The logo depicts a sun, over a bridge with chains as it's handle bars."className="w-10 md:w-20" />
+              <img src={newlogo} alt="Logo" description="The logo depicts a sun, over a bridge with chains as it's handle bars."className="w-10 md:w-20" />
             </Link>
 
 

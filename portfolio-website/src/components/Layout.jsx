@@ -3,6 +3,7 @@ import IonIcon from '@reacticons/ionicons';
 import { Outlet, Link } from "react-router-dom";
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
+import instagramlogo from '/src/assets/instagramlogo.png';
 import newlogo from '/src/assets/newlogo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -105,9 +106,12 @@ function Layout() {
             <a href="https://linkedin.com/in/jose-orola" target="_blank">
               <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn."className="w-8 h-8 md:w-10 md:h-10" />
             </a>
+            <a href="https://www.instagram.com/jose.orola/" target="_blank">
+              <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram."className="w-8 h-8 md:w-10 md:h-10" />
+            </a>
           </div>
 
-          <span className="text-md md:text-2xl text-black">jorola0411@gmail.com</span>
+          <span className="text-md md:text-2xl text-black">hello@joseorola.ca</span>
         </div>
       </footer>
     </>

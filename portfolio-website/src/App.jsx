@@ -9,6 +9,7 @@ import Styles from './components/Styles';
 import Lelem from './components/Lelem';
 import Poster from './components/Poster';
 import Burger from './components/Burger';
+import Monster from './components/Monster';
 import './App.css'
 
 
@@ -27,6 +28,7 @@ function App() {
     <Route path="projects/lelem" element={ <Lelem />} />
     <Route path="projects/poster" element={ <Poster />} />
     <Route path="projects/burger" element={ <Burger />} />
+    <Route path="projects/monster" element={ <Monster />} />
 
     </Route>
     </Routes>

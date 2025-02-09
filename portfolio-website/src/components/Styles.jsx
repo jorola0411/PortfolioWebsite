@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import stylemockup from '/src/assets/stylemockup.jpg';
-import upersona from '/src/assets/userpersona.png';
 import emap from '/src/assets/empathymap.png';
-import figma from '/src/assets/figma-logo.svg';
+import figma from '/src/assets/Figma-logo.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // ..

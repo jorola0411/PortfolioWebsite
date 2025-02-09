@@ -8,7 +8,7 @@ import sitemap from '/src/assets/lelemsitemap.png';
 import schedule from '/src/assets/sprintschedule.png';
 import jslogo from '/src/assets/jslogo.svg';
 import html from '/src/assets/HTML5.svg';
-import css from '/src/assets/css3_logo.svg';
+import css from '/src/assets/CSS3_logo.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // ..

@@ -42,50 +42,59 @@ function Home() {
       <meta name="twitter:url" content="https://joseorola.ca/" />
 
 
-      <div className="flex flex-col items-center justify-center sm:px-4">
-        <div className="max-w-[80%] mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4 items-start pt-10">
 
-          <div className="container mx-auto pt-10 sm:col-span-2 md:col-span-3 flex-grow mt-10">
-            <h1 className="md:text-5xl sm:text-2xl" data-aos="fade-left">
-              Hello,I'm<span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold"> Jose</span>. {/*text-transparent is needed for the gradient to show up*/}
-            </h1>
+      <div className="max-w-[80%] mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4  pt-10">
 
-            <p className="md:text-2xl sm:text-md mt-5 max-w-3xl" data-aos="fade-right">
-              I'm a <span className="bg-gradient-to-r from-beige-400 to-beige-500 bg-clip-text text-transparent font-bold">UI/UX designer</span> and <span className="bg-gradient-to-r from-beige-400 to-beige-500 bg-clip-text text-transparent font-bold">Front-End developer</span> located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company.
-            </p>
-          </div>
+        <div className="container mx-auto pt-10 sm:col-span-2 md:col-span-3 flex-grow mt-10">
+          <h1 className="md:text-8xl sm:text-2xl mb-10" data-aos="fade-left">
+            Need a<span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Front-end Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> UI Designer</span>? {/*text-transparent is needed for the gradient to show up*/}
+          </h1>
 
-          <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-2 md:col-span-1 " data-aos="flip-left">
-            <img src={homepolaroid} className="relative rounded-sm object-cover w-full h-80" alt="Jose Home Polaroid" description="Small picture featuring me, as a quick visual introduction beside the written description." />
-            <p className="mt-2">Hi there!</p>
-          </div>
-
-          <div className="mx-auto space-y-2  mt-10 sm:col-span-4 md:col-span-4">
-            <h2 className="md:text-4xl sm:text-2xl text-center">Featured Projects</h2>
-            <hr className="border-t-2 border-black  mt-2 mb-4" />
-            <Link to="projects/lelem" className="relative group">
-              <img src={featuredproject1} alt="Lelem Natural Park" className="border rounded-3xl mt-5 transition duration-300 ease-in-out" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
-
-              <div className="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 text-black bg-gradient-to-t from-beige-50 via-transparent to-transparent"> {/* group-hover allow the parent element that was defined with group to be fully opaque when hovered, and via transparent is the middle of the gradient being transparent,and from-beige-50/ to transparent starts and ends the gradient*/}
-                <div className="p-5 text-center">
-                  <h1 className="text-3xl">Lelem Natural Park</h1>
-                  <p className="text-md mt-2">Front End Development & team collaboration</p>
-                </div>
-              </div>
-            </Link>
-
-            <Link to="projects/styles" className="relative group">
-              <img src={featuredproject2} alt="Styles" className=" rounded-3xl mt-5 transition duration-300 ease-in-out" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
-              <div className="absolute inset-0 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 text-black bg-gradient-to-t from-beige-50 via-transparent to-transparent">
-                <div className="p-5 text-center">
-                  <h1 className="text-3xl">styles by jao</h1>
-                  <p className="text-md mt-2">UI/UX development</p>
-                </div>
-              </div>
-            </Link>
-          </div>
+          <p className="md:text-4xl sm:text-md mt-5 max-w-3xl" data-aos="fade-right">
+            I'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose</span>, and I’m looking forward to be working with you.
+          </p>
         </div>
       </div>
+
+      <div className="mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4 pt-10 ">
+        <div className="mx-auto space-y-2 mt-10 sm:col-span-4 md:col-span-4 mb-10">
+          <h2 className="md:text-4xl sm:text-2xl text-center">Featured Projects</h2>
+          <hr className="border-t-2 border-black mt-2 " />
+        </div>
+
+        
+        <div className="sm:col-span-2 md:col-span-2 gap-4 mb-10">
+          <Link to="projects/lelem">
+            <img src={featuredproject1} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
+          </Link>
+          </div>
+
+        <div className="p-5 text-center sm:col-span-2 md:col-span-2 flex flex-col justify-center mb-10">
+          <h1 className= 'text-3xl mb-5'>Monster Hunter API project</h1>
+          <div className='flex justify-center gap-10 mb-5 '>
+            <p className='px-4 py-2 border border-black rounded-full'>JAVASCRIPT</p>
+            <p className='px-4 py-2 border border-black rounded-full'>REACT</p>
+            <p className='px-4 py-2 border border-black rounded-full'>API</p>
+          </div>
+          <p>Search and favorite items using the Monster Hunter API.</p>
+        </div>
+  
+        <div className="p-5 text-center md:col-span-2 flex flex-col justify-center">
+          <h1 className="text-3xl mb-5">styles by jao</h1>
+          <div className='flex justify-center gap-10 mb-5'>
+            <p className='px-4 py-2 border border-black rounded-full'>UI</p>
+            <p className='px-4 py-2 border border-black rounded-full'>UX</p>
+          </div>
+          <p className="text-md mt-2">Virtually try on clothes and browse in styles, a streetwear store app.</p>
+        </div>
+
+        <div className="sm:col-span-4 md:col-span-2 gap-4">
+          <Link to="projects/styles" className="relative group">
+            <img src={featuredproject2} alt="Styles" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
+          </Link>
+        </div>
+        </div>
+      
     </>
   )
 }

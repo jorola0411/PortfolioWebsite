@@ -145,9 +145,9 @@ function Lelem() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10" data-aos="flip-right" data-aos-anchor-placement="center-bottom">
-          
+
           <div className='col-span-1 sm:col-span-2 md:col-span-2'>
-            <img src={sitemap} alt="Lelem Sitemap" description="The sitemap details the potential pages of the website." className='shadow-lg'/>
+            <img src={sitemap} alt="Lelem Sitemap" description="The sitemap details the potential pages of the website." className='shadow-lg' />
           </div>
 
           <div className='col-span-1 sm:col-span-1 md:col-span-1 bg-beige-100 shadow-lg p-3'>

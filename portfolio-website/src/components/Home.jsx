@@ -3,8 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init(); // we have to initialize aos in the code or else the animations won't work
-import homepolaroid from '/src/assets/homepolaroid.jpg'; //I imported these images because this is the only fix (so far) for my images to show on the web 
-import featuredproject1 from '/src/assets/featuredprojects1.jpg';
+import featuredproject4 from '/src/assets/featuredprojects4.jpg';
 import featuredproject2 from '/src/assets/featuredprojects2.jpg';
 import { Link } from "react-router-dom";
 
@@ -62,15 +61,15 @@ function Home() {
           <hr className="border-t-2 border-black mt-2 " />
         </div>
 
-        
+
         <div className="sm:col-span-2 md:col-span-2 gap-4 mb-10">
-          <Link to="projects/lelem">
-            <img src={featuredproject1} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
+          <Link to="projects/monster">
+            <img src={featuredproject4} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
           </Link>
-          </div>
+        </div>
 
         <div className="p-5 text-center sm:col-span-2 md:col-span-2 flex flex-col justify-center mb-10">
-          <h1 className= 'text-3xl mb-5'>Monster Hunter API project</h1>
+          <h1 className='text-3xl mb-5'>Monster Hunter API project</h1>
           <div className='flex justify-center gap-10 mb-5 '>
             <p className='px-4 py-2 border border-black rounded-full'>JAVASCRIPT</p>
             <p className='px-4 py-2 border border-black rounded-full'>REACT</p>
@@ -78,7 +77,7 @@ function Home() {
           </div>
           <p>Search and favorite items using the Monster Hunter API.</p>
         </div>
-  
+
         <div className="p-5 text-center md:col-span-2 flex flex-col justify-center">
           <h1 className="text-3xl mb-5">styles by jao</h1>
           <div className='flex justify-center gap-10 mb-5'>
@@ -93,8 +92,8 @@ function Home() {
             <img src={featuredproject2} alt="Styles" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
           </Link>
         </div>
-        </div>
-      
+      </div>
+
     </>
   )
 }

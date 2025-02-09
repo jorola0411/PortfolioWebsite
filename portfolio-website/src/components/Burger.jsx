@@ -19,7 +19,7 @@ function Burger() {
   return (
     <>
 
-<meta charSet="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       <title>Jao's Burgers - Jose Orola </title>
@@ -36,7 +36,7 @@ function Burger() {
       <meta name="twitter:title" content="Jao's Burgers - Jose Orola" />
       <meta name="twitter:description" content="Jao's Burgers is a project that involved creating fictional website for mobile, tablet, and desktop formats. It was also my first time creating a website that responds to different screen sizes." />
       <meta name="twitter:url" content="https://joseorola.ca/projects/burger" />
-    
+
       <div className="items-center justify-center sm:px-4">
         <div className="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
           <div className="md:col-span-4 mb-4">

@@ -96,15 +96,15 @@ function Layout() {
 
 
       <footer>
-        <div className="container grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 mx-auto flex justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 mx-auto flex justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
           <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-          <p className="text-md md:text-xl text-black text-left">You’ve made it to the bottom so you know...</p>
-          <p className="text-md md:text-5xl text-black text-left mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>
+            <p className="text-md md:text-xl text-black text-left">You’ve made it to the bottom so you know...</p>
+            <p className="text-md md:text-5xl text-black text-left mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>
             <p className="text-md md:text-xl text-black ">hello@joseorola.ca</p>
           </div>
 
           <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-          
+
             <div className="flex space-x-4 justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
                 <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="w-8 h-8 md:w-10 md:h-10" />
@@ -119,8 +119,8 @@ function Layout() {
           </div>
 
           <div className='col-span-1 sm:col-span-1 md:col-span-1 flex flex-col items-end'>
-          <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="w-24 mb-5" />
-          
+            <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="w-24 mb-5" />
+
             <p className="text-md md:text-xl text-black">Made in React</p>
             <p className="text-md md:text-xl text-black">Jose Alejandro Orola | 2025</p>
           </div>

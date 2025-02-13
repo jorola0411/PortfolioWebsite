@@ -335,7 +335,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg  bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="https://www.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="blank">
+                    <button className="sm:text-sm md:text-lg  bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="http://mhapiproject.joseorola.ca/" target="blank">
                         Live Website
                     </a></button>
 

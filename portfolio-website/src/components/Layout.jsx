@@ -39,13 +39,13 @@ function Layout() {
           <div className="px-4 md:px-10 mx-auto flex justify-between items-center">
 
             <Link to="/">
-              <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="w-10 md:w-20" />
+              <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-10 md:w-20" />
             </Link>
 
 
             <div className="hidden md:flex text-black space-x-8 font-ubuntumono" data-aos="fade-down">
               <Link to="/about" className="text-lg md:text-2xl hover:underline">About</Link>
-              <Link to="/projects" className="text-lg md:text-2xl hover:underline">Projects</Link>
+              <Link to="/projects" className="text-lg md:text-2xl hover:underline">Works</Link>
               <a href="/newresume.pdf" className="text-lg md:text-2xl hover:underline" target="_blank">Resume</a>
             </div>
 
@@ -74,7 +74,7 @@ function Layout() {
                   className="text-lg hover:underline"
                   onClick={toggleMenu}
                 >
-                  Projects
+                  Works
                 </Link>
                 <a
                   href="/resume.pdf"
@@ -96,14 +96,14 @@ function Layout() {
 
 
       <footer>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 mx-auto flex justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
-          <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-            <p className="text-md md:text-xl text-black text-left">You’ve made it to the bottom so you know...</p>
-            <p className="text-md md:text-5xl text-black text-left mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto flex justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
+          <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
+            <p className="text-md md:text-xl text-black md:text-left">You’ve made it to the bottom so you know...</p>
+            <p className="text-md md:text-5xl text-black md:text-left mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>
             <p className="text-md md:text-xl text-black ">hello@joseorola.ca</p>
           </div>
 
-          <div className='col-span-1 sm:col-span-1 md:col-span-1'>
+          <div className='col-span-1 sm:col-span-4 md:col-span-1'>
 
             <div className="flex space-x-4 justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
@@ -118,11 +118,11 @@ function Layout() {
             </div>
           </div>
 
-          <div className='col-span-1 sm:col-span-1 md:col-span-1 flex flex-col items-end'>
-            <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="w-24 mb-5" />
+          <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col md:items-end sm:text-center'>
+            <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="w-24 mb-5 " />
 
-            <p className="text-md md:text-xl text-black">Made in React</p>
-            <p className="text-md md:text-xl text-black">Jose Alejandro Orola | 2025</p>
+            <p className="sm:text-sm md:text-xl text-black">Made in React</p>
+            <p className="sm:text-sm md:text-xl text-black">Jose Alejandro Orola | 2025</p>
           </div>
         </div>
       </footer>

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: '424px', // Small devices (phones)
+        sm: '320px', // Small devices (phones)
         md: '769px', // Medium devices (tablets)
         lg: '1024px', // Large devices (desktops)
         xl: '1280px', // Extra large devices

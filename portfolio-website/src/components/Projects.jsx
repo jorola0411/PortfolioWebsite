@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import featuredproject1 from '/src/assets/featuredprojects1.jpg';
 import featuredproject2 from '/src/assets/featuredprojects2.jpg';
-import featuredproject3 from '/src/assets/featuredprojects3.jpg';
 import featuredproject4 from '/src/assets/featuredprojects4.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,12 +35,12 @@ function Project() {
         <div className="w-full py-10 mt-20 mb-20">
           <div className=" mx-auto space-y-4 ">
             <h1 className="text-6xl font-bold text-center" data-aos="fade-down">
-              PROJECTS
+              WORKS
             </h1>
 
 
             <div className=" mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4  pt-10">
-              <div className="sm:col-span-2 md:col-span-2 gap-4 mb-10">
+              <div className="sm:col-span-2 md:col-span-2 gap-4">
                 <Link to="lelem">
                   <img src={featuredproject1} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
                 </Link>
@@ -66,7 +65,7 @@ function Project() {
                 <p className="text-md mt-2">Virtually try on clothes and browse in styles, a streetwear store app.</p>
               </div>
 
-              <div className="sm:col-span-4 md:col-span-2 gap-4 mb-10">
+              <div className="sm:col-span-4 md:col-span-2 gap-4">
                 <Link to="styles" className="relative group">
                   <img src={featuredproject2} alt="Styles" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
                 </Link>

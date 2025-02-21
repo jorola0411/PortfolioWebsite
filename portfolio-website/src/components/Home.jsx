@@ -42,43 +42,43 @@ function Home() {
 
 
 
-      <div className="max-w-[80%] mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4  pt-10">
+      <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4  md:pt-10">
 
-        <div className="container mx-auto pt-10 sm:col-span-2 md:col-span-3 flex-grow mt-10">
-          <h1 className="md:text-8xl sm:text-2xl mb-10" data-aos="fade-left">
-            Need a<span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Front-end Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> UI Designer</span>? {/*text-transparent is needed for the gradient to show up*/}
+        <div className="container mx-auto pt-10 sm:col-span-4 md:col-span-4  md:mt-10">
+          <h1 className="sm:text-2xl md:text-7xl mb-10" data-aos="fade-left">
+            Need a<span className="bg-beige-500 bg-clip-text text-transparent font-bold font-style: italic"> Front-end Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold font-style: italic"> UI Designer</span>? {/*text-transparent is needed for the gradient to show up*/}
           </h1>
 
-          <p className="md:text-4xl sm:text-md mt-5 max-w-3xl" data-aos="fade-right">
+          <p className="md:text-4xl sm:text-xl mt-5" data-aos="fade-right">
             I'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose</span>, and I’m looking forward to be working with you.
           </p>
         </div>
       </div>
 
-      <div className="mx-auto grid grid-cols-1  sm:grid-cols-4 md:grid-cols-4 pt-10 ">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 pt-10 ">
         <div className="mx-auto space-y-2 mt-10 sm:col-span-4 md:col-span-4 mb-10">
-          <h2 className="md:text-4xl sm:text-2xl text-center">Featured Projects</h2>
+          <h2 className="md:text-4xl text-2xl text-center">Featured Works</h2>
           <hr className="border-t-2 border-black mt-2 " />
         </div>
 
 
-        <div className="sm:col-span-2 md:col-span-2 gap-4 mb-10">
+        <div className="sm:col-span-4 md:col-span-2 gap-4">
           <Link to="projects/monster">
             <img src={featuredproject4} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
           </Link>
         </div>
 
-        <div className="p-5 text-center sm:col-span-2 md:col-span-2 flex flex-col justify-center mb-10">
-          <h1 className='text-3xl mb-5'>Monster Hunter API project</h1>
+        <div className="p-5 text-center sm:col-span-4 md:col-span-2  justify-center mb-10">
+          <h1 className='sm:text-xl md:text-3xl mb-5'>Monster Hunter API project</h1>
           <div className='flex justify-center gap-10 mb-5 '>
-            <p className='px-4 py-2 border border-black rounded-full'>JAVASCRIPT</p>
-            <p className='px-4 py-2 border border-black rounded-full'>REACT</p>
-            <p className='px-4 py-2 border border-black rounded-full'>API</p>
+            <p className='sm:text-sm sm:px-4 sm:py-2 border border-black rounded-full'>JAVASCRIPT</p>
+            <p className='sm:text-sm sm:px-4 sm:py-2 border border-black rounded-full'>REACT</p>
+            <p className='sm:text-sm px-4 py-2 border border-black rounded-full'>API</p>
           </div>
           <p>Search and favorite items using the Monster Hunter API.</p>
         </div>
 
-        <div className="p-5 text-center md:col-span-2 flex flex-col justify-center">
+        <div className="p-5 text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center">
           <h1 className="text-3xl mb-5">styles by jao</h1>
           <div className='flex justify-center gap-10 mb-5'>
             <p className='px-4 py-2 border border-black rounded-full'>UI</p>

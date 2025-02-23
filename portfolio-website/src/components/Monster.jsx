@@ -327,104 +327,105 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
     return (
         <div>
             <div className="w-full bg-beige-200 py-10 mt-10 mb-10">
-                <h1 className="sm:text-xl md:text-4xl font-bold text-center" data-aos="fade-down"> Monster Hunter API Project</h1>
+                <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Monster Hunter API Project</h1>
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg  bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg  bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="http://mhapiproject.joseorola.ca/" target="blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="http://mhapiproject.joseorola.ca/" target="blank">
                         Live Website
                     </a></button>
 
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
 
-                    <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-                        <h2 className='text-center md:text-2xl '>Technologies</h2>
+                    <div className='col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
-                            <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain h-24" />
+                            <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
 
-                            <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain h-24" />
+                            <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
                         </div>
                     </div>
 
-                    <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-                        <h2 className='text-center md:text-2xl '>Overview</h2>
+                    <div className='col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className="text-center">This project uses an API to call from a selected list, and allows the user to search and favorite items within that API.</p>
+                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl">This project uses an API to call from a selected list, and allows the user to search and favorite items within that API.</p>
                     </div>
 
-                    <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-                        <h2 className='text-center md:text-2xl'>Timeframe</h2>
+                    <div className='col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className='text-center'>48 hours</p>
+                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>48 hours</p>
                     </div>
 
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-2 md:col-span-2'>
-                    <pre className='max-h-72 overflow-y-auto '>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                <div className='col-span-1 sm:col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-2'>
+                    <pre className='max-h-72 overflow-y-auto sm:text-md md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
                             {favoriteCode}
                         </code>
                     </pre>
                 </div>
 
-                <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-                    <h2 className='text-center md:text-2xl' >Favoriting Items & local Storage</h2>
+                <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Favoriting Items & local Storage</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
-                    <p className='mb-5'>Multiple const variables are created, notably the category and fav item const.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Multiple const variables are created, notably the category and fav item const.</p>
 
-                    <p className='mb-5'>Using useEffect and if statements in the function “Favorites,” the code fetches the API, and checks which item from that API has been favorited, resulting in a list of favorited items.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Using useEffect and if statements in the function “Favorites,” the code fetches the API, and checks which item from that API has been favorited, resulting in a list of favorited items.</p>
 
-                    <p className='mb-5'>On the favorites page, there is an option to remove the item from the favorites, and the const savedFavs retrieves the local storage which holds the favorited items.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>On the favorites page, there is an option to remove the item from the favorites, and the const savedFavs retrieves the local storage which holds the favorited items.</p>
 
-                    <p className='mb-5'>Through a filter, and the const updatedFavs, it checks if the id and the item id are not the same. If true (if they are not the same,), remove the item.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Through a filter, and the const updatedFavs, it checks if the id and the item id are not the same. If true (if they are not the same,), remove the item.</p>
 
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-2 md:col-span-2'>
-                    <pre className='max-h-72 overflow-y-auto'>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                <div className='col-span-1 sm:col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-2'>
+                    <pre className='max-h-72 overflow-y-auto sm:text-md md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
                             {detailCode}
                         </code>
                     </pre>
                 </div>
-                <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-                    <h2 className='text-center md:text-2xl'>Detail page & switch statement</h2>
+
+                <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Detail page & switch statement</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
-                    <p className='mb-5'>With amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>With amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
 
-                    <p className='mb-5'>Each category has different details, and I used a switch statement to differentiate the details within each category.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Each category has different details, and I used a switch statement to differentiate the details within each category.</p>
 
-                    <p className='mb-5'>Each category has a name, the monster category has a id of “monster”. When the user changes the category to monster,  the switch statement will use the matching case clause to use the details unique to the “monster” category.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Each category has a name, the monster category has a id of “monster”. When the user changes the category to monster,  the switch statement will use the matching case clause to use the details unique to the “monster” category.</p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[90%]">
-                <div className='col-span-1 sm:col-span-2 md:col-span-2'>
-                    <pre className='max-h-72 overflow-y-auto'>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
+                <div className='col-span-1 sm:col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-2'>
+                    <pre className='max-h-72 overflow-y-auto sm:text-md md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
                             {searchCode}
                         </code>
                     </pre>
                 </div>
-                <div className='col-span-1 sm:col-span-1 md:col-span-1'>
-                    <h2 className='text-center md:text-2xl'>Search Bar</h2>
+                <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Search Bar</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
 
-                    <p className='mb-5'>For this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>For this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>
 
-                    <p className='mb-5'>The search bar filters the results no matter what; if the user types just the letter “a”, the API. will show results that contain the letter a, or as specific as “pot”, which would pull up results that contain “pot”.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>The search bar filters the results no matter what; if the user types just the letter “a”, the API. will show results that contain the letter a, or as specific as “pot”, which would pull up results that contain “pot”.</p>
 
                 </div>
             </div>

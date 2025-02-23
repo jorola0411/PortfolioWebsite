@@ -78,7 +78,7 @@ function Home() {
           <p>Search and favorite items using the Monster Hunter API.</p>
         </div>
 
-        <div className="p-5 text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center">
+        <div className="p-5 text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-1">
           <h1 className="text-3xl mb-5">styles by jao</h1>
           <div className='flex justify-center gap-10 mb-5'>
             <p className='px-4 py-2 border border-black rounded-full'>UI</p>
@@ -87,7 +87,7 @@ function Home() {
           <p className="text-md mt-2">Virtually try on clothes and browse in styles, a streetwear store app.</p>
         </div>
 
-        <div className="sm:col-span-4 md:col-span-2 gap-4">
+        <div className="sm:col-span-4 md:col-span-2 gap-4 sm:order-1 md:order-2">
           <Link to="projects/styles" className="relative group">
             <img src={featuredproject2} alt="Styles" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
           </Link>

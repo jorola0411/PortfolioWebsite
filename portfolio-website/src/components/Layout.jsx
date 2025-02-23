@@ -100,7 +100,7 @@ function Layout() {
           <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
             <p className="text-md md:text-xl text-black md:text-left">You’ve made it to the bottom so you know...</p>
             <p className="text-md md:text-5xl text-black md:text-left mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>
-            <p className="text-md md:text-xl text-black ">hello@joseorola.ca</p>
+            <p className="text-md md:text-xl text-black md:text-left">hello@joseorola.ca</p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>

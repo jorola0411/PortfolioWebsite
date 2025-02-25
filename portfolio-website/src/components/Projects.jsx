@@ -32,58 +32,58 @@ function Project() {
       <meta name="twitter:url" content="https://joseorola.ca/" />
 
       <div className="items-center justify-center">
-        <div className="w-full py-10 mt-20 mb-20">
+        <div className="w-full lg:py-5 lg:mt-20 lg:mb-15">
           <div className=" mx-auto space-y-4 ">
-            <h1 className="text-6xl font-bold text-center" data-aos="fade-down">
+            <h1 className="sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold text-center" data-aos="fade-down">
               WORKS
             </h1>
 
 
-            <div className=" mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4  pt-10">
-              <div className="sm:col-span-2 md:col-span-2 gap-4">
+            <div className=" mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-col-4 pt-10">
+              <div className="sm:col-span-4 md:col-span-2 gap-4 sm:order-1 md:order-1 lg:order-1 xl:order-1">
                 <Link to="lelem">
                   <img src={featuredproject1} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
                 </Link>
               </div>
 
-              <div className="p-5 text-center sm:col-span-2 md:col-span-2 flex flex-col justify-center mb-10">
-                <h1 className='text-3xl mb-5'>Lelem Natural Park</h1>
-                <div className='flex justify-center gap-10 mb-5 '>
-                  <p className='px-4 py-2 border border-black rounded-full'>JAVASCRIPT</p>
-                  <p className='px-4 py-2 border border-black rounded-full'>HTML</p>
-                  <p className='px-4 py-2 border border-black rounded-full'>CSS</p>
+              <div className="text-center sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-center lg:mb-10 sm:order-2 md:order-2 lg:order-2">
+                <h1 className='sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl md:mb-3 lg:mb-5'>Lelem Natural Park</h1>
+                <div className='flex justify-center md:gap-10 sm:gap-3 sm:mb-3 md:mb-3 lg:mb-5'>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>HTML</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>CSS</p>
                 </div>
-                <p> A fictional zoo focusing on front-end development.</p>
+                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'> A fictional zoo focusing on front-end development.</p>
               </div>
 
-              <div className="p-5 text-center md:col-span-2 flex flex-col justify-center mb-10">
-                <h1 className="text-3xl mb-5">styles by jao</h1>
-                <div className='flex justify-center gap-10 mb-5'>
-                  <p className='px-4 py-2 border border-black rounded-full'>UI</p>
-                  <p className='px-4 py-2 border border-black rounded-full'>UX</p>
+              <div className="text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center lg:mb-10 sm:order-4 md:order-3 lg:order-3 xl:order-3">
+                <h1 className="sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl md:mb-3 lg:mb-5">styles by jao</h1>
+                <div className='flex justify-center sm:gap-3 sm:mb-3 md:gap-10 md:mb-3 lg:mb-5'>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>UI</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>UX</p>
                 </div>
-                <p className="text-md mt-2">Virtually try on clothes and browse in styles, a streetwear store app.</p>
+                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'>Virtually try on clothes and browse in styles, a streetwear store app.</p>
               </div>
 
-              <div className="sm:col-span-4 md:col-span-2 gap-4">
-                <Link to="styles" className="relative group">
+              <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 sm:order-3 md:order-4 lg:order-4 xl:order-4 sm:mb-5">
+                <Link to="styles" >
                   <img src={featuredproject2} alt="Styles" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
                 </Link>
               </div>
-              <div className="sm:col-span-2 md:col-span-2 gap-4 mb-10">
+              <div className="sm:col-span-4 md:col-span-2 gap-4 sm:mb-5 md:mb-10 sm:order-5 md:order-5 lg:order-5 xl:order-5">
                 <Link to="monster">
                   <img src={featuredproject4} alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
                 </Link>
               </div>
 
-              <div className="p-5 text-center sm:col-span-2 md:col-span-2 flex flex-col justify-center mb-10">
-                <h1 className='text-3xl mb-5'>Monster Hunter API project</h1>
-                <div className='flex justify-center gap-10 mb-5 '>
-                  <p className='px-4 py-2 border border-black rounded-full'>JAVASCRIPT</p>
-                  <p className='px-4 py-2 border border-black rounded-full'>REACT</p>
-                  <p className='px-4 py-2 border border-black rounded-full'>API</p>
+              <div className=" text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center md:mb-10 sm:order-6 md:order-6 lg:order-6 xl:order-6">
+                <h1 className='sm:text-lg md:text-2xl lg:text-3xl xl:text-7xl sm:mb-3 md:mb-3 lg:mb-5'>Monster Hunter API project</h1>
+                <div className='flex justify-center sm:gap-3 sm:mb-3 md:gap-10 md:mb-3 lg:mb-5'>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>REACT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>API</p>
                 </div>
-                <p>Search and favorite items using the Monster Hunter API.</p>
+                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl'>Search and favorite items using the Monster Hunter API.</p>
               </div>
             </div>
           </div>

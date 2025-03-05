@@ -139,7 +139,7 @@ function AboutMe() {
           </h1>
           <hr className="border-t-2 border-black  mt-2 mb-4" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">

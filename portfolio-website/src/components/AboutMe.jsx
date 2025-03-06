@@ -139,60 +139,60 @@ function AboutMe() {
           </h1>
           <hr className="border-t-2 border-black  mt-2 mb-4" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
+          <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={html5} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={html5} alt="css3" className="mb-2 rounded-sm object-contain md:h-64 " />
               </div>
               <p className="mt-2 font-medium">HTML5</p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={css3} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={css3} alt="css3" className="mb-2 rounded-sm object-contain h-64 " />
               </div>
               <p className="mt-2 font-medium">CSS</p>
             </div>
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain h-64 " />
               </div>
               <p className="mt-2 font-medium">Javascript </p>
             </div>
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
               </div>
               <p className="mt-2 font-medium">React.js </p>
             </div>
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
               </div>
               <p className="mt-2 font-medium">Figma</p>
             </div>
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={python} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={python} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
               </div>
               <p className="mt-2 font-medium">Python</p>
             </div>
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={illustrator} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={illustrator} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
               </div>
               <p className="mt-2 font-medium">Adobe Illustrator</p>
             </div>
 
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={photoshop} alt="css3" className="mb-2 rounded-sm object-contain h-64 bg-light-grey" />
+                <img src={photoshop} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
               </div>
               <p className="mt-2 font-medium">Adobe Photoshop</p>
             </div>

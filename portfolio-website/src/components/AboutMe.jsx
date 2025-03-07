@@ -55,16 +55,16 @@ function AboutMe() {
               Hi, I'm Jose!
             </h1>
             <hr className="border-t-2 border-black mt-2 mb-4" />
-            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
-              I'm a Front-end developer and UI/UX designer  currently residing in Vancouver, BC.
+            <p className="sm:text-md md:text-lg xl:text-2xl" data-aos="zoom-in">
+              I'm a Front-end developer and UI/UX designer currently residing in Vancouver, BC.
             </p>
-            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg xl:text-2xl" data-aos="zoom-in">
               I've always loved analyzing the nuances behind many things. Whether it be media, art, UI, or just about anything, I've found joy in how design influences the perception and interaction of people.
             </p>
-            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg xl:text-2xl" data-aos="zoom-in">
               Wanting to embrace my creative side, I took on the New Media Design and Web Development Course at BCIT.
             </p>
-            <p className="sm:text-md md:text-lg" data-aos="zoom-in">
+            <p className="sm:text-md md:text-lg xl:text-2xl" data-aos="zoom-in">
               From there, my goal is to create solutions that are made with passion and aesthetically pleasing.
             </p>
           </div>
@@ -87,47 +87,39 @@ function AboutMe() {
           <hr className="border-t-2 border-black  mt-2 mb-4" />
 
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative">
-                <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">🎧</p>
+                <p className="sm:text-6xl md:text-7xl lg:text-9xl xl:text-9xl flex items-center justify-center sm:h-32 lg:h-64 bg-light-grey">🎧</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-                  <p className="md:text-md sm:text-sm">Music helps me focus on my work and relax when things are hectic. In my current rotation, I'm playing some DPR Ian, Kendrick Lamar, and kpop.</p>
+                  <p className="md:text-md sm:text-sm xl:text-2xl">Music helps me focus on my work and relax when things are hectic. In my current rotation, I'm playing some DPR Ian, Kendrick Lamar, and kpop.</p>
                 </div>
               </div>
-              <p className="mt-2 font-medium">Listening to music </p>
+              <p className="sm:text-sm md:text-md lg:text-md xl:text-2xl mt-2 font-medium">Listening to music </p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
+            <div className="text-center sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative">
-                <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">🎮</p>
+                <p className="sm:text-6xl md:text-7xl lg:text-9xl xl:text-9xl flex items-center justify-center sm:h-32 lg:h-64 bg-light-grey">🎮</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-                  <p className="md:text-md sm:text-sm">I've been a avid gamer since I was 4, and it's been a huge influence in my life. I love the design of various aspects of video games as a whole, and from a UI perspective, video games offer many creative ways to implement UI for the user.</p>
+                  <p className="md:text-md sm:text-sm xl:text-2xl">I've been a avid gamer since I was 4, and it's been a huge influence in my life. I love the design of various aspects of video games as a whole, and from a UI perspective, video games offer many creative ways to implement UI for the user.</p>
                 </div>
               </div>
-              <p className="mt-2 font-medium">Gaming </p>
+              <p className="sm:text-sm md:text-md lg:text-md xl:text-2xl mt-2 font-medium">Gaming </p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative">
-                <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">🏋️</p>
+                <p className="sm:text-6xl md:text-7xl lg:text-9xl xl:text-9xl flex items-center justify-center sm:h-32  lg:h-64 bg-light-grey">🏋️</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-                  <p className="md:text-md sm:text-sm">In my free time, I also love going to the gym, as it keeps my physical body active, and also acts as mental therapy. Got to keep both the mind and body healthy!</p>
+                  <p className="md:text-md sm:text-sm xl:text-2xl">In my free time, I also love going to the gym, as it keeps my physical body active, and also acts as mental therapy. Got to keep both the mind and body healthy!</p>
                 </div>
               </div>
-              <p className="mt-2 font-medium ">Going to the gym</p>
+              <p className="sm:text-sm md:text-md lg:text-md xl:text-2xl mt-2 font-medium text-center">Going to the gym</p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
-              <div className="relative">
-                <p className="text-9xl flex items-center justify-center h-64 bg-light-grey">✍️</p>
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
-                  <p className="md:text-md sm:text-sm"> While not as often, sometimes I write! If I have something that comes to mind for a story I'm writing, i'll jot it down, but writing is also another way I keep my creative side going.</p>
-                </div>
-              </div>
-              <p className="mt-2 font-medium">Writing</p>
-            </div>
+            
           </div>
         </div>
 
@@ -143,58 +135,58 @@ function AboutMe() {
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={html5} alt="css3" className="mb-2 rounded-sm object-contain md:h-64 " />
+                <img src={html5} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">HTML5</p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">HTML5</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={css3} alt="css3" className="mb-2 rounded-sm object-contain h-64 " />
+                <img src={css3} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">CSS</p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">CSS</p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain h-64 " />
+                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">Javascript </p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Javascript </p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
+                <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">React.js </p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">React.js </p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
+                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">Figma</p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Figma</p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={python} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
+                <img src={python} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">Python</p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Python</p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={illustrator} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
+                <img src={illustrator} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">Adobe Illustrator</p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Adobe Illustrator</p>
             </div>
 
-            <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={photoshop} alt="css3" className="mb-2 rounded-sm object-contain h-64" />
+                <img src={photoshop} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
-              <p className="mt-2 font-medium">Adobe Photoshop</p>
+              <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Adobe Photoshop</p>
             </div>
           </div>
         </div>

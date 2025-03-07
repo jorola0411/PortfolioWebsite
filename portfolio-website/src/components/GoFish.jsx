@@ -183,7 +183,7 @@ const playerTurn = (requestedCardValue) => {
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>?? hours</p>
+                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>36 hours</p>
                     </div>
 
                 </div>
@@ -201,7 +201,9 @@ const playerTurn = (requestedCardValue) => {
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1'>
                     <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>StartGame.jsx</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Lorem</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>The startGame.jsx file intializes the game, and creates a new deck from the api.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>This file also handles the sorting of the cards, as to keep things neat and make it easier for the player to see what ranks they have.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>.slice gives the player and CPU 7 cards each.</p>
 
                     
 
@@ -220,7 +222,9 @@ const playerTurn = (requestedCardValue) => {
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1'>
                     <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Lorem</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Hand.jsx handles the UI of the hands that the player and CPU holds.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>A ternary statement is used for both the animation and visual look of the cards. If its the CPU, then display the back of the cards and ignore animation. If it's not the CPU (player), display the cards face up and add the animation.</p>
 
                     
                 </div>
@@ -238,7 +242,8 @@ const playerTurn = (requestedCardValue) => {
                     <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Turns.jsx</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
 
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Lorem</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Turns.jsx has the entire gameplay loop.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>The entire file handles the player/cpu turns, go fish, win and game over mechanics, to check if there has been a completed set, function to go again if the cpu/player has the requested card, score system, and messaging system. </p>
 
                    
                 </div>

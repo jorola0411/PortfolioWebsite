@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import featuredproject1 from '/src/assets/featuredprojects1.jpg';
 import featuredproject2 from '/src/assets/featuredprojects2.jpg';
 import featuredproject4 from '/src/assets/featuredprojects4.jpg';
-import placeholder from '/src/assets/placeholder.jpg'
+import gofish from '/src/assets/gofish.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // ..
@@ -55,7 +55,7 @@ function Project() {
 
               <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 sm:order-1 md:order-2 lg:order-2 xl:order-2 xl:mb-0">
                 <Link to="gofish" >
-                  <img src={placeholder} alt="Styles" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
+                  <img src={gofish} alt="Styles" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
                 </Link>
               </div>
 

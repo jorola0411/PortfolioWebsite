@@ -96,7 +96,7 @@ function Layout() {
 
 
       <footer>
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto flex justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
           <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
             <p className="text-md md:text-xl xl:text-4xl text-black md:text-left">You’ve made it to the bottom so you know...</p>
             <p className="text-md md:text-3xl xl:text-6xl text-black md:text-left md:mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>

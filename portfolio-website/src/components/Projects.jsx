@@ -72,7 +72,7 @@ function Project() {
                   <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>HTML</p>
                   <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>CSS</p>
                 </div>
-                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'> A fictional zoo focusing on front-end development.</p>
+                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'> A fictional zoo focusing on front-end development and Agile Methology.</p>
               </div>
 
               <div className="text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center lg:mb-10 sm:order-6 md:order-5 lg:order-5 xl:order-5">

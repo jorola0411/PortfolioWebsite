@@ -87,9 +87,9 @@ function AboutMe() {
           <hr className="border-t-2 border-black  mt-2 mb-4" />
 
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
+          <div className="grid sm:grid-rows-3  md:grid-rows-none md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4"> {/* grid-col-4 sets the grids, and col span sets how much of the div element covers the grid. In this case, since I have 4 polaroids, they all span the column once.*/}
 
-            <div className="text-center sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="text-center sm:row-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative">
                 <p className="sm:text-6xl md:text-7xl lg:text-9xl xl:text-9xl flex items-center justify-center sm:h-32 lg:h-64 bg-light-grey">🎧</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
@@ -99,7 +99,7 @@ function AboutMe() {
               <p className="sm:text-sm md:text-md lg:text-md xl:text-2xl mt-2 font-medium">Listening to music </p>
             </div>
 
-            <div className="text-center sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
+            <div className="text-center sm:row-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative">
                 <p className="sm:text-6xl md:text-7xl lg:text-9xl xl:text-9xl flex items-center justify-center sm:h-32 lg:h-64 bg-light-grey">🎮</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
@@ -109,7 +109,7 @@ function AboutMe() {
               <p className="sm:text-sm md:text-md lg:text-md xl:text-2xl mt-2 font-medium">Gaming </p>
             </div>
 
-            <div className="sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+            <div className="sm:row-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative">
                 <p className="sm:text-6xl md:text-7xl lg:text-9xl xl:text-9xl flex items-center justify-center sm:h-32  lg:h-64 bg-light-grey">🏋️</p>
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-left text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2">
@@ -119,7 +119,6 @@ function AboutMe() {
               <p className="sm:text-sm md:text-md lg:text-md xl:text-2xl mt-2 font-medium text-center">Going to the gym</p>
             </div>
 
-            
           </div>
         </div>
 
@@ -135,56 +134,56 @@ function AboutMe() {
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={html5} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={html5} alt="html5 logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">HTML5</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={css3} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={css3} alt="css3 logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">CSS</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Javascript </p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={reactlogo} alt="react logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">React.js </p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={figma} alt="figma logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Figma</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={python} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={python} alt="python logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Python</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={illustrator} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={illustrator} alt="illustrator logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Adobe Illustrator</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={photoshop} alt="css3" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={photoshop} alt="photoshop logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Adobe Photoshop</p>
             </div>

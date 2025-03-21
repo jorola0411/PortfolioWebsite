@@ -55,13 +55,13 @@ function Project() {
 
               <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 sm:order-1 md:order-2 lg:order-2 xl:order-2 xl:mb-0">
                 <Link to="gofish" >
-                  <img src={gofish} alt="Styles" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
+                  <img src={gofish} alt="Go Fish project" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
                 </Link>
               </div>
 
               <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 gap-4 sm:order-3 md:order-3 lg:order-3 xl:order-3 ">
                 <Link to="lelem">
-                  <img src={featuredproject1} className="xl:w-full xl:h-auto" alt="Lelem Natural Park" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
+                  <img src={featuredproject1} className="xl:w-full xl:h-auto" alt="Lelem Natural Park project" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
                 </Link>
               </div>
 
@@ -86,7 +86,7 @@ function Project() {
 
               <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 sm:order-5 md:order-6 lg:order-6 xl:order-6 xl:mb-0">
                 <Link to="styles" >
-                  <img src={featuredproject2} alt="Styles" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
+                  <img src={featuredproject2} alt="Styles project" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
                 </Link>
               </div>
 

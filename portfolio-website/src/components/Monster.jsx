@@ -14,6 +14,10 @@ export default function Monster() {
         });
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     const favoriteCode = `
       function Favourites() {
         const [category, setCategory] = useState("monsters"); // Default category
@@ -331,11 +335,11 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="http://mhapiproject.joseorola.ca/" target="blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="http://mhapiproject.joseorola.ca/" target="_blank">
                         Live Website
                     </a></button>
 
@@ -347,16 +351,16 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
-                            <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
 
-                            <img src={reactlogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={reactlogo} alt="react.js logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
                         </div>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl">This project uses an API to call from a selected list, and allows the user to search and favorite items within that API.</p>
+                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl px-5">This project uses an API to call from a selected list, and allows the user to search and favorite items within that API.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
@@ -369,15 +373,15 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-2'>
-                    <pre className='max-h-72 overflow-y-auto sm:text-md md:text-md lg:text-md xl:text-2xl'>
+                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                    <pre className='max-h-72 overflow-y-auto  md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
                             {favoriteCode}
                         </code>
                     </pre>
                 </div>
 
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1'>
+                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Favoriting Items & local Storage</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
                     <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Multiple const variables are created, notably the category and fav item const.</p>
@@ -392,15 +396,15 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-2'>
-                    <pre className='max-h-72 overflow-y-auto sm:text-md md:text-md lg:text-md xl:text-2xl'>
+                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
                             {detailCode}
                         </code>
                     </pre>
                 </div>
 
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1'>
+                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Detail page & switch statement</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
                     <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>With amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
@@ -412,14 +416,14 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-2'>
-                    <pre className='max-h-72 overflow-y-auto sm:text-md md:text-md lg:text-md xl:text-2xl'>
+                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
                             {searchCode}
                         </code>
                     </pre>
                 </div>
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1'>
+                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Search Bar</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
 

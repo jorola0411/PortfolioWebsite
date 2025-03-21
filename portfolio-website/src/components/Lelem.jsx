@@ -22,6 +22,10 @@ function Lelem() {
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <>
 
@@ -55,11 +59,11 @@ function Lelem() {
           <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
           <div className='flex gap-4 justify-center mb-3'>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/projectmanagement.git" target="blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank">
               GitHub
             </a></button>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="joseorola.ca" target="blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="https://lelemnaturalpark.joseorola.ca/" target="_blank">
               Live Website
             </a></button>
 
@@ -71,16 +75,16 @@ function Lelem() {
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <div className="relative flex justify-center items-center ">
-                <img src={html} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
-                <img src={css} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
-                <img src={jslogo} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={html} alt="html logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={css} alt="css3 logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
               </div>
             </div>
 
             <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-              <p className="text-center sm:text-sm md:text-lg lg:text-xl xl:text-2xl px-5"> This project involved creating a website for a fictional
+              <p className="text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5"> This project involved creating a website for a fictional
                 organization for a client, and to showcase proper usage of the
                 Agile project management methodology.</p>
             </div>
@@ -88,7 +92,7 @@ function Lelem() {
             <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-              <p className='text-center sm:text-sm md:text-lg lg:text-xl xl:text-2xl'>28 hours</p>
+              <p className='text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl'>28 hours</p>
             </div>
 
           </div>
@@ -132,12 +136,12 @@ function Lelem() {
                   <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Graphic Designer</p>
                 </div>
               </a>
-              
-                <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                  <img src={sam} alt="Sam Luk" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
-                  <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Samantha Luk </p>
-                  <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Content Writer</p>
-                </div>
+
+              <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
+                <img src={sam} alt="Sam Luk" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
+                <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Samantha Luk </p>
+                <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Content Writer</p>
+              </div>
             </div>
           </div>
         </div>

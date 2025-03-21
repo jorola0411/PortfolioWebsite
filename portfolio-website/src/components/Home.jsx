@@ -64,7 +64,7 @@ function Home() {
 
         <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 gap-4">
           <Link to="projects/monster">
-            <img src={featuredproject4} className="xl:w-full xl:h-auto" alt="Lelem Natural Park" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
+            <img src={featuredproject4} className="xl:w-full xl:h-auto" alt="Monster Hunter API project" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
           </Link>
         </div>
 

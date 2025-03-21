@@ -15,6 +15,10 @@ function Styles() {
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <>
 
@@ -37,11 +41,11 @@ function Styles() {
           <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
           <div className='flex gap-4 justify-center mb-3'>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://www.figma.com/design/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://www.figma.com/design/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="_blank">
               Wireframes
             </a></button>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="https://www.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="https://www.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="_blank">
               Prototype
             </a></button>
 
@@ -49,25 +53,25 @@ function Styles() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
 
-            <div className='col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
+            <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Software</h2>
               <hr className="sm:max-w-[50%] max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <div className="relative flex justify-center items-center ">
-                <img src={figma} alt="css3" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={figma} alt="figma logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
               </div>
             </div>
 
-            <div className='col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+            <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
               <hr className="sm:max-w-[50%] max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-              <p className="text-center sm:text-sm md:text-lg lg:text-xl xl:text-2xl"> Styles is a company that provides a mobile clothing shopping experience.
+              <p className="text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5"> Styles is a company that provides a mobile clothing shopping experience.
                 Focusing on streetwear, Styles also allows the users to “try on” their clothes before buying.</p>
             </div>
 
-            <div className='col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1'>
+            <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
               <hr className="sm:max-w-[50%] lg:max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-              <p className='text-center sm:text-sm md:text-lg lg:text-xl xl:text-2xl'> 16 hours</p>
+              <p className='text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl'>16 hours</p>
             </div>
 
           </div>
@@ -123,7 +127,7 @@ function Styles() {
               <iframe
                 className="w-full max-w-[400px] aspect-[9/16] rounded-lg shadow-md"
                 src="https://embed.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=481-3383&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=481%3A3295&starting-point-node-id=481%3A3383&embed-host=share"
-                allowFullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>

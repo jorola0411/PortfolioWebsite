@@ -75,9 +75,9 @@ function Lelem() {
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <div className="relative flex justify-center items-center ">
-                <img src={html} alt="html logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
-                <img src={css} alt="css3 logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
-                <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={html} alt="html logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={css} alt="css3 logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
               </div>
             </div>
 
@@ -108,14 +108,14 @@ function Lelem() {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-6">
 
               <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                <img src={jose} alt="Jose Orola" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
+                <img src={jose} alt="Jose Orola" description="Polaroid style button and photo for the team members." className="mb-2 rounded-xs object-cover w-full h-64" />
                 <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Jose Orola</p>
                 <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Web Developer & UI Designer</p>
               </div>
 
               <a href="https://karleilvillareal.ca/" target="_blank">
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                  <img src={leil} alt="Karleil Villareal" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
+                  <img src={leil} alt="Karleil Villareal" description="Polaroid style button and photo for the team members." className="mb-2 rounded-xs object-cover w-full h-64" />
                   <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Karleil Villareal </p>
                   <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Web Developer & UI Designer</p>
                 </div>
@@ -123,7 +123,7 @@ function Lelem() {
 
               <a href="https://lilyzvillage.ca/" target="_blank">
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                  <img src={yurino} alt="Yurino Murakami" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
+                  <img src={yurino} alt="Yurino Murakami" description="Polaroid style button and photo for the team members." className="mb-2 rounded-xs object-cover w-full h-64" />
                   <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Yurino Murakami </p>
                   <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Graphic and UI Designer</p>
                 </div>
@@ -131,14 +131,14 @@ function Lelem() {
 
               <a href="https://denisgurcu.com/" target="_blank">
                 <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                  <img src={denis} alt="Denis Gurcu" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
+                  <img src={denis} alt="Denis Gurcu" description="Polaroid style button and photo for the team members." className="mb-2 rounded-xs object-cover w-full h-64" />
                   <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Denis Gurcu</p>
                   <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Graphic Designer</p>
                 </div>
               </a>
 
               <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center sm:col-span-1 md:col-span-1" data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                <img src={sam} alt="Sam Luk" description="Polaroid style button and photo for the team members." className="mb-2 rounded-sm object-cover w-full h-64" />
+                <img src={sam} alt="Sam Luk" description="Polaroid style button and photo for the team members." className="mb-2 rounded-xs object-cover w-full h-64" />
                 <p className="mt-2 font-medium sm:text-md md:text-lg lg:text-xl xl:text-3xl">Samantha Luk </p>
                 <p className="sm:text-sm md:text-md lg:text-lg xl:text-xl">Content Writer</p>
               </div>

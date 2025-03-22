@@ -213,12 +213,12 @@ return (
       {renderDetails()} {/* this calls the renderDetails function we created for each category and item, and displays it.*/}
       <button
     onClick={() => toggleFav(detail.id)}
-    className="bg-gray-500 rounded border border-gray-300 text-white m-5 py-2 px-4 hover:bg-gray-600"
+    className="bg-gray-500 rounded-sm border border-gray-300 text-white m-5 py-2 px-4 hover:bg-gray-600"
 >
     {favs.includes(detail.id) ? 'Remove from Favourites' : 'Add to Favourites'}
 </button>
 
-      <button className="bg-gray-500 rounded border border-gray-300 text-white m-5 py-2 px-4  hover:bg-gray-600">
+      <button className="bg-gray-500 rounded-sm border border-gray-300 text-white m-5 py-2 px-4  hover:bg-gray-600">
       <Link to="/" className="text-white">Back to Home</Link>
       </button>
       </div>
@@ -315,16 +315,16 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
     <>
       <header className="bg-gray-800 text-white p-4 flex flex-col md:flex-row md:justify-center items-center">
         <div className="flex flex-wrap justify-center md:justify-start">
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("monsters")}>Monsters</button>
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("skills")}>Skills</button>
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("items")}>Items</button>
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("charms")}>Charms</button>
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("weapons")}>Weapons</button>
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("armor")}>Armor</button>
-          <button className="px-4 py-2 rounded hover:bg-gray-400 transition duration-200" onClick={() => setCategory("locations")}>Location</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("monsters")}>Monsters</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("skills")}>Skills</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("items")}>Items</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("charms")}>Charms</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("weapons")}>Weapons</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("armor")}>Armor</button>
+          <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("locations")}>Location</button>
         </div>
 
-        <input type="text" className="w-full md:w-auto px-4 py-2 rounded text-black" placeholder={\`Search for \${category}\`} value={searchTerm} onChange={(event) => { setSearchTerm(event.target.value) }} />
+        <input type="text" className="w-full md:w-auto px-4 py-2 rounded-sm text-black" placeholder={\`Search for \${category}\`} value={searchTerm} onChange={(event) => { setSearchTerm(event.target.value) }} />
       </header>
         `;
 
@@ -351,9 +351,9 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
-                            <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
 
-                            <img src={reactlogo} alt="react.js logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={reactlogo} alt="react.js logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
                         </div>
                     </div>
 

@@ -36,17 +36,42 @@ function Layout() {
     <>
       <header>
         <nav className="py-4">
-          <div className="px-4 md:px-10 mx-auto flex justify-between items-center">
+          <div className="px-4 md:px-16 mx-auto flex justify-between items-center">
 
             <Link to="/">
               <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-12 md:w-20 xl:w-40  " />
             </Link>
 
 
-            <div className="hidden md:flex text-black space-x-8 font-ubuntumono" data-aos="fade-down">
-              <Link to="/about" className="text-lg md:text-2xl xl:text-5xl hover:underline">About</Link>
-              <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">Works</Link>
-              <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">Resume</a>
+            <div className="hidden md:flex text-black  justify-between gap-10 font-dmsans" >
+
+              <div className="relative group cursor-pointer flex flex-col items-center">
+                <Link to="/about" className="text-lg md:text-2xl xl:text-5xl hover:underline">about.</Link>
+                <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                  curious about me? i'm flattered.
+                </span>
+              </div>
+
+              <div className="relative group cursor-pointer flex flex-col items-center">
+              <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">works.</Link>
+              <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                  the reason you're here.
+                </span>
+              </div>
+
+              <div className="relative group cursor-pointer flex flex-col items-center">
+              <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume.</a>
+              <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                  me, in one page.
+                </span>
+              </div>
+
+              <div className="relative group cursor-pointer flex flex-col items-center">
+              <a href="https://jaotalksmusic.joseorola.ca/" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">music.</a>
+              <span className="absolute top-full w-50 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                  tap in.
+                </span>
+              </div>
             </div>
 
 
@@ -67,21 +92,28 @@ function Layout() {
                   className="text-lg hover:underline"
                   onClick={toggleMenu}
                 >
-                  About
+                  about.
                 </Link>
                 <Link
                   to="/projects"
                   className="text-lg hover:underline"
                   onClick={toggleMenu}
                 >
-                  Works
+                  works.
                 </Link>
                 <a
                   href="/newresume.pdf"
                   className="text-lg hover:underline"
                   onClick={toggleMenu}
                 >
-                  Resume
+                  resume.
+                </a>
+                <a 
+                href="https://jaotalksmusic.joseorola.ca/"
+                className="text-lg hover:underline"
+                onClick={toggleMenu}
+                >
+                  music.
                 </a>
               </div>
             </div>
@@ -96,33 +128,31 @@ function Layout() {
 
 
       <footer>
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto flex justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
           <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
-            <p className="text-md md:text-xl xl:text-4xl text-black md:text-left">You’ve made it to the bottom so you know...</p>
-            <p className="text-md md:text-3xl xl:text-6xl text-black md:text-left md:mb-10 ">Let’s work <span className="bg-gradient-to-r from-beige-300 to-beige-500 bg-clip-text text-transparent font-bold">together!</span></p>
+
+            <p className="text-md md:text-xl xl:text-4xl text-black md:text-left">just say hi.</p>
             <p className="text-md md:text-xl xl:text-4xl text-black md:text-left"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>
 
-            <div className="flex space-x-4 justify-center">
+            <div className="flex space-x-1 justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
-                <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-24 xl:h-24" />
+                <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-24 xl:h-24" />
               </a>
               <a href="https://linkedin.com/in/jose-orola" target="_blank">
-                <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-24 xl:h-24" />
+                <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-24 xl:h-24" />
               </a>
               <a href="https://www.instagram.com/jose.orola/" target="_blank">
-                <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram." className="sm:w-8 sm:h-8 md:w-10 md:h-10 xl:w-24 xl:h-24" />
+                <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram." className="sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-24 xl:h-24" />
               </a>
             </div>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:items-center sm:text-center md:items-end'>
-            <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:mt-5  sm:w-16 md:w-24 xl:w-36 mb-5 " />
-
-            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-4xl text-black">Made in React</p>
-            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-4xl text-black">Jose Alejandro Orola | 2025</p>
+            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-4xl text-black">coded with react by yours truly.</p>
+            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-4xl text-black">most likely listening to the latest kpop, rnb, and rap releases.</p>
           </div>
         </div>
       </footer>

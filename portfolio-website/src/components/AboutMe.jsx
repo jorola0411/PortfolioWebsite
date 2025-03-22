@@ -71,7 +71,7 @@ function AboutMe() {
 
           <div className="flex justify-center md:justify-end">
             <div className="bg-white p-2 shadow-lg rounded-md border border-gray-200 text-center" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
-              <img src={jose} alt="Jose" className="mb-2 rounded-sm object-cover w-full h-64" />
+              <img src={jose} alt="Jose" className="mb-2 rounded-xs object-cover w-full h-64" />
               <p className="mt-2 font-medium">Jao</p>
             </div>
           </div>
@@ -134,56 +134,56 @@ function AboutMe() {
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={html5} alt="html5 logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={html5} alt="html5 logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">HTML5</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={css3} alt="css3 logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={css3} alt="css3 logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">CSS</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Javascript </p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom" >
               <div className="relative flex justify-center items-center">
-                <img src={reactlogo} alt="react logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={reactlogo} alt="react logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">React.js </p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={figma} alt="figma logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={figma} alt="figma logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Figma</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={python} alt="python logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={python} alt="python logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Python</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={illustrator} alt="illustrator logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={illustrator} alt="illustrator logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Adobe Illustrator</p>
             </div>
 
             <div className="text-center md:col-span-1 group" data-aos="flip-left" data-aos-anchor-placement="top-bottom">
               <div className="relative flex justify-center items-center">
-                <img src={photoshop} alt="photoshop logo" className="mb-2 rounded-sm object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
+                <img src={photoshop} alt="photoshop logo" className="mb-2 rounded-xs object-contain sm:h-24 md:h-32 lg:h-32 xl:h-48" />
               </div>
               <p className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl mt-2 font-medium">Adobe Photoshop</p>
             </div>

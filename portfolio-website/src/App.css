@@ -1,3 +1,4 @@
+
 #root {
   --radial-gradient-background: 255, 255, 255;
   --solid-color-background:  255, 255, 255;
@@ -10,16 +11,16 @@
 }
 
 h1 {
-    font-family: 'Ubuntu Mono', 'sans-serif';
+    font-family: 'DM Sans', 'sans-serif';
 }
 h2 {
-    font-family: 'Ubuntu Mono', 'sans-serif';
+    font-family: 'DM Sans', 'sans-serif';
 }
 p {
-    font-family: 'Ubuntu', 'sans-serif';
+    font-family: 'Satoshi-Regular', 'sans-serif';
 }
 li {
-    font-family: 'Ubuntu', 'sans-serif';
+    font-family: 'Satoshi-Regular', 'sans-serif';
 }
 .radial-gradient {
     background: radial-gradient(
@@ -61,6 +62,7 @@ li {
     mask-composite: exclude;
     -webkit-mask-composite: xor;
 }
+
 
 
 

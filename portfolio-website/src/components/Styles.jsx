@@ -57,7 +57,7 @@ function Styles() {
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Software</h2>
               <hr className="sm:max-w-[50%] max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <div className="relative flex justify-center items-center ">
-                <img src={figma} alt="figma logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={figma} alt="figma logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
               </div>
             </div>
 
@@ -125,7 +125,7 @@ function Styles() {
           <div className='col-span-1 sm:col-span-3 md:col-span-2 sm:order-2'>
             <div className="flex justify-center">
               <iframe
-                className="w-full max-w-[400px] aspect-[9/16] rounded-lg shadow-md"
+                className="w-full max-w-[400px] aspect-9/16 rounded-lg shadow-md"
                 src="https://embed.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=481-3383&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=481%3A3295&starting-point-node-id=481%3A3383&embed-host=share"
                 allowFullScreen
               ></iframe>

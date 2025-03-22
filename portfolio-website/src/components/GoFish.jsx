@@ -156,11 +156,11 @@ const playerTurn = (requestedCardValue) => {
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="https://gofish.joseorola.ca/" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200"> <a href="https://gofish.joseorola.ca/" target="_blank">
                         Live Website
                     </a></button>
 
@@ -172,9 +172,9 @@ const playerTurn = (requestedCardValue) => {
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
-                            <img src={jslogo} alt="javascript logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
 
-                            <img src={reactlogo} alt="react logo" className="mb-2 rounded-sm object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={reactlogo} alt="react logo" className="mb-2  object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
                         </div>
                     </div>
 

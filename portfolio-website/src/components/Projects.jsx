@@ -46,9 +46,9 @@ function Project() {
             <div className="text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center lg:mb-10 sm:order-2 md:order-1 lg:order-1 xl:order-1">
                 <h1 className="sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl sm:mb-3 md:mb-3 lg:mb-5 sm:mt-5">Go Fish!</h1>
                 <div className='flex justify-center sm:gap-3 sm:mb-3 md:gap-10 md:mb-3 lg:mb-5'>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>JAVASCRIPT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>REACT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>API</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 border border-black'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>REACT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>API</p>
                 </div>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'>Play Go Fish and win against the CPU!</p>
               </div>
@@ -68,9 +68,9 @@ function Project() {
               <div className="text-center sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-center lg:mb-10 sm:order-4 md:order-4 lg:order-4">
                 <h1 className='sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl sm:mb-3 md:mb-3 lg:mb-5 sm:mt-5'>Lelem Natural Park</h1>
                 <div className='flex justify-center md:gap-10 sm:gap-3 sm:mb-3 md:mb-3 lg:mb-5'>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>JAVASCRIPT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>HTML</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>CSS</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>HTML</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>CSS</p>
                 </div>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'> A fictional zoo focusing on front-end development and Agile Methology.</p>
               </div>
@@ -78,8 +78,8 @@ function Project() {
               <div className="text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center lg:mb-10 sm:order-6 md:order-5 lg:order-5 xl:order-5">
                 <h1 className="sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl sm:mb-3 md:mb-3 lg:mb-5 sm:mt-5">styles by jao</h1>
                 <div className='flex justify-center sm:gap-3 sm:mb-3 md:gap-10 md:mb-3 lg:mb-5'>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>UI</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>UX</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-3 md:py-2 lg:px-4 lg:py-2 border border-black'>UI</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>UX</p>
                 </div>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'>Virtually try on clothes and browse in styles, a streetwear store app.</p>
               </div>
@@ -99,9 +99,9 @@ function Project() {
               <div className=" text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center md:mb-10 sm:order-8 md:order-8 lg:order-8 xl:order-8">
                 <h1 className='sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl sm:mb-3 md:mb-3 lg:mb-5'>Monster Hunter API project</h1>
                 <div className='flex justify-center sm:gap-3 sm:mb-3 md:gap-10 md:mb-3 lg:mb-5'>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>JAVASCRIPT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>REACT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black rounded-full'>API</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>REACT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>API</p>
                 </div>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl'>Search and favorite items using the Monster Hunter API.</p>
               </div>

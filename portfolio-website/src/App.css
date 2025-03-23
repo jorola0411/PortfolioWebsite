@@ -10,18 +10,14 @@
     background-color:#FFF8EF ;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'DM Sans', 'sans-serif';
 }
-h2 {
-    font-family: 'DM Sans', 'sans-serif';
-}
-p {
+
+p, li, span {
     font-family: 'Satoshi-Regular', 'sans-serif';
 }
-li {
-    font-family: 'Satoshi-Regular', 'sans-serif';
-}
+
 .radial-gradient {
     background: radial-gradient(
             circle at 50% 0%,

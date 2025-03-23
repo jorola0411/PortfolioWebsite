@@ -46,29 +46,29 @@ function Layout() {
             <div className="hidden md:flex text-black  justify-between gap-10 font-dmsans" >
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-                <Link to="/about" className="text-lg md:text-2xl xl:text-5xl hover:underline">about.</Link>
+                <Link to="/about" className="text-lg md:text-2xl xl:text-5xl hover:underline">about</Link>
                 <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   curious about me? i'm flattered.
                 </span>
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-              <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">works.</Link>
+              <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">works</Link>
               <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   the reason you're here.
                 </span>
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-              <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume.</a>
+              <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
               <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   me, in one page.
                 </span>
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-              <a href="https://jaotalksmusic.joseorola.ca/" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">music.</a>
-              <span className="absolute top-full w-50 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+              <a href="https://jaotalksmusic.joseorola.ca/" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">?</a>
+              <span className="absolute top-full w-35 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   tap in.
                 </span>
               </div>

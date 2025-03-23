@@ -7,8 +7,9 @@ import featuredproject4 from '/src/assets/featuredprojects4.jpg';
 import featuredproject2 from '/src/assets/featuredprojects2.jpg';
 import { Link } from "react-router-dom";
 
-import "../App.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
 
@@ -44,7 +45,7 @@ function Home() {
 
       <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 md:pt-10">
 
-        <div className="container mx-auto pt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 md:mt-10">
+        <div className="h-screen container mx-auto pt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 md:mt-10">
           <h1 className="sm:text-2xl md:text-7xl lg:text-7xl xl:text-9xl mb-10" data-aos="fade-left">
             Need a<span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Front-end Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> UI Designer</span>? {/*text-transparent is needed for the gradient to show up*/}
           </h1>
@@ -53,6 +54,10 @@ function Home() {
             I'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose</span>, and I’m looking forward to be working with you.
           </p>
         </div>
+         <div  className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+        
+                <FontAwesomeIcon icon={faChevronDown}  className=" hover:text-beige-500 transition animate-bounce text-5xl"/>
+                </div>
       </div>
 
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10 ">

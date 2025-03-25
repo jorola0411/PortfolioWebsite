@@ -9,34 +9,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutMe() {
 
-  const joseRef = useRef(null);
-  const jaoRef = useRef(null);
+  const jose1Ref = useRef(null);
+  const jose2Ref = useRef(null);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
-    gsap.from(joseRef.current, {
+    gsap.from(jose1Ref.current, {
       opacity: 1,
       y: 0,
       duration: 1,
       scrollTrigger: {
-        trigger: joseRef.current,
+        trigger: jose1Ref.current,
         start: "top 80%",
       },
     });
 
-    gsap.from(jaoRef.current, {
+    gsap.from(jose2Ref.current, {
       opacity: 1,
       y: 0,
       duration: 1,
       scrollTrigger: {
-        trigger: jaoRef.current,
+        trigger: jose2Ref.current,
         start: "top 80%",
       },
     });
   }, []);
+
+
   return (
     <>
       <meta charSet="UTF-8" />
@@ -63,14 +65,14 @@ export default function AboutMe() {
 
       <section className="h-screen flex flex-col items-center justify-center sm:px-4">
         <div>
-          <h1 className='text-center lg:text-8xl mb-5'>about me, huh.</h1>
+          <h1 className='text-center lg:text-8xl mb-5'>about me.</h1>
           <h2 className='text-center lg:text-7xl mb-5'> but which one?</h2>
           <h3 className='text-center lg:text-2xl mb-5'> I want to learn more about...</h3>
 
           <div className='mx-auto flex items-center justify-between max-w-[50%]'>
 
             <div className="relative group flex flex-col items-center">
-              <button className="sm:text-sm md:text-lg lg:text-3xl xl:text-3xl  cursor-pointer  transition duration-200 gap-10" onClick={() => scrollToSection(joseRef)}>
+              <button className="sm:text-sm md:text-lg lg:text-3xl xl:text-3xl  cursor-pointer  transition duration-200 gap-10" onClick={() => scrollToSection(jose1Ref)}>
                 Jose
               </button>
               <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
@@ -79,8 +81,8 @@ export default function AboutMe() {
             </div>
 
             <div className="relative group flex flex-col items-center">
-              <button className="sm:text-sm md:text-lg lg:text-3xl xl:text-3xl cursor-pointer transition duration-200" onClick={() => scrollToSection(jaoRef)}>
-                Jao
+              <button className="sm:text-sm md:text-lg lg:text-3xl xl:text-3xl cursor-pointer transition duration-200" onClick={() => scrollToSection(jose2Ref)}>
+                jose
               </button>
               <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                 the one you would want to hang out with.
@@ -92,13 +94,13 @@ export default function AboutMe() {
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
 
-          <FontAwesomeIcon icon={faChevronDown} className=" hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(joseRef)} />
+          <FontAwesomeIcon icon={faChevronDown} className=" hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(jose1Ref)} />
         </div>
       </section>
 
 
       <section
-        ref={joseRef}
+        ref={jose1Ref}
         id="jose"
         className="w-full bg-beige-200 py-10 mt-10"
       >
@@ -157,15 +159,32 @@ export default function AboutMe() {
 
       </section>
 
-      <section ref={jaoRef} id="jao" >
+      <section ref={jose2Ref} id="jao" >
         <div className=" bg-beige-200 py-10 mt-10">
               
-        <h1 className='text-8xl text-center'> now let's talk about jao. (also me.)</h1>
+        <h1 className='text-8xl text-center'> the fun side.</h1>
 
         </div>
-        <div className='grid grid-cols-2 mx-auto'>
-          <div className='col-span-1'>
-            <h1 className=''></h1>
+        <div className='grid grid-cols-3 mx-auto'>
+          <div className='col-span-3'>
+            <h1 className='text-center text-5xl'>Outside of work, I'm most likely doing 1 of 3 things.</h1>
+          </div>
+
+          <div className='col-span-3'>
+            <h1>Listening and analyzing music</h1>
+            <p>I am a avid music lover and listener, and I listen to music a little too much.</p>
+            <p>I'm always open to exploring new genres and listening to the latest releases.</p>
+          </div>
+          <div className='col-span-3'>
+            <h1>Achievement Hunting in video games (or just gaming in general)</h1>
+            <p>I love getting virtual achievements that won't amount to anything in real life! wow!</p>
+            <p>If I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
+          </div>
+          <div className='col-span-3'>
+            <h1>Lifting heavy objects and complain about the pain</h1>
+            <p>I like to lift weights.</p>
+            <p>That's it.</p>
+            <p>I like doing deadlifts.</p>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -7,7 +7,8 @@ import featuredproject4 from '/src/assets/featuredprojects4.jpg';
 import featuredproject2 from '/src/assets/featuredprojects2.jpg';
 import { Link } from "react-router-dom";
 
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,6 +20,27 @@ function Home() {
       easing: 'ease-in-out', // Easing function
     });
   }, []);
+
+  
+  const featuredRef = useRef(null);
+
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    gsap.from(featuredRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: featuredRef.current,
+        start: "top 80%",
+      },
+    });
+  }, []);
+
   return (
     <>
 
@@ -56,13 +78,14 @@ function Home() {
         </div>
          <div  className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
         
-                <FontAwesomeIcon icon={faChevronDown}  className=" hover:text-beige-500 transition animate-bounce text-5xl"/>
+                <FontAwesomeIcon icon={faChevronDown}  className=" hover:text-beige-500 transition animate-bounce text-5xl"  onClick={() => scrollToSection(featuredRef)}/>
                 </div>
       </div>
 
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10 ">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10">
         <div className="mx-auto space-y-2 mt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 mb-10">
-          <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center">Featured Works</h2>
+          <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center"  ref={featuredRef}
+        id="feature">Featured Works</h2>
           <hr className="border-t-2 border-black mt-2 " />
         </div>
 

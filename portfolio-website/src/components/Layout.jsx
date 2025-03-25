@@ -131,8 +131,8 @@ function Layout() {
         <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
           <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
 
-            <p className="text-md md:text-xl xl:text-4xl text-black md:text-left">just say hi.</p>
-            <p className="text-md md:text-xl xl:text-4xl text-black md:text-left"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
+            <p className="text-md md:text-md lg:text-lg xl:text-4xl text-black md:text-left">just say hi.</p>
+            <p className="text-md md:text-md lg:text-lg xl:text-4xl text-black md:text-left"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>
@@ -151,8 +151,8 @@ function Layout() {
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:items-center sm:text-center md:items-end'>
-            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-4xl text-black">coded with react by yours truly.</p>
-            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-4xl text-black">most likely listening to the latest kpop, rnb, and rap releases.</p>
+            <p className="sm:text-sm md:text-md lg:text-lg xl:text-4xl text-black">coded with react by yours truly.</p>
+            <p className="sm:text-sm md:text-md lg:text-lg xl:text-4xl text-black">most likely listening to the latest kpop, rnb, and rap releases.</p>
           </div>
         </div>
       </footer>

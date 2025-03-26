@@ -1,9 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-gsap.registerPlugin(ScrollTrigger);
+import { faChevronDown, faEye, faBrain, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+
+import html from '../assets/HTML5.svg'
+import tailwind from '../assets/tailwind.svg'
+import js from '../assets/jslogo.svg'
+import reactlogo from '../assets/React-icon.svg'
+import figma from '../assets/Figma-logo.svg'
+
+
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 
 
@@ -11,10 +21,52 @@ export default function AboutMe() {
 
   const jose1Ref = useRef(null);
   const jose2Ref = useRef(null);
+  const [flip1, setFlip1] = useState(true);
+  const [flip2, setFlip2] = useState(true);
+  const [flip3, setFlip3] = useState(true);
+  const sectionsRef = useRef([]);
+  const paragraphs = [
+    "you want me to be honest?",
+    "coding is weird. things don't work like how you want it to, languages are complicated, and sometimes, debugging takes longer than it needs to be. and it's just. so. frustrating at times.",
+    "but it's that exact reason why i do it. when it works, it's like seeing all the pieces fit together like a puzzle.",
+    "i code because it's an outlet that brings my ideas to life. it's a long process at times, but once you understand the logic, connecting code together, and creating something, it's rewarding.",
+  ];
+
+  useEffect(() => {
+    sectionsRef.current.forEach((el, index) => {
+      gsap.fromTo(
+        el.querySelector("p"),
+        { opacity: 0, y: 50, text: "" },
+        {
+          opacity: 1,
+          y: 0,
+          text: paragraphs[index],
+          ease: "power2.out",
+          duration: 1.5,
+          scrollTrigger: {
+            trigger: el,
+            start: "top center",
+            
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+  }, []);
+
+  const skills = [
+
+    { name: "HTML", img: html },
+    { name: "Tailwind", img: tailwind },
+    { name: "JavaScript", img: js },
+    { name: "React", img: reactlogo },
+    { name: "Figma", img: figma },
+  ];
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+
 
   useEffect(() => {
     gsap.from(jose1Ref.current, {
@@ -37,6 +89,7 @@ export default function AboutMe() {
       },
     });
   }, []);
+
 
 
   return (
@@ -82,7 +135,7 @@ export default function AboutMe() {
 
             <div className="relative group flex flex-col items-center">
               <button className="sm:text-sm md:text-lg lg:text-3xl xl:text-3xl cursor-pointer transition duration-200" onClick={() => scrollToSection(jose2Ref)}>
-                jose
+                Jao
               </button>
               <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                 the one you would want to hang out with.
@@ -105,87 +158,209 @@ export default function AboutMe() {
         className="w-full bg-beige-200 py-10 mt-10"
       >
 
-        <div className='grid grid-cols-3 mx-auto'>
-          <h1 className='text-center text-8xl col-span-3'>values</h1>
-        <div className='col-span-1 text-center'>
-        <h1 className='text-center text-5xl col-span-3'>intuitiveness</h1>
-        <p className='text-center text-lg'>
-          the best designs are the one you don't notice, correct?
-          i will make it my priority for *everything* to make sense.
-        </p>
-        </div>
-        <div className='col-span-1 text-center'>
-        <h1 className='text-center text-5xl col-span-3'>adaptability</h1>
-        <p className='text-center text-lg'> 
-          i will always be willing to hear what you have in store for me, and i'll cater my approaches to your needs. a win win for the both of us.
-         
-        </p>
-        </div>
-        <div className='col-span-1 text-center'>
-        <h1 className='text-center text-5xl col-span-3'>having fun.</h1>
-        <p>unconventional, the idea of code coming together excites me.
-          you have an idea because it excites you and you want to see it realized. 
-          the process is challenging, but let's captialize on that and enjoy ourselves. </p>
+
+        <div className="max-w-[80%] mx-auto space-y-8 p-4">
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-6">
+            <h1 className='text-center text-8xl col-span-5 mb-5'>here's what i (usually) work with.</h1>
+            {skills.map((skill) => (
+              <div>
+                <img
+                  src={skill.img}
+                  alt={skill.name}
+                  className="w-32 h-32 justify-center items-center mx-auto"
+                />
+                <p className="text-center mt-2 text-base font-medium">
+                  {skill.name}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
+        <div className='grid grid-cols-3 mx-auto px-4 gap-5 lg:max-w-7xl'>
+          <h1 className='text-center text-8xl col-span-3 mb-5'>values</h1>
 
-        
+          <motion.div
+            transition={{ duration: 0.7 }}
+            animate={{ rotateY: flip1 ? 0 : 180 }}
+
+          >
+
+            <motion.div
+              transition={{ duration: 0.7 }}
+              animate={{ rotateY: flip1 ? 0 : 180 }}
+              className="card cursor-pointer"
+
+            >
+              <button onClick={() => setFlip1((prevState) => !prevState)} className='cursor-pointer'>
+                <motion.div
+                  transition={{ duration: 0.7 }}
+                  animate={{ rotateY: flip1 ? 0 : 180 }}
+                  className="front"
+                >
+
+                  <h1 className='text-center text-5xl mx-auto justify-center'>intuitiveness.</h1>
+                  <FontAwesomeIcon icon={faEye} className='text-5xl mt-5' />
+                </motion.div>
+
+                <motion.div
+                  initial={{ rotateY: 180 }}
+                  animate={{ rotateY: flip1 ? 180 : 0 }}
+                  transition={{ duration: 0.7 }}
+                  className="back"
+                >
+
+                  <p className='text-lg'>
+                    the best designs are the one you don't notice, correct?
+                    i will make it my priority for *everything* to make sense.
+                  </p>
+
+                </motion.div>
+              </button>
+            </motion.div>
+
+          </motion.div>
+
+
+
+
+          <motion.div
+            transition={{ duration: 0.7 }}
+            animate={{ rotateY: flip2 ? 0 : 180 }}
+          >
+
+            <motion.div
+              transition={{ duration: 0.7 }}
+              animate={{ rotateY: flip2 ? 0 : 180 }}
+              className="card"
+            >
+              <button onClick={() => setFlip2((prevState) => !prevState)} className='cursor-pointer'>
+                <motion.div
+                  transition={{ duration: 0.7 }}
+                  animate={{ rotateY: flip2 ? 0 : 180 }}
+                  className="front"
+                >
+                  <h1 className='text-center text-5xl col-span-3'>adaptability.</h1>
+                  <FontAwesomeIcon icon={faBrain} className='text-5xl mt-5' />
+                </motion.div>
+                <motion.div
+                  initial={{ rotateY: 180 }}
+                  animate={{ rotateY: flip2 ? 180 : 0 }}
+                  transition={{ duration: 0.7 }}
+                  className="back"
+                >
+
+                  <p className='text-lg px-3'>
+                    i will always be willing to hear what you have in store for me, and i'll cater my approaches to your needs. a win win for the both of us.
+                  </p>
+                </motion.div>
+              </button>
+            </motion.div>
+          </motion.div>
+
+
+
+
+          <motion.div
+
+            transition={{ duration: 0.7 }}
+            animate={{ rotateY: flip3 ? 0 : 180 }}
+          >
+
+            <motion.div
+              transition={{ duration: 0.7 }}
+              animate={{ rotateY: flip3 ? 0 : 180 }}
+              className="card"
+            >
+              <button onClick={() => setFlip3((prevState) => !prevState)} className='cursor-pointer'>
+                <motion.div
+                  transition={{ duration: 0.7 }}
+                  animate={{ rotateY: flip3 ? 0 : 180 }}
+                  className="front"
+                >
+                  <h1 className='text-center text-5xl col-span-3'>having fun.</h1>
+                  <FontAwesomeIcon icon={faFaceSmile} className='text-5xl mt-5' />
+                </motion.div>
+                <motion.div
+                  initial={{ rotateY: 180 }}
+                  animate={{ rotateY: flip3 ? 180 : 0 }}
+                  transition={{ duration: 0.7 }}
+                  className="back"
+                >
+                  <p className='text-lg px-3'>unconventional, the idea of code coming together excites me.
+                    you have an idea because it excites you and you want to see it realized.
+                    the process is challenging, but let's captialize on that and enjoy ourselves. </p>
+                </motion.div>
+              </button>
+            </motion.div>
+          </motion.div>
+
+
+
+
         </div>
 
-        <div className=" mx-auto space-y-4 p-4">
-          <h1 className=" text-8xl  text-center">
-            why front end development specifically?
-          </h1>
-          <p className='text-center'> you want me to be honest?</p>
-          <p className='text-center'> coding is weird. things don't work like how you want it to, languages are complicated, and sometimes, debugging takes longer than it needs to be. and its just. so. frustrating at times.</p>
-          <p className='text-center'> but its that exact reason why i do it. when it works, its like seeing all the pieces fit together like a puzzle. </p>
-          <p className='text-center'> i code because its an outlet that brings my ideas to life. its a long process at times, but once you understand the logic, connecting code together, and creating something, its rewarding. </p>
+        <div>
+          <section className="min-h-screen flex items-center justify-center">
+            <h1 className="text-8xl text-center ">
+              question is, why front end development specifically?
+            </h1>
+          </section>
+          {paragraphs.map((text, i) => (
+            <section
+              key={i}
+              ref={(el) => (sectionsRef.current[i] = el)}
+              className="min-h-screen flex items-center justify-center"
+            >
+              <p className="text-center text-6xl max-w-5xl leading-tight"></p>
+            </section>
+          ))}
         </div>
 
-        
+      </section >
 
-        <div className="max-w-[80%] mx-auto space-y-4 p-4">
-          <h1 className="sm:text-2xl md:text-3xl font-bold">
-           here's what i usually work with.
-          </h1>
-          <hr className="border-t-2 border-black  mt-2 mb-4" />
-          <p>javascript</p>
-          <p>html</p>
-          <p>tailwind css</p>
-          <p>react</p>
-          <p>javascript</p>
-          <p>figma</p>
+      <section ref={jose2Ref} id="jose2" >
+        <div className="py-10 mt-10">
+          <h1 className='text-8xl text-center'> the fun side.</h1>
         </div>
-
-      </section>
-
-      <section ref={jose2Ref} id="jao" >
-        <div className=" bg-beige-200 py-10 mt-10">
-              
-        <h1 className='text-8xl text-center'> the fun side.</h1>
-
-        </div>
-        <div className='grid grid-cols-3 mx-auto'>
+        <div className='grid grid-cols-3 mx-auto px-5'>
           <div className='col-span-3'>
-            <h1 className='text-center text-5xl'>Outside of work, I'm most likely doing 1 of 3 things.</h1>
+            <h1 className='text-center text-5xl'>outside of work, I'm most likely doing 1 of 3 things.</h1>
           </div>
 
           <div className='col-span-3'>
-            <h1>Listening and analyzing music</h1>
+            <h1>listening and analyzing music</h1>
             <p>I am a avid music lover and listener, and I listen to music a little too much.</p>
             <p>I'm always open to exploring new genres and listening to the latest releases.</p>
+            <p>send me your playlist sometime?</p>
+
           </div>
+
           <div className='col-span-3'>
-            <h1>Achievement Hunting in video games (or just gaming in general)</h1>
-            <p>I love getting virtual achievements that won't amount to anything in real life! wow!</p>
-            <p>If I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
+            <h1>achievement hunting in video games (or just gaming in general)</h1>
+            <p>i love getting virtual achievements that won't amount to anything in real life! wow!</p>
+            <p>if I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
+            <p>video games are an avid part of my life, tell me about a game you know and i *might* just know about it.</p>
           </div>
+
           <div className='col-span-3'>
             <h1>Lifting heavy objects and complain about the pain</h1>
-            <p>I like to lift weights.</p>
-            <p>That's it.</p>
-            <p>I like doing deadlifts.</p>
+            <p>i like to lift weights.</p>
+            <p>that's it.</p>
+            <p>i like doing deadlifts.</p>
+            <p>if you know good leg workouts tell me about it.</p>
           </div>
+
+          <div className='col-span-3'>
+            <h1 className='text-center text-5xl'>the other stuff.</h1>
+          </div>
+          <div className='col-span-3'>
+            <h1>i have a corgi</h1>
+            <p>his name is asher, and hes a very happy dog.</p>
+          </div>
+
+
         </div>
       </section>
     </>

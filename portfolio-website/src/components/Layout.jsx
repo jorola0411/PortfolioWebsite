@@ -36,7 +36,7 @@ function Layout() {
     <>
       <header>
         <nav className="py-4">
-          <div className="px-4 md:px-16 mx-auto flex justify-between items-center">
+          <div className="px-5 md:px-16 mx-auto flex justify-between items-center">
 
             <Link to="/">
               <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-12 md:w-20 xl:w-40  " />

@@ -1,64 +1,54 @@
-
 #root {
   --radial-gradient-background: 255, 255, 255;
-  --solid-color-background:  255, 255, 255;
+  --solid-color-background: 255, 255, 255;
   --overlay-color: 255, 255, 255;
-  background-color:#FFF8EF ;
+  background-color: #FFF8EF;
   min-height: 100%;
-  }
-  body {
-    background-color:#FFF8EF ;
 }
 
-h1, h2, h3 {
-    font-family: 'DM Sans', 'sans-serif';
+body {
+  background-color: #FFF8EF;
 }
 
-p, li, span {
-    font-family: 'Satoshi-Regular', 'sans-serif';
+h1,
+h2,
+h3 {
+  font-family: 'DM Sans', 'sans-serif';
 }
 
-.radial-gradient {
-    background: radial-gradient(
-            circle at 50% 0%,
-            rgba(var(--radial-gradient-background), 0.05) 0%,
-            transparent 60%
-        )
-        rgba(var(--solid-color-background));
-}
-
-.linear-mask {
-    mask-image: linear-gradient(
-        -75deg,
-        white calc(var(--x) + 20%),
-        transparent calc(var(--x) + 30%),
-        white calc(var(--x) + 100%)
-    );
-    -webkit-mask-image: linear-gradient(
-        -75deg,
-        white calc(var(--x) + 20%),
-        transparent calc(var(--x) + 30%),
-        white calc(var(--x) + 100%)
-    );
-}
-
-.linear-overlay {
-    background-image: linear-gradient(
-        -75deg,
-        rgba(var(--overlay-color), 0.1) calc(var(--x) + 20%),
-        rgba(var(--overlay-color), 0.5) calc(var(--x) + 25%),
-        rgba(var(--overlay-color), 0.1) calc(var(--x) + 100%)
-    );
-    mask:
-        linear-gradient(black, black) content-box,
-        linear-gradient(black, black);
-    -webkit-mask:
-        linear-gradient(black, black) content-box,
-        linear-gradient(black, black);
-    mask-composite: exclude;
-    -webkit-mask-composite: xor;
+p,
+li,
+span {
+  font-family: 'Satoshi-Regular', 'sans-serif';
 }
 
 
+
+
+
+.card {
+  width: 300px;
+  height: 250px;
+  margin: auto;
+  border-radius: 20px;
+  position: relative; 
+  perspective: 1000px;
+  background: #fff8ef;
+  overflow: hidden;
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 

@@ -121,12 +121,12 @@ export default function AboutMe() {
       <meta name="twitter:url" content="https://joseorola.ca/about" />
 
 
-      <section className="h-screen flex flex-col justify-center  sm:px-4">
+      <section className="h-screen flex flex-col justify-center">
         <div>
           <div className='mx-auto flex items-center justify-between max-w-[75%]'>
 
             <div className="relative group flex flex-col items-center">
-              <button className="sm:text-sm md:text-lg lg:text-8xl xl:text-3xl  cursor-pointer  transition duration-200 gap-10" onClick={() => scrollToSection(jose1Ref)}>
+              <button className="sm:text-lg md:text-lg lg:text-8xl xl:text-3xl  cursor-pointer  transition duration-200 gap-10" onClick={() => scrollToSection(jose1Ref)}>
                 Jose
               </button>
               <span className="absolute top-full w-60  lg:text-2xl mt-2 text-md  opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
@@ -135,7 +135,7 @@ export default function AboutMe() {
             </div>
             <h1 className='text-center lg:text-2xl'> I want to learn more about...</h1>
             <div className="relative group flex flex-col items-center">
-              <button className="sm:text-sm md:text-lg lg:text-8xl xl:text-3xl cursor-pointer transition duration-200" onClick={() => scrollToSection(jose2Ref)}>
+              <button className="sm:text-3xl md:text-lg lg:text-8xl xl:text-3xl cursor-pointer transition duration-200" onClick={() => scrollToSection(jose2Ref)}>
                 Jao
               </button>
               <span className=" lg:text-2xl absolute top-full w-60 mt-2 text-md  opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
@@ -158,17 +158,17 @@ export default function AboutMe() {
         id="jose"
         className="w-full bg-beige-200 py-10 mt-10"
       >
-        <div className='grid grid-cols-3 mx-auto gap-5 max-w-[80%]'>
-          <h1 className='text-8xl text-center col-span-3 mb-10'>hello, i'm jose.</h1>
-          <h2 className='text-4xl text-center col-span-3'> the tldr:</h2>
+        <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
+          <h1 className='sm:text-5xl lg:text-8xl text-center col-span-3 lg:mb-10'>hello, i'm jose.</h1>
+          <h2 className='sm:text-2xl lg:text-4xl text-center col-span-3'> the tldr:</h2>
 
-          <ul className='col-span-2 list-disc  pl-4 justify-center flex flex-col'>
-            <li className='lg:text-xl mb-5'>i'm approaching my final semester as a <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" className='hover:underline' target='_blank'>New Media Design & Web Development student at BCIT. </a></li>
+          <ul className='sm:col-span-3 lg:col-span-2 list-disc  pl-4 justify-center flex flex-col'>
+            <li className='lg:text-xl mb-5'>i'm approaching my final semester as a <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" className='hover:underline' target='_blank'>New Media Design & Web Development</a> student at BCIT.</li>
             <li className='lg:text-xl mb-5'>as a child, i loved interacting and discovering new things. newest pieces of technology, latest video game and music releases, new ways to digitally interact, my environment has shaped me into who i am now, and i'm here as a designer. </li>
             <li className='lg:text-xl mb-5'>understanding why things are the way they are have been a core component of myself since i was a child, and has let me adapt, make intuitive designs, and be mindful of the world around me.  </li>
             <li className='lg:text-xl mb-5'>i find joy in coding and designing because its a gateway for me to create something satisfying. everything comes together.</li>
           </ul>
-          <img src={baby} className='col-span-1' />
+          <img src={baby} className='sm:col-span-3 lg:col-span-1' />
 
 
 
@@ -178,15 +178,15 @@ export default function AboutMe() {
         <div className="lg:max-w-[75%] mx-auto  p-4">
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-6 mb-5">
-            <h1 className='text-center text-8xl col-span-5 mb-5'>here's what i (usually) work with.</h1>
+            <h1 className='text-center sm:text-5xl lg:text-8xl sm:col-span-3 lg:col-span-5 mb-5'>here's what i (usually) work with.</h1>
             {skills.map((skill) => (
-              <div>
+              <div className='sm:col-span-1'>
                 <img
                   src={skill.img}
                   alt={skill.name}
-                  className="w-32 h-32 justify-center items-center mx-auto"
+                  className="sm:w-12 sm:h-12 lg:w-32 lg:h-32 justify-center items-center mx-auto"
                 />
-                <p className="text-center mt-2  text-2xl">
+                <p className="text-center mt-2 sm:text-lg lg:text-2xl">
                   {skill.name}
                 </p>
               </div>
@@ -194,13 +194,13 @@ export default function AboutMe() {
           </div>
         </div>
 
-        <div className='grid grid-cols-3 mx-auto px-4 gap-5 lg:max-w-[75%]'>
-          <h1 className='text-center text-8xl col-span-3 mb-5'>values</h1>
+        <div className='grid sm:grid-cols-3  md:grid-cols-3 mx-auto px-4 gap-5 lg:max-w-[75%]'>
+          <h1 className='text-center sm:text-5xl lg:text-8xl col-span-3 mb-5'>values</h1>
 
           <motion.div
             transition={{ duration: 0.7 }}
             animate={{ rotateY: flip1 ? 0 : 180 }}
-
+            className="sm:col-span-3 md:col-span-1"
           >
 
             <motion.div
@@ -216,8 +216,8 @@ export default function AboutMe() {
                   className="front"
                 >
 
-                  <h1 className='text-center text-5xl mx-auto justify-center'>intuitiveness.</h1>
-                  <FontAwesomeIcon icon={faEye} className='text-5xl mt-5' />
+                  <h1 className='text-center sm:text-xl md:text-2xl lg:text-5xl mx-auto justify-center'>intuitiveness.</h1>
+                  <FontAwesomeIcon icon={faEye} className='sm:text-2xl md:text-4xl lg:text-5xl mt-5' />
                 </motion.div>
 
                 <motion.div
@@ -226,7 +226,7 @@ export default function AboutMe() {
                   transition={{ duration: 0.7 }}
                   className="back"
                 >
-                  <p className='text-lg'>
+                  <p className='sm:text-sm md:text-md sm:px-3 md:px-3 lg:text-lg'>
                     the best designs are the one you don't notice, correct?
                     i will make it my priority for *everything* to make sense.
                   </p>
@@ -238,6 +238,7 @@ export default function AboutMe() {
           <motion.div
             transition={{ duration: 0.7 }}
             animate={{ rotateY: flip2 ? 0 : 180 }}
+            className="sm:col-span-3 md:col-span-1"
           >
 
             <motion.div
@@ -251,8 +252,8 @@ export default function AboutMe() {
                   animate={{ rotateY: flip2 ? 0 : 180 }}
                   className="front"
                 >
-                  <h1 className='text-center text-5xl col-span-3'>adaptability.</h1>
-                  <FontAwesomeIcon icon={faBrain} className='text-5xl mt-5' />
+                  <h1 className='text-center sm:text-xl md:text-2xl lg:text-5xl col-span-3'>adaptability.</h1>
+                  <FontAwesomeIcon icon={faBrain} className='sm:text-2xl md:text-4xl mt-5' />
                 </motion.div>
                 <motion.div
                   initial={{ rotateY: 180 }}
@@ -261,7 +262,7 @@ export default function AboutMe() {
                   className="back"
                 >
 
-                  <p className='text-lg px-3'>
+                  <p className='sm:text-sm md:text-md sm:px-3 md:px-3 lg:text-lg px-3'>
                     i will always be willing to hear what you have in store for me, and i'll cater my approaches to your needs. a win win for the both of us.
                   </p>
                 </motion.div>
@@ -272,6 +273,7 @@ export default function AboutMe() {
           <motion.div
             transition={{ duration: 0.7 }}
             animate={{ rotateY: flip3 ? 0 : 180 }}
+            className="sm:col-span-3 md:col-span-1"
           >
 
             <motion.div
@@ -285,8 +287,8 @@ export default function AboutMe() {
                   animate={{ rotateY: flip3 ? 0 : 180 }}
                   className="front"
                 >
-                  <h1 className='text-center text-5xl col-span-3'>having fun.</h1>
-                  <FontAwesomeIcon icon={faFaceSmile} className='text-5xl mt-5' />
+                  <h1 className='text-center sm:text-xl md:text-2xl lg:text-5xl col-span-3'>having fun.</h1>
+                  <FontAwesomeIcon icon={faFaceSmile} className='sm:text-2xl md:text-4xl text-5xl mt-5' />
                 </motion.div>
                 <motion.div
                   initial={{ rotateY: 180 }}
@@ -294,7 +296,7 @@ export default function AboutMe() {
                   transition={{ duration: 0.7 }}
                   className="back"
                 >
-                  <p className='text-lg px-3'>unconventional, the idea of code coming together excites me.
+                  <p className='sm:text-sm md:text-sm sm:px-3 md:px-3 text-lg'>unconventional, the idea of code coming together excites me.
                     you have an idea because it excites you and you want to see it realized.
                     the process is challenging, but let's captialize on that and enjoy ourselves. </p>
                 </motion.div>
@@ -305,7 +307,7 @@ export default function AboutMe() {
 
         <div>
           <section className="min-h-screen flex items-center justify-center">
-            <h1 className="text-8xl text-center ">
+            <h1 className="sm:text-xl lg:text-8xl text-center sm:px-3">
               question is, why front end development specifically?
             </h1>
           </section>
@@ -315,7 +317,7 @@ export default function AboutMe() {
               ref={(el) => (sectionsRef.current[i] = el)}
               className="min-h-screen flex items-center justify-center"
             >
-              <p className="text-center text-6xl max-w-[80%] leading-tight"></p>
+              <p className="text-center sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl max-w-[80%] leading-tight sm:px-3"></p>
             </section>
           ))}
         </div>
@@ -324,63 +326,59 @@ export default function AboutMe() {
 
       <section ref={jose2Ref} id="jose2" >
         <div className="py-10 mt-10">
-          <h1 className='text-8xl text-center'> hello, im jao.</h1>
-          <h2 className='text-center text-5xl'>jao is a nickname ive had since childhood, the intials of my full name.</h2>
-          <h3 className='text-center text-5xl'>here's more random tidbits about me.</h3>
+          <h1 className='sm:text-5xl lg:text-8xl text-center'> hello, im jao.</h1>
+          <h2 className='text-center sm:text-3xl lg:text-5xl sm:px-3 sm:mt-5'>jao is a nickname ive had since childhood, the intials of my full name.</h2>
+          <h3 className='text-center sm:text-3xl lg:text-5xl sm:mt-5 '>here's more random tidbits about me.</h3>
         </div>
-        <div className='flex max-w-[70%] mx-auto items-center justify-center'>
-          <div className='grid grid-cols-6 mx-auto gap-5 '>
-            <div className="col-span-3 group relative">
-              <img src={favoritegame} className=' rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center rounded-lg">
-                <h3 className="text-4xl">if you like rpgs, play this game.</h3>
-              </div>
-            </div>
-            <div className='flex col-span-1 bg-beige-200 rounded-lg  shadow'>
-              <h1 className='flex text-4xl justify-center items-center px-3'>listening and analyzing music</h1>
+        <div className='flex sm:max-w-[90%] lg:max-w-[70%] mx-auto items-center justify-center'>
+          <div className='grid sm:grid-cols-3 lg:grid-cols-6 mx-auto gap-5 '>
+   
+            <div className='flex sm:col-span-3 lg:col-span-3 bg-beige-200 rounded-lg  shadow'>
+              <h1 className='flex sm:text-xl lg:text-4xl justify-center items-center sm:p-3'>listening and analyzing music</h1>
             </div>
 
-            <div className='col-span-2 bg-beige-200 rounded-lg  text-lg shadow flex flex-col justify-center items-center px-3'>
-              <p>I am a avid music lover and listener, and I listen to music a little too much.</p>
+            <div className='sm:col-span-3 lg:col-span-3 sm:p-3 bg-beige-200 rounded-lg text-lg shadow'>
+              <p className='sm:text-sm'>I am a avid music lover and listener, and I listen to music a little too much.</p>
               <br />
-              <p>I'm always open to exploring new genres and listening to the latest releases.</p>
+              <p className='sm:text-sm'>I'm always open to exploring new genres and listening to the latest releases.</p>
               <br />
-              <p>send me your playlist and lets chat about that one artist you don't understand the hype for.</p>
+              <p className='sm:text-sm'>send me your playlist and lets chat about that one artist you don't understand the hype for.</p>
             </div>
 
-            <div className='flex col-span-3 bg-beige-200 rounded-lg  shadow'>
-              <h1 className=' flex text-4xl justify-center items-center px-3'>achievement hunting in video games </h1>
+            <div className='flex sm:col-span-3 lg:col-span-3 bg-beige-200 rounded-lg  shadow'>
+              <h1 className='flex sm:text-xl lg:text-4xl justify-center items-center sm:p-3'>achievement hunting in video games </h1>
             </div>
-            <div className='bg-beige-200 col-span-3 rounded-lg text-lg shadow flex flex-col justify-center items-center px-3'>
-              <p>if I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
-              <p>video games are an avid part of my life,  tell me about a game you know and i *might* just know about it.</p>
+            <div className='bg-beige-200 sm:col-span-3 lg:col-span-3 rounded-lg text-lg shadow flex flex-col justify-center items-center sm:p-3'>
+              <p className='sm:text-sm'>if I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
+                <br/>
+              <p className='sm:text-sm'>video games are an avid part of my life,  tell me about a game you know and i *might* just know about it.</p>
             </div>
-            <div className="col-span-2 group relative w-full h-full">
+            <div className="sm:col-span-3 lg:col-span-2 group relative w-full h-full">
               <img src={asher} className='w-full h-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center rounded-lg">
-                <h3 className="text-4xl">thats my corgi, asher.</h3>
-                <p className="text-2xl">he will bark at any loud noise and pull sneak attacks on you.</p>
-                <p className="text-2xl">he's pretty cool.</p>
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 sm:p-3 flex flex-col justify-center items-center text-white text-center rounded-lg">
+                <h3 className="text-3xl">thats my corgi, asher.</h3>
+                <p className="text-xl">he will bark at any loud noise and pull sneak attacks on you.</p>
+                <p className="text-xl">he's pretty cool.</p>
               </div>
             </div>
-            <div className="col-span-2 group relative">
-              <img src={wrapped} className='"w-full  object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center rounded-lg">
-                <h3 className="text-4xl">do you know how much 120,509 minutes is?</h3>
-                <p className="text-2xl">there's 525600 minutes in 1 year.</p>
-                <p className="text-2xl">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
-                <p className="text-2xl">yikes.</p>
+            <div className="sm:col-span-3 lg:col-span-2 group relative overflow-hidden">
+              <img src={wrapped} className='"w-full object-cover rounded-lg' />
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 sm:p-3 flex flex-col justify-center items-center text-white text-center rounded-lg">
+                <h3 className="text-3xl">do you know how much 120,509 minutes is?</h3>
+                <p className="text-xl">there's 525600 minutes in 1 year.</p>
+                <p className="text-xl">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
+                <p className="text-xl">yikes.</p>
               </div>
             </div>
 
-            <div className="col-span-2 group relative">
+            <div className="sm:col-span-3 lg:col-span-2 group relative overflow-hidden">
               <img src={concert} className='"w-full  object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white text-center rounded-lg">
-                <h3 className="text-4xl">i like to go concerts! (pictured; NIKI)</h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 sm:p-3 flex flex-col justify-center items-center text-white text-center rounded-lg">
+                <h3 className="text-3xl">i like to go concerts! (pictured; NIKI)</h3>
                 <p className="text-xl">my goal for 2026 is to attend 1 concert per month if possible. as well as just going to more concerts in general.</p>
                 <p className="text-xl">some artists i've been to live are:</p>
 
-                <ul className='col-span-2 list-disc flex flex-col'>
+                <ul className='lg:col-span-2 list-disc flex flex-col'>
                   <li className='lg:text-xl'>kendrick lamar in 2017</li>
                   <li className='lg:text-xl'>backstreet boys in 2019</li>
                   <li className='lg:text-xl'> tyler, the creator in 2022</li>

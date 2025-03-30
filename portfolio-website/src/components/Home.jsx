@@ -69,7 +69,7 @@ function Home() {
 
         <div className="md:h-screen lg:h-screen container mx-auto sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center ">
           <h1 className="sm:text-2xl md:text-7xl lg:text-7xl xl:text-9xl mb-10" data-aos="fade-left">
-            your next <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> front-end developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span> {/*text-transparent is needed for the gradient to show up*/}
+            your next <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Front-End Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span> {/*text-transparent is needed for the gradient to show up*/}
           </h1>
 
           <p className="sm:text-xl md:text-4xl xl:text-5xl mt-5" data-aos="fade-right">

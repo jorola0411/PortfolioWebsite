@@ -67,7 +67,7 @@ function Home() {
 
       <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 ">
 
-        <div className="h-screen container mx-auto  sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center items-center">
+        <div className="md:h-screen lg:h-screen container mx-auto  sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center items-center">
           <h1 className="sm:text-2xl md:text-7xl lg:text-7xl xl:text-9xl mb-10" data-aos="fade-left">
             Need a<span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Front-end Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> UI Designer</span>? {/*text-transparent is needed for the gradient to show up*/}
           </h1>
@@ -76,7 +76,7 @@ function Home() {
             I'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose</span>, and I’m looking forward to be working with you.
           </p>
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+        <div className=" max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
 
           <FontAwesomeIcon icon={faChevronDown} className=" hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(featuredRef)} />
         </div>

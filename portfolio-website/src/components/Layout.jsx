@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
-import IonIcon from '@reacticons/ionicons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Outlet, Link } from "react-router-dom";
 import githublogo from '/src/assets/githublogo.png';
 import linkedinlogo from '/src/assets/linkedinlogo.png';
 import instagramlogo from '/src/assets/instagramlogo.png';
 import newlogo from '/src/assets/newlogo.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-// ..
-AOS.init();
+
 function Layout() {
 
   const [isOpen, setIsOpen] = useState(false); //is open is a state variable that tracks whether the hamburger menu was open or closed, usestate(false) means the menu is closed by default
@@ -39,36 +37,36 @@ function Layout() {
           <div className="px-5 md:px-16 mx-auto flex justify-between items-center">
 
             <Link to="/">
-              <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-12 md:w-20 xl:w-40  " />
+              <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-12 md:w-20 xl:w-40" />
             </Link>
 
 
-            <div className="hidden md:flex text-black  justify-between gap-10 font-dmsans" >
+            <div className="hidden md:flex justify-between gap-10 font-dmsans" >
 
               <div className="relative group cursor-pointer flex flex-col items-center">
                 <Link to="/about" className="text-lg md:text-2xl xl:text-5xl hover:underline">about</Link>
-                <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                <span className="absolute top-full w-60 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   curious about me? i'm flattered.
                 </span>
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-              <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">works</Link>
-              <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">works</Link>
+                <span className="absolute top-full w-60 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   the reason you're here.
                 </span>
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-              <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
-              <span className="absolute top-full w-60 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
+                <span className="absolute top-full w-60 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   me, in one page.
                 </span>
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-              <a href="https://jaotalksmusic.joseorola.ca/" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">?</a>
-              <span className="absolute top-full w-35 mt-2 text-md text-black opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
+                <a href="https://jaotalksmusic.joseorola.ca/" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">?</a>
+                <span className="absolute top-full w-35 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   tap in.
                 </span>
               </div>
@@ -76,63 +74,60 @@ function Layout() {
 
 
             <button
-              className="text-black md:hidden"
+              className={`md:hidden transition-transform duration-300  ${isOpen ? "rotate-180" : "rotate-0"}`}
               onClick={() => setIsOpen(!isOpen)}
             >
-              <IonIcon name="menu" style={{ fontSize: 24, color: 'black' }}></IonIcon>
+              <FontAwesomeIcon icon={isOpen ? faXmark : faBars} style={{ fontSize: 20, }} />
+
             </button>
           </div>
 
-
-          {isOpen && (
-            <div className="flex md:hidden justify-end mt-4">
-              <div className="text-black flex flex-col items-end text-right space-y-2 px-5 font-ubuntumono">
+            <div className={`flex md:hidden justify-end mt-4 transition-all duration-300 ease-in-out transform ${isOpen ? "opacity-100" : "opacity-0"}`}>
+              <div className="flex flex-col items-end text-right space-y-2 px-5 font-dmsans">
                 <Link
                   to="/about"
-                  className="text-lg hover:underline"
+                  className="text-lg"
                   onClick={toggleMenu}
                 >
                   about.
                 </Link>
                 <Link
                   to="/projects"
-                  className="text-lg hover:underline"
+                  className="text-lg"
                   onClick={toggleMenu}
                 >
                   works.
                 </Link>
                 <a
                   href="/newresume.pdf"
-                  className="text-lg hover:underline"
+                  className="text-lg"
                   onClick={toggleMenu}
                 >
                   resume.
                 </a>
-                <a 
-                href="https://jaotalksmusic.joseorola.ca/"
-                className="text-lg hover:underline"
-                onClick={toggleMenu}
+                <a
+                  href="https://jaotalksmusic.joseorola.ca/"
+                  className="text-lg"
+                  onClick={toggleMenu}
                 >
                   music.
                 </a>
               </div>
             </div>
-          )}
+ 
         </nav>
       </header>
-
       <main>
-
         <Outlet />
       </main>
 
 
       <footer>
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black p-5 mt-5 font-ubuntumono">
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black p-5">
           <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
 
-            <p className="text-md md:text-md lg:text-lg xl:text-3xl text-black md:text-left">just say hi.</p>
-            <p className="text-md md:text-md lg:text-lg xl:text-3xl text-black md:text-left"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
+            <p className="text-md md:text-md lg:text-lg xl:text-3xl md:text-left">just say hi.</p>
+            <p className="text-md md:text-md lg:text-lg xl:text-3xl md:text-left"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>
@@ -151,7 +146,7 @@ function Layout() {
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:items-center sm:text-center md:items-end'>
-            <p className="sm:text-sm md:text-md lg:text-lg xl:text-3xl ">coded with react by yours truly.</p>
+            <p className="sm:text-sm md:text-md lg:text-lg xl:text-3xl">coded with react by yours truly.</p>
             <p className="sm:text-sm md:text-md lg:text-lg xl:text-3xl md:text-right">most likely listening to the latest kpop, rnb, and rap releases.</p>
           </div>
         </div>

@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 import baby from '../assets/baby.jpg'
 import wrapped from '../assets/wrapped.jpg'
-import favoritegame from '../assets/favoritegame.png'
 import asher from '../assets/asher.jpg'
 import concert from '../assets/concert.jpg'
 import html from '../assets/HTML5.svg'
@@ -31,7 +30,6 @@ export default function AboutMe() {
   const [flip3, setFlip3] = useState(true);
   const sectionsRef = useRef([]);
   const paragraphs = [
-    "you want me to be honest?",
     "coding is weird. bugs happen, languages are complicated, and sometimes, debugging takes longer than it needs to be. and it's frustrating at times.",
     "but it's that exact reason why i do it. when it works, it's like seeing all the pieces fit together like a puzzle.",
     "i code because it's an outlet that brings my ideas to life. it's a long process at times, but understanding the logic, connecting code together, and creating something, it's rewarding.",
@@ -121,41 +119,10 @@ export default function AboutMe() {
       <meta name="twitter:url" content="https://joseorola.ca/about" />
 
 
-      <section className="h-screen flex flex-col justify-center">
-        <div>
-          <div className='mx-auto flex items-center justify-between max-w-[75%]'>
-
-            <div className="relative group flex flex-col items-center">
-              <button className="sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl  cursor-pointer  transition duration-200 gap-10" onClick={() => scrollToSection(jose1Ref)}>
-                Jose
-              </button>
-              <span className="absolute top-full w-60 lg:text-2xl mt-2 sm:text-sm sm:w-30 opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
-                the one you want to hire.
-              </span>
-            </div>
-            <h1 className='text-center sm:text-md md:text-xl lg:text-2xl xl:text-6xl'> I want to learn more about...</h1>
-            <div className="relative group flex flex-col items-center">
-              <button className="sm:text-3xl md:text-4xl lg:text-8xl xl:text-9xl cursor-pointer transition duration-200" onClick={() => scrollToSection(jose2Ref)}>
-                Jao
-              </button>
-              <span className=" sm:text-sm lg:text-2xl absolute top-full sm:w-30 lg:w-60 mt-2 opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
-                the one outside of work.
-              </span>
-            </div>
-          </div>
-
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
-
-          <FontAwesomeIcon icon={faChevronDown} className=" hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(jose1Ref)} />
-        </div>
-      </section>
-
+      
+      
 
       <section
-        ref={jose1Ref}
-        id="jose"
         className="w-full bg-beige-200 py-10 mt-10"
       >
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>

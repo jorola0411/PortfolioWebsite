@@ -33,7 +33,7 @@ function Project() {
       <meta name="twitter:url" content="https://joseorola.ca/" />
 
       <div className="items-center justify-center">
-        <div className="w-full md:mt-10 lg:py-5 lg:mt-20 lg:mb-15">
+        <div className="w-full md:mt-10 lg:mt-20 ">
           <div className=" mx-auto space-y-4 ">
             <h1 className="sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold text-center" data-aos="fade-down">
               WORKS
@@ -84,19 +84,19 @@ function Project() {
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5'>Virtually try on clothes and browse in styles, a streetwear store app.</p>
               </div>
 
-              <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 sm:order-5 md:order-6 lg:order-6 xl:order-6 xl:mb-0">
+              <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 sm:order-5 md:order-6 lg:order-6 xl:order-6 ">
                 <Link to="styles" >
                   <img src={featuredproject2} alt="Styles project" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
                 </Link>
               </div>
 
-              <div className="sm:col-span-4 md:col-span-2 gap-4 sm:mb-5 md:mb-10 sm:order-7 md:order-7 lg:order-7 xl:order-7">
+              <div className="sm:col-span-4 md:col-span-2 gap-4  sm:order-7 md:order-7 lg:order-7 xl:order-7">
                 <Link to="monster">
                   <img src={featuredproject4} className="xl:w-full xl:h-auto" alt="Monster Hunter API project" description="CTA that leads the user to one of my projects, Monster Hunter API, a front-end development project." />
                 </Link>
               </div>
 
-              <div className=" text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center md:mb-10 sm:order-8 md:order-8 lg:order-8 xl:order-8">
+              <div className=" text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-8 md:order-8 lg:order-8 xl:order-8">
                 <h1 className='sm:text-xl md:text-2xl lg:text-3xl xl:text-7xl sm:mb-3 md:mb-3 lg:mb-5'>Monster Hunter API project</h1>
                 <div className='flex justify-center sm:gap-3 sm:mb-3 md:gap-10 md:mb-3 lg:mb-5'>
                   <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>JAVASCRIPT</p>

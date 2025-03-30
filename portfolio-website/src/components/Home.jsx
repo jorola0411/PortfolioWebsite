@@ -65,11 +65,11 @@ function Home() {
 
 
 
-      <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 ">
+      <div className=" grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 ">
 
-        <div className="md:h-screen lg:h-screen container mx-auto  sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center items-center">
+        <div className="md:h-screen lg:h-screen container mx-auto sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center ">
           <h1 className="sm:text-2xl md:text-7xl lg:text-7xl xl:text-9xl mb-10" data-aos="fade-left">
-            Need a<span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Front-end Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> UI Designer</span>? {/*text-transparent is needed for the gradient to show up*/}
+            your next <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> front-end developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span> {/*text-transparent is needed for the gradient to show up*/}
           </h1>
 
           <p className="sm:text-xl md:text-4xl xl:text-5xl mt-5" data-aos="fade-right">
@@ -85,39 +85,40 @@ function Home() {
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10">
         <div className="mx-auto space-y-2 mt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 mb-10">
           <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center" ref={featuredRef}
-            id="feature">Featured Works</h2>
+            id="feature">Featured Work</h2>
           <hr className="border-t-2 border-black mt-2 " />
         </div>
 
 
         <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 gap-4">
           <Link to="projects/monster">
-            <img src={featuredproject4} className="xl:w-full xl:h-auto" alt="Monster Hunter API project" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
+            <img src={featuredproject4} className="xl:w-full xl:h-auto" alt="Monster Hunter API project" data-aos="fade-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
           </Link>
         </div>
 
-        <div className="p-5 text-center sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-center mb-10">
-          <h1 className='sm:text-xl md:text-3xl lg:text-3xl xl:text-6xl mb-5'>Monster Hunter API project</h1>
-          <div className='flex justify-center gap-10 mb-5 '>
-            <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black '>JAVASCRIPT</p>
-            <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black '>REACT</p>
-            <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black '>API</p>
+        <div className="md:pl-3 lg:p-5 sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-center" data-aos="fade-right">
+          <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5'>Monster Hunter API project</h1>
+          <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5'>Search and favorite items using the Monster Hunter API.</p>
+          <div className='flex gap-5 sm:mb-5'>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>JAVASCRIPT</p>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>REACT</p>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>API</p>
           </div>
-          <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl'>Search and favorite items using the Monster Hunter API.</p>
+  
         </div>
 
-        <div className="p-5 text-center sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-1">
-          <h1 className="sm:text-xl md:text-3xl lg:text-3xl xl:text-6xl mb-5">styles by jao</h1>
-          <div className='flex justify-center gap-10 mb-5'>
-            <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>UI</p>
-            <p className='sm:text-sm md:text-sm lg:text-lg xl:text-3xl sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-4 lg:py-2 border border-black'>UX</p>
+        <div className="md:pr-3 lg:p-5 sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-1" data-aos="fade-left">
+          <h1 className="sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5 sm:text-left md:text-right lg:text-right">styles by jao</h1>
+          <p className="sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5 sm:text-left md:text-right lg:text-right">Virtually try on clothes and browse in styles, a streetwear store app.</p>
+          <div className='flex gap-5 sm:mb-5 sm:justify-start md:justify-end lg:justify-end'>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>UI</p>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black '>UX</p>
           </div>
-          <p className="sm:text-sm md:text-sm lg:text-lg xl:text-4xl mt-2">Virtually try on clothes and browse in styles, a streetwear store app.</p>
         </div>
 
         <div className="sm:col-span-4 md:col-span-2 gap-4 sm:order-1 md:order-2">
           <Link to="projects/styles" className="relative group">
-            <img src={featuredproject2} className="xl:w-full xl:h-auto" alt="Styles" data-aos="flip-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
+            <img src={featuredproject2} className="xl:w-full xl:h-auto" alt="Styles" data-aos="fade-left" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
           </Link>
         </div>
       </div>

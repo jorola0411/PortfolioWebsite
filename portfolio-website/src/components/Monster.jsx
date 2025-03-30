@@ -324,7 +324,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
           <button className="px-4 py-2 rounded-sm hover:bg-gray-400 transition duration-200" onClick={() => setCategory("locations")}>Location</button>
         </div>
 
-        <input type="text" className="w-full md:w-auto px-4 py-2 rounded-sm text-black" placeholder={\`Search for \${category}\`} value={searchTerm} onChange={(event) => { setSearchTerm(event.target.value) }} />
+        <input type="text" className="w-full md:w-auto px-4 py-2 rounded-sm" placeholder={\`Search for \${category}\`} value={searchTerm} onChange={(event) => { setSearchTerm(event.target.value) }} />
       </header>
         `;
 

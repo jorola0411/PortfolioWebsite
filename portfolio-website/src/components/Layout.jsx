@@ -33,7 +33,7 @@ function Layout() {
   return (
     <>
       <header>
-        <nav className="py-4">
+        <nav className="py-5">
           <div className="px-5 md:px-16 mx-auto flex justify-between items-center">
 
             <Link to="/">
@@ -82,7 +82,7 @@ function Layout() {
             </button>
           </div>
 
-            <div className={`flex md:hidden justify-end mt-4 transition-all duration-300 ease-in-out transform ${isOpen ? "opacity-100" : "opacity-0"}`}>
+            <div className={`flex md:hidden justify-end  transition-all duration-300 ease-in-out transform ${isOpen ? "opacity-100" : "opacity-0"}`}>
               <div className="flex flex-col items-end text-right space-y-2 px-5 font-dmsans">
                 <Link
                   to="/about"

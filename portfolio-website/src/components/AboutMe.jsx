@@ -123,7 +123,7 @@ export default function AboutMe() {
       
 
       <section
-        className="w-full bg-beige-200 py-10 mt-10"
+        className="w-full bg-beige-200 py-10 lg:mt-15"
       >
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
           <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'>hello, i'm jose.</h1>
@@ -290,9 +290,8 @@ export default function AboutMe() {
 
       <section ref={jose2Ref} id="jose2" >
         <div className="py-10 mt-10">
-          <h1 className='sm:text-5xl lg:text-8xl text-center'> hello, im jao.</h1>
-          <h2 className='text-center sm:text-3xl lg:text-5xl sm:px-3 sm:mt-5'>jao is a nickname ive had since childhood, the intials of my full name.</h2>
-          <h3 className='text-center sm:text-3xl lg:text-5xl sm:mt-5 '>here's more random tidbits about me.</h3>
+          <h1 className='sm:text-5xl lg:text-8xl text-center'> here's me outside of work.</h1>
+
         </div>
         <div className='flex sm:max-w-[90%] lg:max-w-[75%] mx-auto items-center justify-center'>
           <div className='grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 mx-auto gap-5 '>
@@ -301,7 +300,7 @@ export default function AboutMe() {
 
             <div className='sm:col-span-3  md:col-span-3 lg:col-span-3 sm:p-3 bg-beige-200 rounded-lg text-lg shadow'>
             <h1 className='flex sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>listening and analyzing music</h1>
-              <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>I am a avid music lover and listener, and I listen to music a little too much.</p>
+              <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>I am an avid music lover and listener, and I listen to music a little too much.</p>
               <br />
               <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>I'm always open to exploring new genres and listening to the latest releases.</p>
               <br />
@@ -312,11 +311,11 @@ export default function AboutMe() {
             <h1 className='sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>relaxing in video games </h1>
               <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>if I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
                 <br/>
-              <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>video games are an avid part of my life,  tell me about a game you know and i *might* just know about it.</p>
+              <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>video games are an avid part of my life, so let's talk about our favorite games together.</p>
             </div>
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative w-full h-full">
               <img src={asher} className='w-full h-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 p-3 flex flex-col justify-center items-center text-white rounded-lg">
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 p-3 flex flex-col justify-center items-center text-white rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">thats my corgi, asher.</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl sm:mb-3">he will bark at any loud noise and pull sneak attacks on you.</p>
                 <p className="sm:text-lg  md:text-sm lg:text-xl sm:mb-3">he'll try his best to distract me from my work as much as possible.</p>
@@ -324,7 +323,7 @@ export default function AboutMe() {
             </div>
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
               <img src={wrapped} className='"w-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 sm:p-3 flex flex-col justify-center items-center text-white text-center rounded-lg">
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 flex flex-col justify-center items-center text-white text-center rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">do you know how much 120,509 minutes is?</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl sm:mb-3">there's 525600 minutes in 1 year.</p>
                 <p className="sm:text-lg md:text-sm  lg:text-xl sm:mb-3">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
@@ -333,7 +332,7 @@ export default function AboutMe() {
 
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
               <img src={concert} className='"w-full  object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 sm:p-3 lg:p-3 flex flex-col justify-center items-center text-white rounded-lg">
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 lg:p-3 flex flex-col justify-center items-center text-white rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl text-center  sm:mb-3">i like to go concerts! (pictured; NIKI)</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl text-center  sm:mb-3">my goal for 2026 is to attend 1 concert per month if possible. as well as just going to more concerts in general.</p>
                 <p className="sm:text-lg md:text-sm  lg:text-xl text-center ">some artists i've been to live are:</p>

@@ -65,9 +65,9 @@ function Home() {
 
 
 
-      <div className=" grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 ">
+      <div className=" grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
 
-        <div className="md:h-screen lg:h-screen container mx-auto sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center ">
+        <div className="px-15 md:h-screen lg:h-screen container mx-auto sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center ">
           <h1 className="sm:text-2xl md:text-7xl lg:text-7xl xl:text-9xl mb-10" data-aos="fade-left">
             your next <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Front-End Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span> {/*text-transparent is needed for the gradient to show up*/}
           </h1>

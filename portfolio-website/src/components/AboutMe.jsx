@@ -1,9 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { TextPlugin } from "gsap/TextPlugin";
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faEye, faBrain, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
+import {faEye, faBrain, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
 import baby from '../assets/baby.jpg'
@@ -16,46 +13,11 @@ import js from '../assets/jslogo.svg'
 import reactlogo from '../assets/React-icon.svg'
 import figma from '../assets/Figma-logo.svg'
 
-
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
-
-
-
 export default function AboutMe() {
 
-  const jose1Ref = useRef(null);
-  const jose2Ref = useRef(null);
   const [flip1, setFlip1] = useState(true);
   const [flip2, setFlip2] = useState(true);
   const [flip3, setFlip3] = useState(true);
-  const sectionsRef = useRef([]);
-  const paragraphs = [
-    "coding is weird. bugs happen, languages are complicated, and sometimes, debugging takes longer than it needs to be. and it's frustrating at times.",
-    "but it's that exact reason why i do it. when it works, it's like seeing all the pieces fit together like a puzzle.",
-    "i code because it's an outlet that brings my ideas to life. it's a long process at times, but understanding the logic, connecting code together, and creating something, it's rewarding.",
-  ];
-
-  useEffect(() => {
-    sectionsRef.current.forEach((el, index) => {
-      gsap.fromTo(
-        el.querySelector("p"),
-        { opacity: 0, y: 50, text: "" },
-        {
-          opacity: 1,
-          y: 0,
-          text: paragraphs[index],
-          ease: "power2.out",
-          duration: 1.5,
-          scrollTrigger: {
-            trigger: el,
-            start: "top center",
-
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    });
-  }, []);
 
   const skills = [
 
@@ -65,35 +27,6 @@ export default function AboutMe() {
     { name: "React", img: reactlogo },
     { name: "Figma", img: figma },
   ];
-
-  const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-
-  useEffect(() => {
-    gsap.from(jose1Ref.current, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: jose1Ref.current,
-        start: "top 80%",
-      },
-    });
-
-    gsap.from(jose2Ref.current, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: jose2Ref.current,
-        start: "top 80%",
-      },
-    });
-  }, []);
-
-
 
   return (
     <>
@@ -269,26 +202,10 @@ export default function AboutMe() {
           </motion.div>
         </div>
 
-        <div>
-          <section className="min-h-screen flex items-center justify-center">
-            <h1 className="sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl text-center sm:px-3">
-              question is, why front end development specifically?
-            </h1>
-          </section>
-          {paragraphs.map((text, i) => (
-            <section
-              key={i}
-              ref={(el) => (sectionsRef.current[i] = el)}
-              className="min-h-screen flex items-center justify-center"
-            >
-              <p className="text-center sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl max-w-[80%] leading-tight sm:px-3"></p>
-            </section>
-          ))}
-        </div>
-
+        
       </section >
 
-      <section ref={jose2Ref} id="jose2" >
+      <section>
         <div className="py-10 mt-10">
           <h1 className='sm:text-5xl lg:text-8xl text-center'> here's me outside of work.</h1>
 

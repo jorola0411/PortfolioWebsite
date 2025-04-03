@@ -100,11 +100,13 @@ function Home() {
           <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5'>Monster Hunter API project</h1>
           <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5'>Search and favorite items using the Monster Hunter API.</p>
           <div className='flex gap-5 sm:mb-5'>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>HTML</p>
+            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>CSS</p>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>JAVASCRIPT</p>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>REACT</p>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>API</p>
           </div>
-  
+
         </div>
 
         <div className="md:pr-3 lg:p-5 sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-1" data-aos="fade-left">

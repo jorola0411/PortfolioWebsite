@@ -59,11 +59,11 @@ function Lelem() {
           <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
           <div className='flex gap-4 justify-center mb-3'>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/projectmanagement.git" target="_blank">
               GitHub
             </a></button>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-200"> <a href="https://lelemnaturalpark.joseorola.ca/" target="_blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200"> <a href="https://lelemnaturalpark.joseorola.ca/" target="_blank">
               Live Website
             </a></button>
 

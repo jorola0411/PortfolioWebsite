@@ -63,14 +63,9 @@ function Layout() {
                   me, in one page.
                 </span>
               </div>
-
-              <div className="relative group cursor-pointer flex flex-col items-center">
-                <a href="https://jaotalksmusic.joseorola.ca/" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">?</a>
-                <span className="absolute top-full w-35 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
-                  tap in.
-                </span>
               </div>
-            </div>
+
+          
 
 
             <button
@@ -105,13 +100,7 @@ function Layout() {
                 >
                   resume.
                 </a>
-                <a
-                  href="https://jaotalksmusic.joseorola.ca/"
-                  className="text-lg"
-                  onClick={toggleMenu}
-                >
-                  music.
-                </a>
+               
               </div>
             </div>
  

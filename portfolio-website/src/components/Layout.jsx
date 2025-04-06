@@ -34,7 +34,7 @@ function Layout() {
     <>
       <header>
         <nav className="py-5">
-          <div className="px-5 md:px-16 mx-auto flex justify-between items-center">
+          <div className="md:px-16 mx-auto flex justify-between items-center">
 
             <Link to="/">
               <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-12 md:w-20 xl:w-40" />
@@ -112,31 +112,31 @@ function Layout() {
 
 
       <footer>
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black p-5">
-          <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-center'>
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 mx-auto justify-between items-end border-t border-black px-16 py-10">
+          <div className='col-span-1 sm:col-span-4 md:col-span-2 sm:text-center'>
 
-            <p className="text-md md:text-md lg:text-lg xl:text-3xl md:text-left">just say hi.</p>
-            <p className="text-md md:text-md lg:text-lg xl:text-3xl md:text-left"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
+            <p className="text-md md:text-md lg:text-2xl xl:text-3xl md:text-left">just say hi.</p>
+            <p className="text-md md:text-md lg:text-2xl xl:text-3xl md:text-left hover:underline"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>
 
-            <div className="flex space-x-1 xl:space-x-5 justify-center">
+            <div className="flex lg:space-x-5 justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
-                <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-18 xl:h-18" />
+                <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18" />
               </a>
               <a href="https://linkedin.com/in/jose-orola" target="_blank">
-                <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-18 xl:h-18" />
+                <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12  xl:w-18 xl:h-18" />
               </a>
               <a href="https://www.instagram.com/jose.orola/" target="_blank">
-                <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram." className="sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-18 xl:h-18" />
+                <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18" />
               </a>
             </div>
           </div>
 
-          <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:items-center sm:text-center md:items-end'>
-            <p className="sm:text-sm md:text-md lg:text-lg xl:text-3xl">coded with react by yours truly.</p>
-            <p className="sm:text-sm md:text-md lg:text-lg xl:text-3xl md:text-right">most likely listening to the latest kpop, rnb, and rap releases.</p>
+          <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-center sm:text-center md:items-end'>
+            <p className="sm:text-sm md:text-md lg:text-2xl xl:text-3xl">coded with react by yours truly.</p>
+            <p className="sm:text-sm md:text-md lg:text-2xl xl:text-3xl md:text-right">most likely listening to the latest kpop, rnb, and rap releases.</p>
           </div>
         </div>
       </footer>

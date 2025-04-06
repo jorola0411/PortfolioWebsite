@@ -65,7 +65,7 @@ function Home() {
 
 
 
-      <div className=" grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
+      <div className=" grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 ">
 
         <div className="px-15 md:h-screen lg:h-screen container mx-auto sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center ">
           <h1 className="sm:text-2xl md:text-7xl lg:text-7xl xl:text-9xl mb-10" data-aos="fade-left">
@@ -73,7 +73,7 @@ function Home() {
           </h1>
 
           <p className="sm:text-xl md:text-4xl xl:text-5xl mt-5" data-aos="fade-right">
-            I'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose</span>, and I’m looking forward to be working with you.
+            i'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose</span>, and i’m looking forward to be working with you.
           </p>
         </div>
         <div className=" max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
@@ -82,7 +82,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10 overflow-x-hidden">
         <div className="mx-auto space-y-2 mt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 mb-10">
           <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center" ref={featuredRef}
             id="feature">Featured Work</h2>
@@ -97,8 +97,8 @@ function Home() {
         </div>
 
         <div className="md:pl-3 lg:p-5 sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-center" data-aos="fade-right">
-          <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5'>Monster Hunter API project</h1>
-          <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5'>Search and favorite items using the Monster Hunter API.</p>
+          <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5'>Monster Hunter World database</h1>
+          <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5'>search and favorite items using the Monster Hunter API.</p>
           <div className='flex gap-5 sm:mb-5'>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>HTML</p>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>CSS</p>
@@ -111,7 +111,7 @@ function Home() {
 
         <div className="md:pr-3 lg:p-5 sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-1" data-aos="fade-left">
           <h1 className="sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5 sm:text-left md:text-right lg:text-right">styles by jao</h1>
-          <p className="sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5 sm:text-left md:text-right lg:text-right">Virtually try on clothes and browse in styles, a streetwear store app.</p>
+          <p className="sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5 sm:text-left md:text-right lg:text-right">virtually try on clothes and browse in styles, a streetwear store app.</p>
           <div className='flex gap-5 sm:mb-5 sm:justify-start md:justify-end lg:justify-end'>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>UI</p>
             <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black '>UX</p>

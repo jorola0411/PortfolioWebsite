@@ -351,9 +351,9 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
-                            <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
 
-                            <img src={reactlogo} alt="react.js logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={reactlogo} alt="react.js logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
                         </div>
                     </div>
 
@@ -372,29 +372,32 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <pre className='max-h-72 overflow-y-auto  md:text-md lg:text-md xl:text-2xl'>
-                        <code ref={codeRef} className="language-javascript">
-                            {favoriteCode}
-                        </code>
-                    </pre>
+            <section className='p-10 bg-beige-200'>
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <pre className='max-h-72 overflow-y-auto  md:text-md lg:text-md xl:text-2xl'>
+                            <code ref={codeRef} className="language-javascript">
+                                {favoriteCode}
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>favoriting Items & local storage</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4" />
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>multiple const variables are created, notably the category and fav item const.</p>
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>using useEffect and if statements in the function “Favorites,” the code fetches the API, and checks which item from that API has been favorited, resulting in a list of favorited items.</p>
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>on the favorites page, there is an option to remove the item from the favorites, and the const savedFavs retrieves the local storage which holds the favorited items.</p>
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>through a filter, and the const updatedFavs, it checks if the id and the item id are not the same. If true (if they are not the same,), remove the item.</p>
+
+                    </div>
                 </div>
+            </section>
 
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Favoriting Items & local Storage</h2>
-                    <hr className="border-t-2 border-black mt-2 mb-4" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Multiple const variables are created, notably the category and fav item const.</p>
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Using useEffect and if statements in the function “Favorites,” the code fetches the API, and checks which item from that API has been favorited, resulting in a list of favorited items.</p>
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>On the favorites page, there is an option to remove the item from the favorites, and the const savedFavs retrieves the local storage which holds the favorited items.</p>
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Through a filter, and the const updatedFavs, it checks if the id and the item id are not the same. If true (if they are not the same,), remove the item.</p>
-
-                </div>
-            </div>
-
+            <section className='p-10 bg-beige-200 mt-10'>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
@@ -405,16 +408,18 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                 </div>
 
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Detail page & switch statement</h2>
+                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>detail page & switch statement</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>With amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>with amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
 
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Each category has different details, and I used a switch statement to differentiate the details within each category.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>each category has different details, and I used a switch statement to differentiate the details within each category.</p>
 
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Each category has a name, the monster category has a id of “monster”. When the user changes the category to monster,  the switch statement will use the matching case clause to use the details unique to the “monster” category.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>each category has a name, the monster category has a id of “monster”. When the user changes the category to monster,  the switch statement will use the matching case clause to use the details unique to the “monster” category.</p>
                 </div>
             </div>
+            </section>
 
+            <section className='p-10 bg-beige-200 mt-10'>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
@@ -424,15 +429,16 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                     </pre>
                 </div>
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Search Bar</h2>
+                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>search bar</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
 
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>For this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>for this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>
 
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>The search bar filters the results no matter what; if the user types just the letter “a”, the API. will show results that contain the letter a, or as specific as “pot”, which would pull up results that contain “pot”.</p>
+                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the search bar filters the results no matter what; if the user types just the letter “a”, the API. will show results that contain the letter a, or as specific as “pot”, which would pull up results that contain “pot”.</p>
 
                 </div>
             </div>
+            </section>
         </div>
     )
 }

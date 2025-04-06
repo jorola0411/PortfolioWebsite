@@ -72,7 +72,7 @@ function Lelem() {
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
 
             <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
+              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <div className="relative flex justify-center items-center ">
                 <img src={html} alt="html logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
@@ -82,15 +82,15 @@ function Lelem() {
             </div>
 
             <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
+              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-              <p className="text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5"> This project involved creating a website for a fictional
+              <p className="text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5"> this project involved creating a website for a fictional
                 organization for a client, and to showcase proper usage of the
-                Agile project management methodology.</p>
+                agile project management methodology.</p>
             </div>
 
             <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
+              <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
               <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <p className='text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl'>28 hours</p>
             </div>
@@ -102,7 +102,7 @@ function Lelem() {
 
         <div className="sm:col-span-5 md:col-span-5 lg:grid-cols-5 xl:grid-cols-5 space-y-6 mb-10">
           <div className="bg-beige-100 shadow-lg p-6">
-            <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold">Team and Roles</h1>
+            <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold">team and roles</h1>
             <hr className="border-t-2 border-black mt-2 mb-4" />
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-6">
@@ -153,23 +153,23 @@ function Lelem() {
           </div>
 
           <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1 bg-beige-100 shadow-lg p-3'>
-            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Role duties</h2>
+            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>role duties</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
             <span className="sm:text-sm md:text-lg lg:text-xl xl:text-2xl font-semibold">
-              Along with another front end developer, we were tasked with:
+              along with another front end developer, we were tasked with:
             </span>
             <ul className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl list-disc list-inside pl-4">
               <li>
-                Designing the UI along with medium fidelity wireframes and
+                designing the UI along with medium fidelity wireframes and
                 sitemap
               </li>
-              <li>Coding of fade-in animations using keyframes</li>
+              <li>coding of fade-in animations using keyframes</li>
               <li>
-                Basic javascript for the slide show and donate and ticket
+                basic javascript for the slide show and donate and ticket
                 button functionality
               </li>
               <li>
-                Collaborating with the graphic designers to align with
+                collaborating with the graphic designers to align with
                 branding and styling
               </li>
             </ul>
@@ -180,9 +180,9 @@ function Lelem() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
           <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1 bg-beige-100 shadow-lg p-3 sm:order-2 md:order-2 lg:order-1'>
-            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Agile Process</h2>
+            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>agile process</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
-            <p className='mb-5 sm:text-sm md:text-lg lg:text-lg xl:text-2xl'>This was the first time using the methology, and it proved
+            <p className='mb-5 sm:text-sm md:text-lg lg:text-lg xl:text-2xl'>this was the first time using the methology, and it proved
               useful for everyone in the team, I felt that having weekly goals
               and deadlines meant I could spread my work evenly and focus on
               smaller goals while making good progress on the project.</p>
@@ -197,54 +197,54 @@ function Lelem() {
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
 
           <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1 bg-beige-100 shadow-lg p-3'>
-            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Team Dynamic</h2>
+            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>team dynamic</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
             <span className="ssm:text-sm md:text-lg lg:text-lg xl:text-2xl">
-              Working with group members was a unique experience as it changed
+              working with group members was a unique experience as it changed
               the way how i approached coding:
             </span>
             <ul className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl list-disc list-inside pl-4">
               <li>
-                Working with the graphic designers and see how they would
+                working with the graphic designers and see how they would
                 approach building a website
               </li>
               <li>
-                I would constantly ask for feedback on the UI design from the
+                i would constantly ask for feedback on the UI design from the
                 designers and adjust accordingly
               </li>
               <li>
-                I had to code in respect of my own skill level and the other
+                i had to code in respect of my own skill level and the other
                 members skill level
               </li>
             </ul>
           </div>
 
           <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1 bg-beige-100 shadow-lg p-3'>
-            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Challenges</h2>
+            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>challenges</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
             <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3">
               Some challenges I had during this project was the coding.</p>
-            <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3"> In combination of some last minute changes or requests from the design team, I felt a bigger weight on my shoulders just to fulfill the designers requests.   </p>
+            <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3"> in combination of some last minute changes or requests from the design team, I felt a bigger weight on my shoulders just to fulfill the designers requests.   </p>
 
-            <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3"> It was also hard because this was the first project where I coded with another person, and I had to get adjusted to how they code and communicate with them on who should do what,
+            <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3"> it was also hard because this was the first project where I coded with another person, and I had to get adjusted to how they code and communicate with them on who should do what,
               as well as getting the code to work before the next sprints started.    </p>
 
-            <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3"> I also had to make sure if a certain section was okay by the design team or my fellow coder. Communication was nescessary.
+            <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3"> i also had to make sure if a certain section was okay by the design team or my fellow coder. Communication was nescessary.
             </p>
           </div>
 
           <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-1 xl:col-span-1 bg-beige-100 shadow-lg p-3'>
-            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Takeaways</h2>
+            <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>takeaways</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
             <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl mb-3">
-              Working in a team environment was rewarding and unique. The
+              working in a team environment was rewarding and unique. The
               biggest takeaway I got from this project was communication.
               Communication is the utmost priority for the team and client, as
               visions and ideas will clash, or the need to let someone know if
               theres a problem or not.
             </p>
             <p className="sm:text-sm md:text-lg lg:text-lg xl:text-2xl">
-              It was also a good opportunity to work with multiple web
+              it was also a good opportunity to work with multiple web
               developers and see how different it would be coding alone VS
               with multiple people.
             </p>

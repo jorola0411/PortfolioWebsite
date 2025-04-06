@@ -169,23 +169,23 @@ const playerTurn = (requestedCardValue) => {
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
-                            <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
 
-                            <img src={reactlogo} alt="react logo" className="mb-2  object-contain sm:h-12 md:h-24 lg:h-24 xl:h-36" />
+                            <img src={reactlogo} alt="react logo" className="mb-2  object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
                         </div>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl">Using custom hooks and an API, a simple Go Fish game was created.</p>
+                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl">using custom hooks and an API, a simple Go Fish game was created.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>36 hours</p>
                     </div>
@@ -193,65 +193,66 @@ const playerTurn = (requestedCardValue) => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
-                        <code ref={codeRef} className="language-javascript">
-                            {startgameCode}
-                        </code>
-                    </pre>
+            <section className='p-10 bg-beige-200'>
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl'>
+                            <code ref={codeRef} className="language-javascript">
+                                {startgameCode}
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>startGame.jsx</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4" />
+                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>the startGame.jsx file intializes the game, and creates a new deck from the api.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>this file also handles the sorting of the cards, as to keep things neat and make it easier for the player to see what ranks they have.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>.slice gives the player and CPU 7 cards each.</p>
+                    </div>
                 </div>
+            </section>
 
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>StartGame.jsx</h2>
-                    <hr className="border-t-2 border-black mt-2 mb-4" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>The startGame.jsx file intializes the game, and creates a new deck from the api.</p>
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>This file also handles the sorting of the cards, as to keep things neat and make it easier for the player to see what ranks they have.</p>
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>.slice gives the player and CPU 7 cards each.</p>
+            <section className='p-10 bg-beige-200 mt-10'>
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl'>
+                            <code ref={codeRef} className="language-javascript">
+                                {handCode}
+                            </code>
+                        </pre>
+                    </div>
 
-
-
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>hand.jsx handles the UI of the hands that the player and CPU holds.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>a ternary statement is used for both the animation and visual look of the cards. If its the CPU, then display the back of the cards and ignore animation. If it's not the CPU (player), display the cards face up and add the animation.</p>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
-                        <code ref={codeRef} className="language-javascript">
-                            {handCode}
-                        </code>
-                    </pre>
+
+            <section className='p-10 bg-beige-200 mt-10'>
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl'>
+                            <code ref={codeRef} className="language-javascript">
+                                {turnsCode}
+                            </code>
+                        </pre>
+                    </div>
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>turns.jsx</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4" />
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>turns.jsx has the entire gameplay loop.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the entire file handles the player/cpu turns, go fish, win and game over mechanics, to check if there has been a completed set, function to go again if the cpu/player has the requested card, score system, and messaging system. </p>
+
+                    </div>
                 </div>
-
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
-                    <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Hand.jsx handles the UI of the hands that the player and CPU holds.</p>
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>A ternary statement is used for both the animation and visual look of the cards. If its the CPU, then display the back of the cards and ignore animation. If it's not the CPU (player), display the cards face up and add the animation.</p>
-
-
-                </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
-                        <code ref={codeRef} className="language-javascript">
-                            {turnsCode}
-                        </code>
-                    </pre>
-                </div>
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Turns.jsx</h2>
-                    <hr className="border-t-2 border-black mt-2 mb-4" />
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>Turns.jsx has the entire gameplay loop.</p>
-                    <p className='mb-5 sm:text-md md:text-md lg:text-md xl:text-2xl'>The entire file handles the player/cpu turns, go fish, win and game over mechanics, to check if there has been a completed set, function to go again if the cpu/player has the requested card, score system, and messaging system. </p>
-
-
-                </div>
-            </div>
+            </section>
         </div>
     )
 }

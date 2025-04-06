@@ -87,12 +87,10 @@ export default function AboutMe() {
       
       
 
-      <section
-        className="w-full bg-beige-200 py-10 lg:mt-15"
-      >
+      <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
           <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'>hello, i'm jose.</h1>
-          <h2 className='sm:text-2xl lg:text-4xl xl:text-5xl text-center col-span-3'> the tldr:</h2>
+          <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3'> the tldr:</h2>
 
           <ul className='sm:col-span-3 lg:col-span-2 list-disc  pl-4 justify-center flex flex-col'>
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>i'm approaching my final semester as a <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" className='hover:underline' target='_blank'>New Media Design & Web Development</a> student at BCIT.</li>
@@ -103,7 +101,9 @@ export default function AboutMe() {
           <img src={baby} className='sm:col-span-3 lg:col-span-1' />
 
         </div>
+        </section >
 
+        <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className="lg:max-w-[75%] mx-auto  p-4">
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-6 mb-5">
@@ -122,7 +122,9 @@ export default function AboutMe() {
             ))}
           </div>
         </div>
+        </section>
 
+        <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3  md:grid-cols-3 mx-auto px-4 gap-5 lg:max-w-[75%]'>
           <h1 className='text-center sm:text-5xl lg:text-8xl xl:text-9xl col-span-3 mb-5'>values</h1>
 
@@ -135,7 +137,7 @@ export default function AboutMe() {
             <motion.div
               transition={{ duration: 0.7 }}
               animate={{ rotateY: flip1 ? 0 : 180 }}
-              className="card cursor-pointer"
+              className="card shadow-xl"
 
             >
               <button onClick={() => setFlip1((prevState) => !prevState)} className='cursor-pointer'>
@@ -173,7 +175,7 @@ export default function AboutMe() {
             <motion.div
               transition={{ duration: 0.7 }}
               animate={{ rotateY: flip2 ? 0 : 180 }}
-              className="card"
+              className="card shadow-xl"
             >
               <button onClick={() => setFlip2((prevState) => !prevState)} className='cursor-pointer'>
                 <motion.div
@@ -208,13 +210,13 @@ export default function AboutMe() {
             <motion.div
               transition={{ duration: 0.7 }}
               animate={{ rotateY: flip3 ? 0 : 180 }}
-              className="card"
+              className="card shadow-2xl"
             >
               <button onClick={() => setFlip3((prevState) => !prevState)} className='cursor-pointer'>
                 <motion.div
                   transition={{ duration: 0.7 }}
                   animate={{ rotateY: flip3 ? 0 : 180 }}
-                  className="front"
+                  className="front "
                 >
                   <h1 className='text-center sm:text-xl md:text-2xl lg:text-5xl xl:text-6xl col-span-3'>having fun.</h1>
                   <FontAwesomeIcon icon={faFaceSmile} className='sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl mt-5' />
@@ -233,8 +235,10 @@ export default function AboutMe() {
             </motion.div>
           </motion.div>
         </div>
+        </section>
 
-        <div>
+
+        <div className='bg-beige-200 py-10 lg:mt-15'>
           <section className="min-h-screen flex items-center justify-center">
             <h1 className="sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl text-center sm:px-3">
               question is, why front end development specifically?
@@ -250,7 +254,7 @@ export default function AboutMe() {
             </section>
           ))}
         </div>
-      </section >
+
 
       <section>
         <div className="py-10 mt-10">
@@ -279,7 +283,7 @@ export default function AboutMe() {
             </div>
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative w-full h-full">
               <img src={asher} className='w-full h-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 p-3 flex flex-col justify-center items-center text-white rounded-lg">
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 p-3 flex flex-col justify-center items-left text-white rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">thats my corgi, asher.</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl sm:mb-3">he will bark at any loud noise and pull sneak attacks on you.</p>
                 <p className="sm:text-lg  md:text-sm lg:text-xl sm:mb-3">he'll try his best to distract me from my work as much as possible.</p>
@@ -287,7 +291,7 @@ export default function AboutMe() {
             </div>
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
               <img src={wrapped} className='"w-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 flex flex-col justify-center items-center text-white text-center rounded-lg">
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 flex flex-col justify-center items-left text-white  rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">do you know how much 120,509 minutes is?</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl sm:mb-3">there's 525600 minutes in 1 year.</p>
                 <p className="sm:text-lg md:text-sm  lg:text-xl sm:mb-3">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
@@ -296,23 +300,23 @@ export default function AboutMe() {
 
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
               <img src={concert} className='"w-full  object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 lg:p-3 flex flex-col justify-center items-center text-white rounded-lg">
-                <h3 className="sm:text-xl md:text-md lg:text-3xl text-center  sm:mb-3">i like to go concerts! (pictured; NIKI)</h3>
-                <p className="sm:text-lg md:text-sm lg:text-xl text-center  sm:mb-3">my goal for 2026 is to attend 1 concert per month if possible. as well as just going to more concerts in general.</p>
-                <p className="sm:text-lg md:text-sm  lg:text-xl text-center ">some artists i've been to live are:</p>
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 lg:p-3 flex flex-col justify-center items-left text-white rounded-lg">
+                <h3 className="sm:text-xl md:text-md lg:text-3xl  sm:mb-3">i like to go concerts! (pictured; NIKI)</h3>
+                <p className="sm:text-lg md:text-sm lg:text-xl  sm:mb-3">my goal for 2026 is to attend 1 concert per month if possible. as well as just going to more concerts in general.</p>
+                <p className="sm:text-lg md:text-sm  lg:text-xl ">some artists i've been to live are:</p>
 
                 <ul className=' list-disc flex flex-col p-3'>
-                  <li className='sm:text-lg md:text-sm lg:text-xl'>kendrick lamar in 2017</li>
-                  <li className='sm:text-lg md:text-sm lg:text-xl'>backstreet boys in 2019</li>
-                  <li className='sm:text-lg md:text-sm lg:text-xl'> tyler, the creator in 2022</li>
-                  <li className='sm:text-lg md:text-sm lg:text-xl'>nier orchestra, niki, kiss of life in 2024</li>
-                  <li className='sm:text-lg md:text-sm lg:text-xl'>and soon, artms in 2025</li>
+                  <li className='sm:text-lg md:text-sm lg:text-xl'>Kendrick Lamar in 2017</li>
+                  <li className='sm:text-lg md:text-sm lg:text-xl'>Backstreet Boys in 2019</li>
+                  <li className='sm:text-lg md:text-sm lg:text-xl'> Tyler, the Creator in 2022</li>
+                  <li className='sm:text-lg md:text-sm lg:text-xl'>Nier orchestra, NIKI, Kiss of Life in 2024</li>
+                  <li className='sm:text-lg md:text-sm lg:text-xl'>and soon, ARTMS in 2025</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </section >
+        </section >
 
     </>
   )

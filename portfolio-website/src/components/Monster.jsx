@@ -330,16 +330,16 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
 
     return (
         <div>
-            <div className="w-full bg-beige-200 py-10 mt-10 mb-10">
-                <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Monster Hunter API Project</h1>
-                <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+            <div className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
+                <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Monster Hunter Database</h1>
+                <hr className="max-w-[70%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 gap-10 rounded-sm"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200"> <a href="http://mhapiproject.joseorola.ca/" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 rounded-sm"> <a href="http://mhapiproject.joseorola.ca/" target="_blank">
                         Live Website
                     </a></button>
 
@@ -348,7 +348,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
+                        <h2 className='text-center font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center ">
                             <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
@@ -358,13 +358,13 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
+                        <h2 className='text-center font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Overview</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl px-5">This project uses an API to call from a selected list, and allows the user to search and favorite items within that API.</p>
+                        <p className="text-center sm:text-md md:text-md lg:text-xl xl:text-2xl px-5">This project uses an API to call from a selected list, and allows the user to search and favorite items within that API.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
+                        <h2 className='text-center font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>48 hours</p>
                     </div>
@@ -373,7 +373,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </div>
 
             <section className='p-10 bg-beige-200'>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <pre className='max-h-72 overflow-y-auto  md:text-md lg:text-md xl:text-2xl'>
                             <code ref={codeRef} className="language-javascript">
@@ -383,7 +383,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>favoriting Items & local storage</h2>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>favoriting Items & local storage</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4" />
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>multiple const variables are created, notably the category and fav item const.</p>
 
@@ -398,7 +398,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </section>
 
             <section className='p-10 bg-beige-200 mt-10'>
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
@@ -408,7 +408,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                 </div>
 
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>detail page & switch statement</h2>
+                    <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>detail page & switch statement</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
                     <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>with amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
 
@@ -420,7 +420,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </section>
 
             <section className='p-10 bg-beige-200 mt-10'>
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%]">
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                     <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                         <code ref={codeRef} className="language-javascript">
@@ -429,7 +429,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                     </pre>
                 </div>
                 <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>search bar</h2>
+                    <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>search bar</h2>
                     <hr className="border-t-2 border-black mt-2 mb-4" />
 
                     <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>for this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>

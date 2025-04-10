@@ -36,7 +36,7 @@ function Project() {
         <div className="w-full md:mt-10 lg:mt-20 ">
           <div className=" mx-auto  ">
             <h1 className="sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold text-center" data-aos="fade-down">
-              WORKS
+              works
             </h1>
 
 

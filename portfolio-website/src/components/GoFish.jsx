@@ -151,16 +151,16 @@ const playerTurn = (requestedCardValue) => {
 
     return (
         <div>
-            <div className="w-full bg-beige-200 py-10 mt-10 mb-10">
+            <div className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Go Fish!</h1>
-                <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                <hr className="max-w-[70%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10 rounded-sm"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200"> <a href="https://gofish.joseorola.ca/" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm"> <a href="https://gofish.joseorola.ca/" target="_blank">
                         Live Website
                     </a></button>
 
@@ -194,9 +194,9 @@ const playerTurn = (requestedCardValue) => {
             </div>
 
             <section className='p-10 bg-beige-200'>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                             <code ref={codeRef} className="language-javascript">
                                 {startgameCode}
                             </code>
@@ -206,17 +206,17 @@ const playerTurn = (requestedCardValue) => {
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>startGame.jsx</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4" />
-                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>the startGame.jsx file intializes the game, and creates a new deck from the api.</p>
-                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>this file also handles the sorting of the cards, as to keep things neat and make it easier for the player to see what ranks they have.</p>
-                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>.slice gives the player and CPU 7 cards each.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the startGame.jsx file intializes the game, and creates a new deck from the api.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>this file also handles the sorting of the cards, as to keep things neat and make it easier for the player to see what ranks they have.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>.slice gives the player and CPU 7 cards each.</p>
                     </div>
                 </div>
             </section>
 
             <section className='p-10 bg-beige-200 mt-10'>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%] mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                             <code ref={codeRef} className="language-javascript">
                                 {handCode}
                             </code>
@@ -226,18 +226,18 @@ const playerTurn = (requestedCardValue) => {
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>hand.jsx handles the UI of the hands that the player and CPU holds.</p>
-                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>
-                        <p className='mb-5 sm:text-md md:text-md lg:text-lg xl:text-2xl'>a ternary statement is used for both the animation and visual look of the cards. If its the CPU, then display the back of the cards and ignore animation. If it's not the CPU (player), display the cards face up and add the animation.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>hand.jsx handles the UI of the hands that the player and CPU holds.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>a ternary statement is used for both the animation and visual look of the cards. If its the CPU, then display the back of the cards and ignore animation. If it's not the CPU (player), display the cards face up and add the animation.</p>
                     </div>
                 </div>
             </section>
 
 
             <section className='p-10 bg-beige-200 mt-10'>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[90%]">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%]">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-lg xl:text-2xl'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
                             <code ref={codeRef} className="language-javascript">
                                 {turnsCode}
                             </code>

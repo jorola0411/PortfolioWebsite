@@ -36,16 +36,16 @@ function Styles() {
       <meta name="twitter:url" content="https://joseorola.ca/projects/styles" />
 
       <div className="items-center justify-center min-h-screen">
-        <div className="w-full bg-beige-200 py-10 mt-10 mb-10 ">
+        <div className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
           <h1 className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down">styles by jao</h1>
           <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
           <div className='flex gap-4 justify-center mb-3'>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2hover:bg-orange-600 transition duration-200 gap-10"> <a href="https://www.figma.com/design/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="_blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 gap-10 rounded-sm"> <a href="https://www.figma.com/design/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="_blank">
               Wireframes
             </a></button>
 
-            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200"> <a href="https://www.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="_blank">
+            <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 rounded-sm"> <a href="https://www.figma.com/proto/c1Wm6EOGfye2l1I9eW3v6X/Clothing-store-WireFrame?node-id=435-5900&t=GSqSsiB1dNSTdMgr-1" target="_blank">
               Prototype
             </a></button>
 
@@ -57,7 +57,7 @@ function Styles() {
               <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>software</h2>
               <hr className="sm:max-w-[50%] max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
               <div className="relative flex justify-center items-center ">
-                <img src={figma} alt="figma logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-16 lg:h-24 xl:h-36" />
+                <img src={figma} alt="figma logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
               </div>
             </div>
 

@@ -126,7 +126,8 @@ export default function AboutMe() {
 
         <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3  md:grid-cols-3 mx-auto px-4 gap-5 lg:max-w-[75%]'>
-          <h1 className='text-center sm:text-5xl lg:text-8xl xl:text-9xl col-span-3 mb-5'>values</h1>
+          <h1 className='text-center sm:text-5xl lg:text-8xl xl:text-9xl col-span-3'>values</h1>
+          <h2 className='text-center sm:text-xl lg:text-2xl xl:text-3xl col-span-3 mb-5'>(click me!)</h2>
 
           <motion.div
             transition={{ duration: 0.7 }}
@@ -281,6 +282,7 @@ export default function AboutMe() {
                 <br/>
               <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>video games are an avid part of my life, so let's talk about our favorite games together.</p>
             </div>
+
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative w-full h-full">
               <img src={asher} className='w-full h-full object-cover rounded-lg' />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 p-3 flex flex-col justify-center items-left text-white rounded-lg">
@@ -289,6 +291,7 @@ export default function AboutMe() {
                 <p className="sm:text-lg  md:text-sm lg:text-xl sm:mb-3">he'll try his best to distract me from my work as much as possible.</p>
               </div>
             </div>
+            
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
               <img src={wrapped} className='"w-full object-cover rounded-lg' />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 flex flex-col justify-center items-left text-white  rounded-lg">

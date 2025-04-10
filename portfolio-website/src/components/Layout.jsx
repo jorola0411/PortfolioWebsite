@@ -115,28 +115,28 @@ function Layout() {
         <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 mx-auto justify-between items-end border-t border-black px-16 py-10">
           <div className='col-span-1 sm:col-span-4 md:col-span-2 sm:text-center'>
 
-            <p className="text-md md:text-md lg:text-2xl xl:text-3xl md:text-left">just say hi.</p>
-            <p className="text-md md:text-md lg:text-2xl xl:text-3xl md:text-left hover:underline"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
+            <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left">just say hi.</p>
+            <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left hover:underline"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>
 
             <div className="flex lg:space-x-5 justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
-                <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18" />
+                <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18 hover:scale-110 transition ease-in-out" />
               </a>
               <a href="https://linkedin.com/in/jose-orola" target="_blank">
-                <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12  xl:w-18 xl:h-18" />
+                <img src={linkedinlogo} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12  xl:w-18 xl:h-18 hover:scale-110 transition ease-in-out" />
               </a>
               <a href="https://www.instagram.com/jose.orola/" target="_blank">
-                <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18" />
+                <img src={instagramlogo} alt="Instagram Logo" description="custom logo, used for the user to click to Instagram." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18 hover:scale-110 transition ease-in-out" />
               </a>
             </div>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-center sm:text-center md:items-end'>
-            <p className="sm:text-sm md:text-md lg:text-2xl xl:text-3xl">coded with react by yours truly.</p>
-            <p className="sm:text-sm md:text-md lg:text-2xl xl:text-3xl md:text-right">most likely listening to the latest kpop, rnb, and rap releases.</p>
+            <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl">coded with react by yours truly.</p>
+            <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/0hJloArA2Kb9xNBIv34osS?si=2nvN98rGTW-z_L7L769SvA" target="_blank" className="hover:underline">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline">rap</a> releases.</p>
           </div>
         </div>
       </footer>

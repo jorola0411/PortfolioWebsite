@@ -85,7 +85,7 @@ function Home() {
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10 overflow-x-hidden">
         <div className="mx-auto space-y-2 mt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 mb-10">
           <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center" ref={featuredRef}
-            id="feature">Featured Work</h2>
+            id="feature">featured work</h2>
           <hr className="border-t-2 border-black mt-2 " />
         </div>
 

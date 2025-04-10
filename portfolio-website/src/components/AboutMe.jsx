@@ -11,6 +11,7 @@ import wrapped from '../assets/wrapped.jpg'
 import asher from '../assets/asher.jpg'
 import concert from '../assets/concert.jpg'
 import html from '../assets/HTML5.svg'
+import css from '../assets/CSS3_logo.svg'
 import tailwind from '../assets/tailwind.svg'
 import js from '../assets/jslogo.svg'
 import reactlogo from '../assets/React-icon.svg'
@@ -54,6 +55,7 @@ export default function AboutMe() {
   const skills = [
 
     { name: "HTML", img: html },
+    { name: "CSS", img: css },
     { name: "Tailwind", img: tailwind },
     { name: "JavaScript", img: js },
     { name: "React", img: reactlogo },
@@ -106,8 +108,8 @@ export default function AboutMe() {
         <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className="lg:max-w-[75%] mx-auto  p-4">
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-6 mb-5">
-            <h1 className='text-center sm:text-5xl lg:text-8xl  xl:text-9xl sm:col-span-3 md:col-span-5 lg:col-span-5 mb-5'>here's what i (usually) work with.</h1>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 mt-6 mb-5">
+            <h1 className='text-center sm:text-5xl lg:text-8xl  xl:text-9xl sm:col-span-2 md:col-span-6 lg:col-span-6 mb-5'>here's what i (usually) work with.</h1>
             {skills.map((skill) => (
               <div className='sm:col-span-1 md:col-span-1'>
                 <img

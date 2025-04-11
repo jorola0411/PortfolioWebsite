@@ -34,7 +34,7 @@ function Layout() {
     <>
       <header>
         <nav className="py-5">
-          <div className="md:px-16 mx-auto flex justify-between items-center">
+          <div className="sm:px-5 md:px-16 mx-auto flex justify-between items-center">
 
             <Link to="/">
               <img src={newlogo} alt="Logo" description="JAO, with the A being orange and J & O being black." className="sm:w-12 md:w-20 xl:w-40" />
@@ -58,7 +58,7 @@ function Layout() {
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-                <a href="/newresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
+                <a href="/joseorolaresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
                 <span className="absolute top-full w-50 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   me, in one page.
                 </span>
@@ -78,27 +78,27 @@ function Layout() {
           </div>
 
             <div className={`flex md:hidden justify-end  transition-all duration-300 ease-in-out transform ${isOpen ? "opacity-100" : "opacity-0"}`}>
-              <div className="flex flex-col items-end text-right space-y-2 px-5 font-dmsans">
+              <div className="flex flex-col items-end text-right space-y-2 sm:px-5 font-dmsans">
                 <Link
                   to="/about"
                   className="text-lg"
                   onClick={toggleMenu}
                 >
-                  about.
+                  about
                 </Link>
                 <Link
                   to="/projects"
                   className="text-lg"
                   onClick={toggleMenu}
                 >
-                  works.
+                  works
                 </Link>
                 <a
-                  href="/newresume.pdf"
+                  href="/joseorolaresume.pdf"
                   className="text-lg"
                   onClick={toggleMenu}
                 >
-                  resume.
+                  resume
                 </a>
                
               </div>
@@ -112,16 +112,16 @@ function Layout() {
 
 
       <footer>
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 mx-auto justify-between items-end border-t border-black px-16 py-10">
-          <div className='col-span-1 sm:col-span-4 md:col-span-2 sm:text-center'>
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 mx-auto justify-between items-end border-t border-black sm:px-5 sm:py-5 md:px-16 md:py-10">
+          <div className='col-span-1 sm:col-span-4 md:col-span-2 sm:text-left'>
 
             <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left">just say hi.</p>
-            <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left hover:underline"><a href="mailto:hello@joseorola.ca">hello@joseorola.ca</a></p>
+            <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left"><a href="mailto:hello@joseorola.ca" className="hover:underline">hello@joseorola.ca</a></p>
           </div>
 
           <div className='col-span-1 sm:col-span-4 md:col-span-1'>
 
-            <div className="flex lg:space-x-5 justify-center">
+            <div className="flex sm:space-x-3 lg:space-x-5 sm:justify-left md:justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
                 <img src={githublogo} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-12 lg:h-12 xl:w-18 xl:h-18 hover:scale-110 transition ease-in-out" />
               </a>
@@ -134,7 +134,7 @@ function Layout() {
             </div>
           </div>
 
-          <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-center sm:text-center md:items-end'>
+          <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-left sm:text-left md:items-end'>
             <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl">coded with react by yours truly.</p>
             <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/0hJloArA2Kb9xNBIv34osS?si=2nvN98rGTW-z_L7L769SvA" target="_blank" className="hover:underline">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline">rap</a> releases.</p>
           </div>

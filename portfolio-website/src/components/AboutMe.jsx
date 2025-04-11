@@ -16,6 +16,10 @@ import tailwind from '../assets/tailwind.svg'
 import js from '../assets/jslogo.svg'
 import reactlogo from '../assets/React-icon.svg'
 import figma from '../assets/Figma-logo.svg'
+import photoshop from '../assets/photoshop.svg'
+import illustrator from '../assets/illustrator.svg'
+import aftereffects from '../assets/aftereffects.svg'
+import python from '../assets/python.svg'
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -52,7 +56,7 @@ export default function AboutMe() {
     });
   }, []);
 
-  const skills = [
+  const mainskills = [
 
     { name: "HTML", img: html },
     { name: "CSS", img: css },
@@ -60,6 +64,14 @@ export default function AboutMe() {
     { name: "JavaScript", img: js },
     { name: "React", img: reactlogo },
     { name: "Figma", img: figma },
+  ];
+  const otherskills = [
+
+    { name: "Photoshop", img: photoshop },
+    { name: "Illustrator", img: illustrator },
+    { name: "After Effects", img: aftereffects },
+    { name: "Python", img: python },
+
   ];
 
   return (
@@ -91,13 +103,13 @@ export default function AboutMe() {
 
       <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
-          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'>hello, i'm jose.</h1>
+          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'>hello again, i'm jose.</h1>
           <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3'> the tldr:</h2>
 
           <ul className='sm:col-span-3 lg:col-span-2 list-disc  pl-4 justify-center flex flex-col'>
-            <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>i'm approaching my final semester as a <a href="https://www.bcit.ca/programs/new-media-design-and-web-development-diploma-full-time-6525dipma/" className='hover:underline' target='_blank'>New Media Design & Web Development</a> student at BCIT.</li>
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>as a child, i loved interacting and discovering new things. newest pieces of technology, latest video game and music releases, new ways to digitally interact, my environment has shaped me into who i am now, and i'm here as a designer. </li>
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>understanding why things are the way they are have been a core component of myself since i was a child, and has let me adapt, make intuitive designs, and be mindful of the world around me.  </li>
+            <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>i work with html, css/tailwind, javascript, and react. </li>
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>i find joy in coding and designing because its a gateway for me to create something satisfying. everything comes together.</li>
           </ul>
           <img src={baby} className='sm:col-span-3 lg:col-span-1' />
@@ -110,26 +122,42 @@ export default function AboutMe() {
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 mt-6 mb-5">
             <h1 className='text-center sm:text-5xl lg:text-8xl  xl:text-9xl sm:col-span-2 md:col-span-6 lg:col-span-6 mb-5'>here's what i (usually) work with.</h1>
-            {skills.map((skill) => (
+            {mainskills.map((mainskills) => (
               <div className='sm:col-span-1 md:col-span-1'>
                 <img
-                  src={skill.img}
-                  alt={skill.name}
+                  src={mainskills.img}
+                  alt={mainskills.name}
                   className="sm:w-12 sm:h-12 md:h-24 md:w-24 lg:w-32 lg:h-32 xl:h-48 xl:w-48 justify-center items-center mx-auto"
                 />
                 <p className="text-center mt-2 sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
-                  {skill.name}
+                  {mainskills.name}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10 mb-5">
+            <h1 className='text-center sm:text-2xl lg:text-5xl xl:text-6xl sm:col-span-2 md:col-span-6 lg:col-span-6 mb-5'>while not as much, i work with these as well.</h1>
+            {otherskills.map((otherskills) => (
+              <div className='sm:col-span-1 md:col-span-1'>
+                <img
+                  src={otherskills.img}
+                  alt={otherskills.name}
+                  className="sm:w-6 sm:h-6 md:h-12 md:w-12 lg:w-16 lg:h-16 xl:h-24 xl:w-24 justify-center items-center mx-auto"
+                />
+                <p className="text-center mt-2 sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
+                  {otherskills.name}
                 </p>
               </div>
             ))}
           </div>
         </div>
+
         </section>
 
         <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3  md:grid-cols-3 mx-auto px-4 gap-5 lg:max-w-[75%]'>
           <h1 className='text-center sm:text-5xl lg:text-8xl xl:text-9xl col-span-3'>values</h1>
-          <h2 className='text-center sm:text-xl lg:text-2xl xl:text-3xl col-span-3 mb-5'>(click me!)</h2>
+          <h2 className='text-center sm:text-xl lg:text-2xl xl:text-3xl col-span-3 mb-5'>(click the cards!)</h2>
 
           <motion.div
             transition={{ duration: 0.7 }}
@@ -242,8 +270,8 @@ export default function AboutMe() {
 
 
         <div className='bg-beige-200 py-10 lg:mt-15'>
-          <section className="min-h-screen flex items-center justify-center">
-            <h1 className="sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl text-center sm:px-3">
+          <section className="min-h-screen flex items-center ">
+            <h1 className="sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl sm:px-3 lg:px-10">
               question is, why front end development specifically?
             </h1>
           </section>
@@ -251,9 +279,9 @@ export default function AboutMe() {
             <section
               key={i}
               ref={(el) => (sectionsRef.current[i] = el)}
-              className="min-h-screen flex items-center justify-center"
+              className="min-h-screen flex items-center "
             >
-              <p className="text-center sm:text-2xl md:text-3xl lg:text-6xl xl:text-8xl max-w-[80%] leading-tight sm:px-3"></p>
+              <p className=" sm:text-xl md:text-2xl lg:text-5xl xl:text-7xl  leading-tight sm:px-3 lg:px-10"></p>
             </section>
           ))}
         </div>

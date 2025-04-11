@@ -45,13 +45,13 @@ function Project() {
 
               <div className="sm:p-5 md:pl-5 lg:p-5 sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-2 lg:order-2 xl:order-2" data-aos="fade-left">
                 <h1 className="sm:text-xl md:text-md lg:text-3xl xl:text-7xl">Go Fish!</h1>
-                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5 lg:my-5'>play Go Fish and win against the CPU!</p>
+                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5 lg:my-5'>play go fish and win against the CPU!</p>
                 <div className='flex gap-5 sm:mb-5 md:mb-0'>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>HTML</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>CSS</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>JAVASCRIPT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>REACT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>API</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>HTML</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>CSS</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>REACT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>RESTfulAPI</p>
                 </div>
               </div>
 
@@ -71,9 +71,9 @@ function Project() {
                 <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-7xl sm:text-left md:text-right lg:text-right'>Lelem Natural Park</h1>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5 lg:my-5 sm:text-left md:text-right lg:text-right'> a fictional zoo focusing on front-end development and agile methology.</p>
                 <div className='flex gap-5 sm:mb-5 md:mb-0 sm:justify-start md:justify-end lg:justify-end'>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>HTML</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>CSS</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>HTML</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>CSS</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>JAVASCRIPT</p>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@ function Project() {
                 <h1 className="sm:text-xl md:text-md lg:text-3xl xl:text-7xl">styles by jao</h1>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5 lg:my-5'>virtually try on clothes and browse in styles, a streetwear store app.</p>
                 <div className='flex justify-center gap-5 sm:mb-5 md:mb-0 sm:justify-start '>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>UI</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>UX</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>UI</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>UX</p>
                 </div>
               </div>
 
@@ -102,11 +102,11 @@ function Project() {
                 <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-7xl sm:text-left md:text-right lg:text-right'>Monster Hunter World database</h1>
                 <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5 lg:my-5 sm:text-left md:text-right lg:text-right'>search and favorite items using the Monster Hunter API.</p>
                 <div className='flex gap-5 sm:mb-5 md:mb-0 sm:justify-start md:justify-end lg:justify-end'>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>HTML</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>CSS</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>JAVASCRIPT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>REACT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black'>API</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>HTML</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>CSS</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>JAVASCRIPT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>REACT</p>
+                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>RESTfulAPI</p>
                 </div>
               </div>
             </div>

@@ -1,12 +1,23 @@
-import { React, useEffect, useRef } from 'react';
+import { React, useEffect, useState, useRef } from 'react';
 import jslogo from '/src/assets/jslogo.svg';
 import reactlogo from '/src/assets/React-icon.svg';
+import tailwind from '../assets/tailwind.svg'
+import serverjs from '/src/assets/serverjs.png';
+import cardset from '/src/assets/cardsetjs.png';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import "highlight.js/styles/atom-one-dark.css";
 hljs.registerLanguage('javascript', javascript);
 
 export default function GoFish() {
+    const [open, setOpen] = useState(false);
+    const [index, setIndex] = useState(0);
+    const slides = [
+        { src: cardset, alt: "CardSet.js" },
+        { src: serverjs, alt: "Server.js" }
+    ];
     const codeRef = useRef(null);
     useEffect(() => {
         document.querySelectorAll("code").forEach((block) => {
@@ -176,31 +187,31 @@ const playerTurn = (requestedCardValue) => {
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <div className="relative flex justify-center items-center">
                             <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
-
-                            <img src={reactlogo} alt="react logo" className="mb-2  object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
+                            <img src={tailwind} alt="tailwind logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-14 xl:h-36" />
+                            <img src={reactlogo} alt="react logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
                         </div>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl">using custom hooks and an API, a simple Go Fish game was created.</p>
+                        <p className="text-left sm:text-md md:text-xl lg:text-xl xl:text-2xl">a solo full stack project, a game of go fish was created via react and javascript, and glitch.com for back end hosting and development.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>36 hours</p>
+                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>1 month: feb-march 2025</p>
                     </div>
 
                 </div>
 
                 <div className="max-w-[80%] mx-auto">
-                    <h1 className="lg:col-span-1 sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
+                    <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
                     <ul className='list-disc list-outside'>
-                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> i wanted to create an app via full stack development, as well as developing my javascript & react knowledge further.</li>
-                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> handling the game logic and core gameplay loop, as well as integrating animations. </li>
-                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> breaking down the game logic (cpu/player turn, go fish, drawing cards) helped structure the development easily, lots of document reading also helped.</li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> i wanted to create an app via full stack development, as well as developing my javascript & react knowledge further.</li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> handling the game logic and core gameplay loop, as well as integrating animations. </li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> breaking down the game logic (cpu/player turn, go fish, drawing cards) helped structure the development easily, lots of document reading also helped.</li>
                     </ul>
                 </div>
             </section>
@@ -264,6 +275,32 @@ const playerTurn = (requestedCardValue) => {
 
                     </div>
                 </div>
+            </section>
+
+            <section className='p-10 bg-beige-200 mt-10'>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mx-auto max-w-[80%]">
+                    <div className='col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1 flex flex-col sm:order-1 md:order-1'>
+                        <div className="flex-1 flex items-center justify-center">
+                            <img src={cardset} className="cursor-pointer hover:scale-102 transition-transform duration-200 " onClick={() => { setIndex(0); setOpen(true); }} />
+                        </div>
+                    </div>
+                    <div className='col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1 sm:order-3 md:order-2'>
+                        <img src={serverjs} className="cursor-pointer hover:scale-102 transition-transform duration-200" onClick={() => { setIndex(1); setOpen(true); }} />
+                    </div>
+                    <div className="col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1 mt-5 sm:order-2 md:order-3">
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>cardset.js</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4" />
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>cardset.js handles the card information and export for use to the server.</p>
+                    </div>
+
+                    <div className="col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1 mt-5 sm:order-4 ">
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>server.js</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4" />
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>server.js handles the routes and drawing of decks, as well as the creation of the decks via unique IDs.</p>
+                    </div>
+
+                </div>
+                <Lightbox open={open} close={() => setOpen(false)} slides={slides} index={index} />
             </section>
         </>
     )

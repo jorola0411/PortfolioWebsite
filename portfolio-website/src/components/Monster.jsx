@@ -329,17 +329,17 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
         `;
 
     return (
-        <div>
-            <div className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
+        <>
+            <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Monster Hunter Database</h1>
-                <hr className="max-w-[70%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 gap-10 rounded-sm"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 gap-10 rounded-sm hover:scale-110 ease-in-out"> <a href="https://github.com/jorola0411/MonsterHunter-API-project.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 rounded-sm"> <a href="http://mhapiproject.joseorola.ca/" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2 hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110 ease-in-out"> <a href="http://mhapiproject.joseorola.ca/" target="_blank">
                         Live Website
                     </a></button>
 
@@ -368,9 +368,17 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>48 hours</p>
                     </div>
-
                 </div>
-            </div>
+                <div className="max-w-[80%] mx-auto">
+                    <h1 className="lg:col-span-1 sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
+                    <ul className='list-disc list-outside'>
+                    <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> favorite items that are persistant across browser sessions via local storage, auto filter via search bar, </li>
+                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> although a school project, this project was a breakthrough in my understand of fetching APIs, react components, and </li>
+                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> since Monster Hunter World has a very large database with multiple categories, I struggled on how to handle multiple categories at once, certain favorited items appearing under the wrong category. (favorited monster would appear under items)</li>
+                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> the switch statement allowed me to utilise the categories in an efficent way without depending on DRY code. by using variables and .map to differentiate each item by its category, i managed to correctly fetch the favorited items to their intended categories.</li>
+                    </ul>
+                </div>
+            </section>
 
             <section className='p-10 bg-beige-200'>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
@@ -398,47 +406,47 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
             </section>
 
             <section className='p-10 bg-beige-200 mt-10'>
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
-                        <code ref={codeRef} className="language-javascript">
-                            {detailCode}
-                        </code>
-                    </pre>
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
+                            <code ref={codeRef} className="language-javascript">
+                                {detailCode}
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>detail page & switch statement</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>with amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>each category has different details, and I used a switch statement to differentiate the details within each category.</p>
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>each category has a name, the monster category has a id of “monster”. When the user changes the category to monster,  the switch statement will use the matching case clause to use the details unique to the “monster” category.</p>
+                    </div>
                 </div>
-
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>detail page & switch statement</h2>
-                    <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
-                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>with amount of content within the Monster Hunter series, I felt it was necessary to allow different categories like monsters, weapons, and items.</p>
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>each category has different details, and I used a switch statement to differentiate the details within each category.</p>
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>each category has a name, the monster category has a id of “monster”. When the user changes the category to monster,  the switch statement will use the matching case clause to use the details unique to the “monster” category.</p>
-                </div>
-            </div>
             </section>
 
             <section className='p-10 bg-beige-200 mt-10'>
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%]">
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
-                        <code ref={codeRef} className="language-javascript">
-                            {searchCode}
-                        </code>
-                    </pre>
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%]">
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>
+                            <code ref={codeRef} className="language-javascript">
+                                {searchCode}
+                            </code>
+                        </pre>
+                    </div>
+                    <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>search bar</h2>
+                        <hr className="border-t-2 border-black mt-2 mb-4" />
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>for this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>
+
+                        <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the search bar filters the results no matter what; if the user types just the letter “a”, the API. will show results that contain the letter a, or as specific as “pot”, which would pull up results that contain “pot”.</p>
+
+                    </div>
                 </div>
-                <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                    <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>search bar</h2>
-                    <hr className="border-t-2 border-black mt-2 mb-4" />
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>for this project, I made the search bar not case sensitive, as typing “potion” or “Potion” will result in potion still showing.</p>
-
-                    <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the search bar filters the results no matter what; if the user types just the letter “a”, the API. will show results that contain the letter a, or as specific as “pot”, which would pull up results that contain “pot”.</p>
-
-                </div>
-            </div>
             </section>
-        </div>
+        </>
     )
 }

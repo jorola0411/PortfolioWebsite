@@ -150,28 +150,31 @@ const playerTurn = (requestedCardValue) => {
         `;
 
     return (
-        <div>
-            <div className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
+        <>
+            <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10 ">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Go Fish!</h1>
-                <hr className="max-w-[70%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10 rounded-sm"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10 rounded-sm hover:scale-110 ease-in-out"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm"> <a href="https://gofish.joseorola.ca/" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110  ease-in-out"> <a href="https://gofish.joseorola.ca/" target="_blank">
                         Live Website
+                    </a></button>
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110  ease-in-out"> <a href="https://glitch.com/edit/#!/deckofcardsapi" target="_blank">
+                        API
                     </a></button>
 
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto ">
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
+                        <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <div className="relative flex justify-center items-center ">
+                        <div className="relative flex justify-center items-center">
                             <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
 
                             <img src={reactlogo} alt="react logo" className="mb-2  object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
@@ -179,19 +182,28 @@ const playerTurn = (requestedCardValue) => {
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
+                        <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className="text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl">using custom hooks and an API, a simple Go Fish game was created.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
+                        <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>36 hours</p>
                     </div>
 
                 </div>
-            </div>
+
+                <div className="max-w-[80%] mx-auto">
+                    <h1 className="lg:col-span-1 sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
+                    <ul className='list-disc list-outside'>
+                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> i wanted to create an app via full stack development, as well as developing my javascript & react knowledge further.</li>
+                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> handling the game logic and core gameplay loop, as well as integrating animations. </li>
+                        <li className=" lg:col-span-1 sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> breaking down the game logic (cpu/player turn, go fish, drawing cards) helped structure the development easily, lots of document reading also helped.</li>
+                    </ul>
+                </div>
+            </section>
 
             <section className='p-10 bg-beige-200'>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
@@ -204,7 +216,7 @@ const playerTurn = (requestedCardValue) => {
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>startGame.jsx</h2>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>startGame.jsx</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4" />
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the startGame.jsx file intializes the game, and creates a new deck from the api.</p>
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>this file also handles the sorting of the cards, as to keep things neat and make it easier for the player to see what ranks they have.</p>
@@ -224,7 +236,7 @@ const playerTurn = (requestedCardValue) => {
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>hand.jsx handles the UI of the hands that the player and CPU holds.</p>
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>
@@ -244,7 +256,7 @@ const playerTurn = (requestedCardValue) => {
                         </pre>
                     </div>
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <h2 className='text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>turns.jsx</h2>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>turns.jsx</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4" />
 
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>turns.jsx has the entire gameplay loop.</p>
@@ -253,6 +265,6 @@ const playerTurn = (requestedCardValue) => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 }

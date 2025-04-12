@@ -31,8 +31,8 @@ export default function AboutMe() {
   const sectionsRef = useRef([]);
   const paragraphs = [
     "coding is weird. bugs happen, languages are complicated, and sometimes, debugging takes longer than it needs to be. and it's frustrating at times.",
-    "but it's that exact reason why i do it. when it works, it's like seeing all the pieces fit together like a puzzle.",
-    "i code because it's an outlet that brings my ideas to life. it's a long process at times, but understanding the logic, connecting code together, and creating something, it's rewarding.",
+    "but the frustration is worth it; when it works, it's like seeing all the pieces fit together like a puzzle.",
+    "i code because it's an outlet that brings my ideas to life. Understanding the logic, connecting code together, and creating something, it's rewarding.",
   ];
   useEffect(() => {
     sectionsRef.current.forEach((el, index) => {
@@ -43,11 +43,11 @@ export default function AboutMe() {
           opacity: 1,
           y: 0,
           text: paragraphs[index],
-          ease: "power2.out",
-          duration: 1.5,
+          ease: "none",
+          duration: 2,
           scrollTrigger: {
             trigger: el,
-            start: "top center",
+            start: "center center",
 
             toggleActions: "play none none none",
           },

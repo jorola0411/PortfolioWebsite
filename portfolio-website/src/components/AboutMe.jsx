@@ -103,7 +103,7 @@ export default function AboutMe() {
 
       <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
-          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'>hello again, i'm jose.</h1>
+          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'>hello again, i'm <span className='font-bold text-beige-500'>jose</span>.</h1>
           <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3'> the tldr:</h2>
 
           <ul className='sm:col-span-3 lg:col-span-2 list-disc  pl-4 justify-center flex flex-col'>
@@ -224,7 +224,7 @@ export default function AboutMe() {
                   className="back"
                 >
 
-                  <p className='sm:text-sm md:text-md sm:px-3 md:px-3 lg:text-lg xl:text-3xl  px-3'>
+                  <p className='sm:text-sm md:text-md sm:px-3 md:px-3 lg:text-lg xl:text-3xl px-3'>
                     i will always be willing to hear what you have in store for me, and i'll cater my approaches to your needs. a win win for the both of us.
                   </p>
                 </motion.div>
@@ -289,14 +289,12 @@ export default function AboutMe() {
 
       <section>
         <div className="py-10 mt-10">
-          <h1 className='sm:text-5xl lg:text-8xl text-center'> here's me outside of work.</h1>
+          <h1 className='sm:text-5xl lg:text-8xl text-center'> here's <span className='font-bold text-beige-500'>me</span> outside of work.</h1>
 
         </div>
         <div className='flex sm:max-w-[90%] lg:max-w-[75%] mx-auto items-center justify-center'>
           <div className='grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 mx-auto gap-5 '>
    
-  
-
             <div className='sm:col-span-3  md:col-span-3 lg:col-span-3 sm:p-3 bg-beige-200 rounded-lg text-lg shadow'>
             <h1 className='flex sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>listening and analyzing music</h1>
               <p className='sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>I am an avid music lover and listener, and I listen to music a little too much.</p>

@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import stylemockup from '/src/assets/stylemockup.jpg';
 import emap from '/src/assets/empathymap.png';
 import figma from '/src/assets/Figma-logo.svg';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { gsap } from "gsap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,6 +30,23 @@ export default function Styles() {
     window.scrollTo(0, 0);
   }, [])
 
+  const detailsRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    gsap.from(detailsRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: detailsRef.current,
+        start: "top 80%",
+      },
+    });
+  }, []);
   return (
     <>
 
@@ -43,7 +63,7 @@ export default function Styles() {
       <meta name="twitter:description" content="Styles is a company that provides a mobile clothing shopping experience. Focusing on streetwear, Styles also allows the users to “try on” their clothes before buying." />
       <meta name="twitter:url" content="https://joseorola.ca/projects/styles" />
 
-      <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10">
+      <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
         <h1 className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down">styles by jao</h1>
         <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
         <div className='flex gap-4 justify-center mb-3'>
@@ -62,7 +82,7 @@ export default function Styles() {
 
           <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
             <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>software</h2>
-            <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+            <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
             <div className="relative flex justify-center items-center ">
               <img src={figma} alt="figma logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
             </div>
@@ -70,35 +90,35 @@ export default function Styles() {
 
           <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
             <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
-            <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-            <p className="text-left sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5">styles is an e-commerce mobile platform that allows users to fit themselves virtually to ensure they have the correct clothing sizes before checkout.</p>
+            <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
+            <p className="text-left sm:text-md md:text-lg lg:text-xl xl:text-2xl ">styles is an e-commerce mobile platform that allows users to fit themselves virtually to ensure they have the correct clothing sizes before checkout.</p>
           </div>
 
           <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
             <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
-            <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+            <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
             <p className='text-center sm:text-md md:text-lg lg:text-xl xl:text-2xl'>2 weeks</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mt-10">
-          <div className='lg:col-span-1 flex flex-col justify-center items-center'>
-            <img src={stylemockup} alt="Style Hero" description="This showcases various screencaps from Figma, in phone mockups." className="mx-auto shadow-lg cursor-pointer hover:scale-102 transition-transform duration-200" onClick={() => { setIndex(0); setOpen(true); }} />
-          </div>
-          <div className="mx-auto lg:col-span-2 ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mt-5">
+
+          <div className="mx-auto lg:col-span-3 ">
             <h1 className=" sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left "> the tldr;</h1>
             <ul className='list-disc list-outside'>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting", virtual try-on feature to ensure the user has the correct clothing size before confirming their order. personalized clothing recommendations based on browsing & buying history.</li>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> online shopping loses the physical experience of trying out clothes; this leads to increased returns and poor user experience. i also didn't want to go through the process of returning an online item incase it was the wrong size. </li>
+              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting" to ensure the user has the correct clothing size. personalized clothing recommendations based on browsing & buying history.</li>
+              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> online shopping loses the physical experience of trying out clothes; this leads to increased returns and poor user experience.  </li>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>problems:</span> high return rates, poor user experience, incorrect size expectations, limited personalized features</li>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> implementation of a virtual try on feature would enhance user experience and personalization, and ensure that the items they buy are the correct sizes.</li>
             </ul>
           </div>
         </div>
-
+        <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+          <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
+        </div>
       </section>
 
-      <section className='p-10 bg-beige-200 mt-10'>
+      <section className='p-10 bg-beige-200 mt-10' ref={detailsRef}>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-8 mx-auto max-w-[80%]">
           <div className='col-span-1 sm:col-span-3 md:col-span-1'>
             <img src={emap} alt="Empathy Map" description="An empathy map assists the designer to see how the user feels or things while using an app. This image showcases the empathy map in this project." className="shadow-lg  mx-auto cursor-pointer hover:scale-102 transition-transform duration-200" onClick={() => { setIndex(1); setOpen(true); }}></img>
@@ -165,7 +185,11 @@ export default function Styles() {
             <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Prototype</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
             <p className="sm:text-sm md:text-lg lg:text-xl xl:text-2xl "> This is a prototype for the app, users can try on the virtual try on feature, as well as browse tops, and make a purchase.</p>
+
+            <img src={stylemockup} alt="Style Hero" description="This showcases various screencaps from Figma, in phone mockups." className="mx-auto shadow-lg cursor-pointer hover:scale-102 transition-transform duration-200 mt-10" onClick={() => { setIndex(0); setOpen(true); }} />
+
           </div>
+
         </div>
       </section>
       <Lightbox open={open} close={() => setOpen(false)} slides={slides} index={index} />

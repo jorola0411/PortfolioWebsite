@@ -72,7 +72,7 @@ function Home() {
            hi. i'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose Orola</span>.
           </h1>
           <h2 className=" sm:text-xl md:text-6xl xl:text-5xl mt-5" data-aos="fade-left">
-          and i'm your next <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Web Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer.</span> {/*text-transparent is needed for the gradient to show up*/}
+          and i'm your <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Web Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span>. {/*text-transparent is needed for the gradient to show up*/}
           </h2>
 
 

@@ -8,6 +8,9 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
+import { gsap } from "gsap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "highlight.js/styles/atom-one-dark.css";
 hljs.registerLanguage('javascript', javascript);
 
@@ -28,6 +31,24 @@ export default function GoFish() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
+
+    const detailsRef = useRef(null);
+
+    const scrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    };
+
+    useEffect(() => {
+        gsap.from(detailsRef.current, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: detailsRef.current,
+                start: "top 80%",
+            },
+        });
+    }, []);
 
     const handCode = `
       //this displays the hands of the player and CPU, 
@@ -162,7 +183,7 @@ const playerTurn = (requestedCardValue) => {
 
     return (
         <>
-            <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10 ">
+            <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10 h-[80vh]">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Go Fish!</h1>
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
@@ -180,12 +201,12 @@ const playerTurn = (requestedCardValue) => {
 
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto ">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-                        <div className="relative flex justify-center items-center">
+                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
+                        <div className="relative flex justify-center items-center gap-4">
                             <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
                             <img src={tailwind} alt="tailwind logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-14 xl:h-36" />
                             <img src={reactlogo} alt="react logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
@@ -194,29 +215,33 @@ const playerTurn = (requestedCardValue) => {
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
                         <p className="text-left sm:text-md md:text-xl lg:text-xl xl:text-2xl">a solo full stack project, a game of go fish was created via react and javascript, and glitch.com for back end hosting and development.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
                         <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>1 month: feb-march 2025</p>
                     </div>
 
                 </div>
 
                 <div className="max-w-[80%] mx-auto">
-                    <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
+                    <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
                     <ul className='list-disc list-outside'>
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> i wanted to create an app via full stack development, as well as developing my javascript & react knowledge further.</li>
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> handling the game logic and core gameplay loop, as well as integrating animations. </li>
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> breaking down the game logic (cpu/player turn, go fish, drawing cards) helped structure the development easily, lots of document reading also helped.</li>
                     </ul>
                 </div>
+                <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+                    <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
+                </div>
+
             </section>
 
-            <section className='p-10 bg-beige-200'>
+            <section className='p-10 bg-beige-200' ref={detailsRef}>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>

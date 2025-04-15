@@ -53,7 +53,7 @@ function Layout() {
               <div className="relative group cursor-pointer flex flex-col items-center">
                 <Link to="/projects" className="text-lg md:text-2xl xl:text-5xl hover:underline">works</Link>
                 <span className="absolute top-full w-60 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
-                  the reason you're here.
+                  the main reason you're here.
                 </span>
               </div>
 
@@ -136,7 +136,7 @@ function Layout() {
 
           <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-left sm:text-left md:items-end'>
             <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl">coded with react by yours truly.</p>
-            <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/0hJloArA2Kb9xNBIv34osS?si=2nvN98rGTW-z_L7L769SvA" target="_blank" className="hover:underline">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline">rap</a> releases.</p>
+            <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/0hJloArA2Kb9xNBIv34osS?si=2nvN98rGTW-z_L7L769SvA" target="_blank" className="hover:underline text-beige-500 font-semibold">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline text-beige-500 font-semibold">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline text-beige-500 font-semibold">rap</a> releases.</p>
           </div>
         </div>
       </footer>

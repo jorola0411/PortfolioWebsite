@@ -3,6 +3,9 @@ import jslogo from '/src/assets/jslogo.svg';
 import reactlogo from '/src/assets/React-icon.svg';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
+import { gsap } from "gsap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "highlight.js/styles/atom-one-dark.css";
 hljs.registerLanguage('javascript', javascript);
 
@@ -17,6 +20,24 @@ export default function Monster() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
+
+    const detailsRef = useRef(null);
+
+    const scrollToSection = (ref) => {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    };
+  
+    useEffect(() => {
+      gsap.from(detailsRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: detailsRef.current,
+          start: "top 80%",
+        },
+      });
+    }, []);
 
     const favoriteCode = `
       function Favourites() {
@@ -349,7 +370,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='text-center font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
                         <div className="relative flex justify-center items-center ">
                             <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
 
@@ -359,28 +380,31 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='text-center font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
                         <p className="text-left sm:text-md md:text-md lg:text-xl xl:text-2xl px-5">utilising fetch statements and local storage, this project allows the user to search various items within the Monster Hunter World API, and favorite their items via local storage.</p>
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='text-center font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
+                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
                         <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>48 hours</p>
                     </div>
                 </div>
                 <div className="max-w-[80%] mx-auto">
-                    <h1 className="lg:col-span-1 sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
+                    <h1 className="lg:col-span-1 sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
                     <ul className='list-disc list-outside'>
-                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> favorite items that are persistant across browser sessions via local storage, auto filter via search bar, </li>
-                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> although a school project, this project was a breakthrough in my understand of fetching APIs, react components, and how local storage works. </li>
-                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> since Monster Hunter World has a very large database with multiple categories, I struggled on how to handle multiple categories at once, certain favorited items appearing under the wrong category. (favorited monster would appear under items)</li>
-                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> the switch statement allowed me to utilise the categories in an efficent way without depending on DRY code. by using variables and .map to differentiate each item by its category, i managed to correctly fetch the favorited items to their intended categories.</li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> favorite items that are persistant across browser sessions via local storage, auto filter via search bar. </li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span>this project improved my understanding of fetching APIs, react components, and how local storage works. </li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span>I struggled on how to handle multiple categories at once, certain favorited items appearing under the wrong category.</li>
+                        <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> the switch statement allowed me to handle categories without depending on DRY code. by using variables and .map to differentiate each item by its category, </li>
                     </ul>
+                </div>
+                <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+                    <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
                 </div>
             </section>
 
-            <section className='p-10 bg-beige-200'>
+            <section className='p-10 bg-beige-200' ref={detailsRef}>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <pre className='max-h-72 overflow-y-auto  md:text-md lg:text-md xl:text-2xl'>

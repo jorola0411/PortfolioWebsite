@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import jose from '/src/assets/jose.jpg';
 import leil from '/src/assets/leil.jpg';
 import yurino from '/src/assets/yurino.jpg';
@@ -9,6 +9,9 @@ import schedule from '/src/assets/sprintschedule.png';
 import jslogo from '/src/assets/jslogo.svg';
 import html from '/src/assets/HTML5.svg';
 import css from '/src/assets/CSS3_logo.svg';
+import { gsap } from "gsap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lightbox from "yet-another-react-lightbox";
@@ -33,6 +36,25 @@ export default function Lelem() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
+
+  const detailsRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    gsap.from(detailsRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: detailsRef.current,
+        start: "top 80%",
+      },
+    });
+  }, []);
+
 
   return (
     <>
@@ -61,7 +83,7 @@ export default function Lelem() {
                 Agile project management methodology." />
       <meta name="twitter:url" content="https://joseorola.ca/projects/lelem" />
 
-      <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
+      <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5 h-[80vh]">
         <h1 className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Lelem Natural Park</h1>
         <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
         <div className='flex gap-4 justify-center mb-3'>
@@ -81,7 +103,7 @@ export default function Lelem() {
           <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
             <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
             <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-            <div className="relative flex justify-center items-center ">
+            <div className="relative flex justify-center items-center gap-4">
               <img src={html} alt="html logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
               <img src={css} alt="css3 logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
               <img src={jslogo} alt="javascript logo" className="mb-2 rounded-xs object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
@@ -91,7 +113,7 @@ export default function Lelem() {
           <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
             <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>overview</h2>
             <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-4 mx-auto" />
-            <p className="text-left sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5"> lelem natural park is a website created via html, css, and javascript, with a team of 5. created for a fictional client, this website showcases web design & development.</p>
+            <p className="text-left sm:text-md md:text-lg lg:text-xl xl:text-2xl px-5"> lelem natural park is a fictional website for a fictional client to showcase team collaboration and web development.</p>
           </div>
 
           <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
@@ -102,21 +124,24 @@ export default function Lelem() {
 
         </div>
         <div className="max-w-[80%] mx-auto">
-          <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-10"> the tldr;</h1>
+          <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
           <ul className='list-disc list-outside'>
             <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> this project involved creating a website for a fictional
-              organization for a client, and to showcase proper usage of the
+              organization for a client, and to work under the
               agile project management methodology. </li>
             <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> scope creep occured, and designing the website that fits within the designers vision.</li>
-            <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> a small meeting was spent on defining the remaining goals and establishing a clear process for our work, as well as constant communication with the designers on how the website looks. </li>
+            <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> properly defining the goal of our project, as well as constant communication with the designers on how the website looks. </li>
           </ul>
+        </div>
+        <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+          <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
         </div>
       </section>
 
 
 
 
-      <div className="sm:col-span-5 md:col-span-5 lg:grid-cols-5 xl:grid-cols-5 space-y-6 mb-10 bg-beige-200 ">
+      <div className="sm:col-span-5 md:col-span-5 lg:grid-cols-5 xl:grid-cols-5 space-y-6 mb-10 bg-beige-200" ref={detailsRef}>
         <div className="p-6 max-w-[80%] mx-auto">
           <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold">team and roles</h1>
           <hr className="border-t-2 border-black mt-2 mb-4" />

@@ -332,7 +332,7 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
 
     return (
         <>
-            <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10 h-[60vh]">
+            <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Monster Hunter Database</h1>
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
@@ -379,9 +379,6 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span>I struggled on how to handle multiple categories at once, certain favorited items appearing under the wrong category.</li>
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> the switch statement allowed me to handle categories without depending on DRY code. by using variables and .map to differentiate each item by its category, </li>
                     </ul>
-                </div>
-                <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
-                    <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
                 </div>
             </section>
 

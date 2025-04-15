@@ -3,9 +3,7 @@ import jslogo from '/src/assets/jslogo.svg';
 import reactlogo from '/src/assets/React-icon.svg';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
-import { gsap } from "gsap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 import "highlight.js/styles/atom-one-dark.css";
 hljs.registerLanguage('javascript', javascript);
 
@@ -21,23 +19,6 @@ export default function Monster() {
         window.scrollTo(0, 0);
     }, [])
 
-    const detailsRef = useRef(null);
-
-    const scrollToSection = (ref) => {
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    };
-  
-    useEffect(() => {
-      gsap.from(detailsRef.current, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: detailsRef.current,
-          start: "top 80%",
-        },
-      });
-    }, []);
 
     const favoriteCode = `
       function Favourites() {
@@ -399,12 +380,10 @@ const [data, setData] = useState([]) // this line of codes holds the fetched dat
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> the switch statement allowed me to handle categories without depending on DRY code. by using variables and .map to differentiate each item by its category, </li>
                     </ul>
                 </div>
-                <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
-                    <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
-                </div>
+ 
             </section>
 
-            <section className='p-10 bg-beige-200' ref={detailsRef}>
+            <section className='p-10 bg-beige-200' >
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <pre className='max-h-72 overflow-y-auto  md:text-md lg:text-md xl:text-2xl'>

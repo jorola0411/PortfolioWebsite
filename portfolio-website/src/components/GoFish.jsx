@@ -8,9 +8,6 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
-import { gsap } from "gsap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "highlight.js/styles/atom-one-dark.css";
 hljs.registerLanguage('javascript', javascript);
 
@@ -31,24 +28,6 @@ export default function GoFish() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
-
-    const detailsRef = useRef(null);
-
-    const scrollToSection = (ref) => {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-    };
-
-    useEffect(() => {
-        gsap.from(detailsRef.current, {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            scrollTrigger: {
-                trigger: detailsRef.current,
-                start: "top 80%",
-            },
-        });
-    }, []);
 
     const handCode = `
       //this displays the hands of the player and CPU, 
@@ -183,7 +162,7 @@ const playerTurn = (requestedCardValue) => {
 
     return (
         <>
-            <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5 h-[60vh]">
+            <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Go Fish!</h1>
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
@@ -235,13 +214,9 @@ const playerTurn = (requestedCardValue) => {
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> breaking down the game logic (cpu/player turn, go fish, drawing cards) helped structure the development easily, lots of document reading also helped.</li>
                     </ul>
                 </div>
-                <div className="max-md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer mt-10">
-                    <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
-                </div>
-
             </section>
 
-            <section className='p-10 bg-beige-200' ref={detailsRef}>
+            <section className='p-10 bg-beige-200'>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
                         <pre className='max-h-72 overflow-y-auto text-xs sm:text-sm md:text-md lg:text-md xl:text-2xl'>

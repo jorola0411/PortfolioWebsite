@@ -63,7 +63,7 @@ export default function Styles() {
       <meta name="twitter:description" content="Styles is a company that provides a mobile clothing shopping experience. Focusing on streetwear, Styles also allows the users to “try on” their clothes before buying." />
       <meta name="twitter:url" content="https://joseorola.ca/projects/styles" />
 
-      <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5 h-[60vh]">
+      <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
         <h1 className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down">styles by jao</h1>
         <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
         <div className='flex gap-4 justify-center mb-3'>
@@ -113,12 +113,9 @@ export default function Styles() {
             </ul>
           </div>
     
-        <div className="max-md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer">
-          <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
-        </div>
       </section>
 
-      <section className='p-10 bg-beige-200 mt-10' ref={detailsRef}>
+      <section className='p-10 bg-beige-200 mt-10'>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-8 mx-auto max-w-[80%]">
           <div className='col-span-1 sm:col-span-3 md:col-span-1'>
             <img src={emap} alt="Empathy Map" description="An empathy map assists the designer to see how the user feels or things while using an app. This image showcases the empathy map in this project." className="shadow-lg  mx-auto cursor-pointer hover:scale-102 transition-transform duration-200" onClick={() => { setIndex(1); setOpen(true); }}></img>

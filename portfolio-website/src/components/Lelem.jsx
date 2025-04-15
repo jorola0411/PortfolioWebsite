@@ -83,7 +83,7 @@ export default function Lelem() {
                 Agile project management methodology." />
       <meta name="twitter:url" content="https://joseorola.ca/projects/lelem" />
 
-      <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5 h-[60vh]">
+      <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
         <h1 className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Lelem Natural Park</h1>
         <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
         <div className='flex gap-4 justify-center mb-3'>
@@ -132,9 +132,6 @@ export default function Lelem() {
             <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>challenges:</span> scope creep occured, and designing the website that fits within the designers vision.</li>
             <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> properly defining the goal of our project, as well as constant communication with the designers on how the website looks. </li>
           </ul>
-        </div>
-        <div className="max-md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer">
-          <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
         </div>
       </section>
 
@@ -186,6 +183,7 @@ export default function Lelem() {
           </div>
         </div>
       </div>
+
       <section className='p-10 bg-beige-200 mt-10'>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 mx-auto max-w-[80%] mb-10">
 

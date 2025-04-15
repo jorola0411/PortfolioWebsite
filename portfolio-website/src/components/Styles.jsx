@@ -63,7 +63,7 @@ export default function Styles() {
       <meta name="twitter:description" content="Styles is a company that provides a mobile clothing shopping experience. Focusing on streetwear, Styles also allows the users to “try on” their clothes before buying." />
       <meta name="twitter:url" content="https://joseorola.ca/projects/styles" />
 
-      <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5">
+      <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5 h-[60vh]">
         <h1 className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down">styles by jao</h1>
         <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
         <div className='flex gap-4 justify-center mb-3'>
@@ -101,19 +101,19 @@ export default function Styles() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto max-w-[80%] mt-5">
+       
 
-          <div className="mx-auto lg:col-span-3 ">
-            <h1 className=" sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left "> the tldr;</h1>
+        <div className="max-w-[80%] mx-auto">
+            <h1 className=" sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
             <ul className='list-disc list-outside'>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting" to ensure the user has the correct clothing size. personalized clothing recommendations based on browsing & buying history.</li>
+              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting" to ensure the user has the correct clothing size. personalized clothing recommendations </li>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> online shopping loses the physical experience of trying out clothes; this leads to increased returns and poor user experience.  </li>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>problems:</span> high return rates, poor user experience, incorrect size expectations, limited personalized features</li>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> implementation of a virtual try on feature would enhance user experience and personalization, and ensure that the items they buy are the correct sizes.</li>
             </ul>
           </div>
-        </div>
-        <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+    
+        <div className="max-md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer">
           <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
         </div>
       </section>

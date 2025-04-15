@@ -183,7 +183,7 @@ const playerTurn = (requestedCardValue) => {
 
     return (
         <>
-            <section className="w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-10 h-[80vh]">
+            <section className="relative w-full bg-beige-100 lg:py-10 lg:mt-10 mb-10 p-5 h-[60vh]">
                 <h1 className="sm:text-xl md:text-4xl lg:text-4xl xl:text-6xl font-bold text-center" data-aos="fade-down"> Go Fish!</h1>
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
@@ -205,7 +205,7 @@ const playerTurn = (requestedCardValue) => {
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>technologies</h2>
-                        <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
+                        <hr className="sm:max-w-[50%] md:max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
                         <div className="relative flex justify-center items-center gap-4">
                             <img src={jslogo} alt="javascript logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-16 xl:h-36" />
                             <img src={tailwind} alt="tailwind logo" className="mb-2 object-contain sm:h-12 md:h-14 lg:h-14 xl:h-36" />
@@ -235,7 +235,7 @@ const playerTurn = (requestedCardValue) => {
                         <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> breaking down the game logic (cpu/player turn, go fish, drawing cards) helped structure the development easily, lots of document reading also helped.</li>
                     </ul>
                 </div>
-                <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
+                <div className="max-md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer mt-10">
                     <FontAwesomeIcon icon={faChevronDown} className="hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(detailsRef)} />
                 </div>
 

@@ -44,10 +44,10 @@ export default function AboutMe() {
           y: 0,
           text: paragraphs[index],
           ease: "none",
-          duration: 2,
+          duration: 1.5,
           scrollTrigger: {
             trigger: el,
-            start: "center center",
+            start: "top center",
 
             toggleActions: "play none none none",
           },
@@ -313,8 +313,8 @@ export default function AboutMe() {
 
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative w-full h-full">
               <img src={asher} className='w-full h-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 p-3 flex flex-col justify-center items-left text-white rounded-lg">
-                <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">thats my corgi, asher.</h3>
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
+                <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">thats my corgi, Asher.</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl sm:mb-3">he will bark at any loud noise and pull sneak attacks on you.</p>
                 <p className="sm:text-lg  md:text-sm lg:text-xl sm:mb-3">he'll try his best to distract me from my work as much as possible.</p>
               </div>
@@ -322,7 +322,7 @@ export default function AboutMe() {
             
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
               <img src={wrapped} className='"w-full object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 flex flex-col justify-center items-left text-white  rounded-lg">
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black  rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl sm:mb-3">do you know how much 120,509 minutes is?</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl sm:mb-3">there's 525600 minutes in 1 year.</p>
                 <p className="sm:text-lg md:text-sm  lg:text-xl sm:mb-3">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
@@ -330,8 +330,8 @@ export default function AboutMe() {
             </div>
 
             <div className="sm:col-span-3 md:col-span-2 lg:col-span-2 group relative overflow-hidden">
-              <img src={concert} className='"w-full  object-cover rounded-lg' />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 lg:p-3 flex flex-col justify-center items-left text-white rounded-lg">
+              <img src={concert} className='"w-full object-cover rounded-lg' />
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 transition duration-300 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
                 <h3 className="sm:text-xl md:text-md lg:text-3xl  sm:mb-3">i like to go concerts! (pictured; NIKI)</h3>
                 <p className="sm:text-lg md:text-sm lg:text-xl  sm:mb-3">my goal for 2026 is to attend 1 concert per month if possible. as well as just going to more concerts in general.</p>
                 <p className="sm:text-lg md:text-sm  lg:text-xl ">some artists i've been to live are:</p>

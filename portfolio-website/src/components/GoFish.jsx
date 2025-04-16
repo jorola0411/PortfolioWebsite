@@ -247,7 +247,7 @@ const playerTurn = (requestedCardValue) => {
                     </div>
 
                     <div className='col-span-1 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3'>
-                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Hand.jsx</h2>
+                        <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>hand.jsx</h2>
                         <hr className="border-t-2 border-black mt-2 mb-4 mx-auto" />
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>hand.jsx handles the UI of the hands that the player and CPU holds.</p>
                         <p className='mb-5 sm:text-md md:text-md lg:text-xl xl:text-2xl'>the offset constant is there to dynamically hold the hand in the middle of the screen, regardless of card amount in each hand.</p>

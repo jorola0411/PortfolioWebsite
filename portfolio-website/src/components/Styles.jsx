@@ -104,7 +104,7 @@ export default function Styles() {
        
 
         <div className="max-w-[80%] mx-auto">
-            <h1 className=" sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
+            <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
             <ul className='list-disc list-outside'>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting" to ensure the user has the correct clothing size. personalized clothing recommendations </li>
               <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> online shopping loses the physical experience of trying out clothes; this leads to increased returns and poor user experience.  </li>
@@ -136,7 +136,7 @@ export default function Styles() {
           <div className='col-span-1 sm:col-span-3 md:col-span-2'>
 
 
-            <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Challenges</h2>
+            <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>challenges</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
             <p className="sm:text-sm md:text-lg lg:text-xl xl:text-2xl mb-3">
               some challenges I had was trying to making the app design intuitive for the user, as well as trying to figure out how the virtual try on feature would look.
@@ -149,7 +149,7 @@ export default function Styles() {
       <section className='p-10 bg-beige-200 mt-10'>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mx-auto max-w-[80%]">
           <div className='col-span-1 sm:col-span-3 md:col-span-2'>
-            <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Takeaways</h2>
+            <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>takeaways</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
 
             <p className="sm:text-sm md:text-lg lg:text-xl xl:text-2xl mb-3">
@@ -179,9 +179,9 @@ export default function Styles() {
           </div>
 
           <div className='col-span-1 sm:col-span-3 md:col-span-1 sm:order-2 flex-col flex justify-center'>
-            <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>Prototype</h2>
+            <h2 className='font-semibold sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl'>prototype</h2>
             <hr className="border-t-2 border-black mt-2 mb-4" />
-            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-2xl "> This is a prototype for the app, users can try on the virtual try on feature, as well as browse tops, and make a purchase.</p>
+            <p className="sm:text-sm md:text-lg lg:text-xl xl:text-2xl "> this is a prototype for the app, users can try on the virtual try on feature, as well as browse tops, and make a purchase.</p>
 
             <img src={stylemockup} alt="Style Hero" description="This showcases various screencaps from Figma, in phone mockups." className="mx-auto shadow-lg cursor-pointer hover:scale-102 transition-transform duration-200 mt-10" onClick={() => { setIndex(0); setOpen(true); }} />
 

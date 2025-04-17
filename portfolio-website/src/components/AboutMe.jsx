@@ -327,14 +327,14 @@ export default function AboutMe() {
           <div className="aspect-square sm:aspect-auto lg:row-span-2 lg:col-start-3 lg:row-start-2 group relative">
             <img src={concert} className='w-full h-full object-cover rounded-lg' alt="NIKI concert" />
             <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">i like to go concerts! (pictured; NIKI)</h3>
-              <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">my goal for 2026 is to attend 1 concert per month if possible. as well as just going to more concerts in general.</p>
-              <p className="text-base md:text-lg lg:text-xl mb-1">some artists i've been to live are:</p>
+              <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">i like to go concerts!</h3>
+              <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">my goal for 2026 is to attend 1 concert per month!</p>
+              <p className="text-base md:text-lg lg:text-xl mb-1">i've seen them live:</p>
               <ul className='list-disc pl-5 md:p-3'>
                 <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Kendrick Lamar in 2017</li>
                 <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Backstreet Boys in 2019</li>
                 <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Tyler, the Creator in 2022</li>
-                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Nier orchestra, NIKI, Kiss of Life in 2024</li>
+                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Nier orchestra, NIKI (pictured), Kiss of Life in 2024</li>
                 <li className='text-base sm:text-sm md:text-lg lg:text-xl'>and soon, ARTMS in 2025</li>
               </ul>
             </div>

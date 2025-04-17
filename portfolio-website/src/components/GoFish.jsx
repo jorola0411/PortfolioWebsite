@@ -167,14 +167,14 @@ const playerTurn = (requestedCardValue) => {
                 <hr className="max-w-[80%] border-t-2 border-black mt-2 mb-4 mx-auto" />
                 <div className='flex gap-4 justify-center mb-3'>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10 rounded-sm hover:scale-110 ease-in-out"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 gap-10 rounded-sm hover:scale-110 ease-in-out" data-aos="fade-right"> <a href="https://github.com/jorola0411/Go-Fish.git" target="_blank">
                         GitHub
                     </a></button>
 
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110  ease-in-out"> <a href="https://gofish.joseorola.ca/" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110  ease-in-out" data-aos="fade-up"> <a href="https://gofish.joseorola.ca/" target="_blank">
                         Live Website
                     </a></button>
-                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110  ease-in-out"> <a href="https://glitch.com/edit/#!/deckofcardsapi" target="_blank">
+                    <button className="sm:text-sm md:text-lg lg:text-lg xl:text-3xl bg-beige-500 text-white px-6 py-2  hover:bg-orange-600 transition duration-200 rounded-sm hover:scale-110  ease-in-out" data-aos="fade-left"> <a href="https://glitch.com/edit/#!/deckofcardsapi" target="_blank">
                         API
                     </a></button>
 

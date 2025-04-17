@@ -32,7 +32,7 @@ export default function AboutMe() {
   const paragraphs = [
     "coding is weird. bugs happen, languages are complicated, and sometimes, debugging takes longer than it needs to be. and it's frustrating at times.",
     "but the frustration is worth it; when it works, it's like seeing all the pieces fit together like a puzzle.",
-    "i code because it's an outlet that brings my ideas to life. Understanding the logic, connecting code together, and creating something, it's rewarding.",
+    "i code because it's an outlet that brings my ideas to life. understanding the logic, connecting code together, and creating something, it's rewarding.",
   ];
   useEffect(() => {
     sectionsRef.current.forEach((el, index) => {
@@ -318,7 +318,7 @@ export default function AboutMe() {
           <div className="aspect-square sm:aspect-auto sm:col-auto lg:col-start-2 lg:row-start-2 group relative">
             <div className='text-8xl sm:text-7xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🚶</div>
             <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <p className="text-base sm:text-sm md:text-md">i like to go on nature walks! snapping pics and enjoying nature is very relaxing off work.</p>
+              <p className="text-base sm:text-sm md:text-md lg:text-xl">i like to go on nature walks! snapping pics and enjoying nature is very relaxing off work.</p>
             </div>
           </div>
 
@@ -356,7 +356,7 @@ export default function AboutMe() {
           <div className="aspect-square sm:aspect-auto lg:col-start-4 lg:row-start-3 group relative">
             <div className='text-8xl sm:text-7xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🏋️</div>
             <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <p className="text-base sm:text-sm md:text-md">i also weight lift to keep the body active. send me leg workouts!</p>
+              <p className="text-base sm:text-sm md:text-lg lg:text-xl">i also weight lift to keep the body active. send me leg workouts!</p>
             </div>
           </div>
           

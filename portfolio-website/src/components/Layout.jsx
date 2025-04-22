@@ -63,9 +63,9 @@ function Layout() {
                   me, in one page.
                 </span>
               </div>
-              </div>
+            </div>
 
-          
+
 
 
             <button
@@ -77,33 +77,33 @@ function Layout() {
             </button>
           </div>
 
-            <div className={`flex md:hidden justify-end  transition-all duration-300 ease-in-out transform ${isOpen ? "opacity-100" : "opacity-0"}`}>
-              <div className="flex flex-col items-end text-right space-y-2 sm:px-5 font-dmsans">
-                <Link
-                  to="/about"
-                  className="text-lg"
-                  onClick={toggleMenu}
-                >
-                  about
-                </Link>
-                <Link
-                  to="/projects"
-                  className="text-lg"
-                  onClick={toggleMenu}
-                >
-                  works
-                </Link>
-                <a
-                  href="/joseorolaresume.pdf"
-                  className="text-lg"
-                  onClick={toggleMenu}
-                >
-                  resume
-                </a>
-               
-              </div>
+          <div className={`flex md:hidden justify-end  transition-all duration-300 ease-in-out transform ${isOpen ? "opacity-100" : "opacity-0"}`}>
+            <div className="flex flex-col items-end text-right space-y-2 sm:px-5 font-dmsans">
+              <Link
+                to="/about"
+                className="text-lg"
+                onClick={toggleMenu}
+              >
+                about
+              </Link>
+              <Link
+                to="/projects"
+                className="text-lg"
+                onClick={toggleMenu}
+              >
+                works
+              </Link>
+              <a
+                href="/joseorolaresume.pdf"
+                className="text-lg"
+                onClick={toggleMenu}
+              >
+                resume
+              </a>
+
             </div>
- 
+          </div>
+
         </nav>
       </header>
       <main>
@@ -113,13 +113,13 @@ function Layout() {
 
       <footer>
         <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 mx-auto justify-between items-end border-t border-black sm:px-5 sm:py-5 md:px-16 md:py-10">
-          <div className='col-span-1 sm:col-span-4 md:col-span-2 sm:text-left'>
+          <div className='col-span-1 sm:col-span-4 md:col-span-2 sm:text-left sm:py-3 md:py-0'>
 
             <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left">just say hi.</p>
             <p className="text-md md:text-md lg:text-xl xl:text-3xl md:text-left"><a href="mailto:hello@joseorola.ca" className="hover:underline">hello@joseorola.ca</a></p>
           </div>
 
-          <div className='col-span-1 sm:col-span-4 md:col-span-1'>
+          <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:py-3 md:py-0'>
 
             <div className="flex sm:space-x-3 lg:space-x-5 sm:justify-left md:justify-center">
               <a href="https://github.com/jorola0411" target="_blank">
@@ -134,7 +134,7 @@ function Layout() {
             </div>
           </div>
 
-          <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-left sm:text-left md:items-end'>
+          <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-left sm:text-left md:items-end sm:py-3 md:py-0'>
             <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl">coded with react by yours truly.</p>
             <p className="sm:text-sm md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/0hJloArA2Kb9xNBIv34osS?si=2nvN98rGTW-z_L7L769SvA" target="_blank" className="hover:underline text-beige-500 font-semibold">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline text-beige-500 font-semibold">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline text-beige-500 font-semibold">rap</a> releases.</p>
           </div>

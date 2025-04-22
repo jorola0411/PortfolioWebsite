@@ -101,18 +101,18 @@ export default function Styles() {
           </div>
         </div>
 
-       
+
 
         <div className="max-w-[80%] mx-auto">
-            <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
-            <ul className='list-disc list-outside'>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting" to ensure the user has the correct clothing size. personalized clothing recommendations </li>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> online shopping loses the physical experience of trying out clothes; this leads to increased returns and poor user experience.  </li>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>problems:</span> high return rates, poor user experience, incorrect size expectations, limited personalized features</li>
-              <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> implementation of a virtual try on feature would enhance user experience and personalization, and ensure that the items they buy are the correct sizes.</li>
-            </ul>
-          </div>
-    
+          <h1 className="sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl font-bold text-left mt-5"> the tldr;</h1>
+          <ul className='list-disc list-outside'>
+            <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>key features:</span> input your height and weight for accurate "virtual fitting" to ensure the user has the correct clothing size. personalized clothing recommendations </li>
+            <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>why:</span> online shopping loses the physical experience of trying out clothes; this leads to increased returns and poor user experience.  </li>
+            <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>problems:</span> high return rates, poor user experience, incorrect size expectations, limited personalized features</li>
+            <li className="sm:text-md md:text-xl lg:text-xl xl:text-2xl"> <span className='font-semibold'>solutions:</span> implementation of a virtual try on feature would enhance user experience and personalization, and ensure that the items they buy are the correct sizes.</li>
+          </ul>
+        </div>
+
       </section>
 
       <section className='p-10 bg-beige-200 mt-10'>

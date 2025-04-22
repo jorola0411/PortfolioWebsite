@@ -201,7 +201,7 @@ const playerTurn = (requestedCardValue) => {
                     <div className='col-span-1 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1'>
                         <h2 className='font-semibold text-center sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>timeframe</h2>
                         <hr className="max-w-[25%] border-t-2 border-black mt-2 mb-2 mx-auto" />
-                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>1 month: feb-march 2025</p>
+                        <p className='text-center sm:text-md md:text-xl lg:text-xl xl:text-2xl'>1 month</p>
                     </div>
 
                 </div>

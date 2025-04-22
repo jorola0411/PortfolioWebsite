@@ -103,8 +103,8 @@ export default function AboutMe() {
 
       <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
-          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10'data-aos="fade-down">hello again, i'm <span className='font-bold text-beige-500'>Jose</span>.</h1>
-          <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3'data-aos="fade-down"> the tldr:</h2>
+          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10' data-aos="fade-down">hello again, i'm <span className='font-bold text-beige-500'>Jose</span>.</h1>
+          <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3' data-aos="fade-down"> the tldr:</h2>
 
           <ul className='sm:col-span-3 lg:col-span-2 list-disc  pl-4 justify-center flex flex-col' data-aos="fade-right">
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>as a child, i loved interacting and discovering new things. newest pieces of technology, latest video game and music releases, new ways to digitally interact, my environment has shaped me into who i am now, and i'm here as a designer. </li>
@@ -286,83 +286,83 @@ export default function AboutMe() {
 
 
       <section>
-      <div className="py-6 md:py-8 lg:py-10 mt-4 md:mt-6 lg:mt-10">
-        <h1 className='text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-center'>
-          here's <span className='font-bold text-beige-500'>me</span> outside of work.
-        </h1>
-        <h2 className='text-center text-lg sm:text-xl lg:text-2xl xl:text-3xl mb-3 md:mb-5'>
-          (hover or tap the images & emojis!)
-        </h2>
-      </div>
+        <div className='w-[90%] sm:max-w-[90%] lg:max-w-[75%] mx-auto'>
 
-      <div className='w-[90%] sm:max-w-[90%] lg:max-w-[75%] mx-auto'>
+          <div className="py-6 md:py-8 lg:py-10 mt-4 md:mt-6 lg:mt-10">
+            <h1 className=' sm:text-5xl lg:text-7xl xl:text-8xl text-center'>
+              here's <span className='font-bold text-beige-500'>me</span> outside of work.
+            </h1>
+            <h2 className='text-center text-lg sm:text-xl lg:text-2xl xl:text-3xl mb-3 md:mb-5'>
+              (hover or tap the images & emojis!)
+            </h2>
+          </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-4 lg:gap-2'>
-          
-          <div className="w-full lg:row-span-2 group relative">
-            <img src={asher} className='w-full h-full object-cover rounded-lg' alt="My corgi Asher" />
-            <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">thats my corgi, Asher.</h3>
-              <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">he will bark at any loud noise and pull sneak attacks on you.</p>
-              <p className="text-base md:text-lg lg:text-xl">he'll try his best to distract me from my work as much as possible.</p>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-4 lg:gap-2'>
+
+            <div className="w-full lg:row-span-2 group relative">
+              <img src={asher} className='w-full h-full object-cover rounded-lg' alt="My corgi Asher" />
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
+                <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">thats my corgi, Asher.</h3>
+                <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">he will bark at any loud noise and pull sneak attacks on you.</p>
+                <p className="text-base md:text-lg lg:text-xl">he'll try his best to distract me from my work as much as possible.</p>
+              </div>
             </div>
-          </div>
 
-          <div className='p-4 sm:p-3 bg-beige-200 rounded-lg shadow sm:col-auto lg:col-span-2 lg:col-start-2 lg:row-start-1'>
-            <h1 className='text-2xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>listening and analyzing music</h1>
-            <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl mb-2 lg:mb-4'>I am an avid music lover and listener, and I listen to music a little too much.</p>
-            <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl mb-2 lg:mb-4'>I'm always open to exploring new genres and listening to the latest releases.</p>
-            <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>send me your playlist and lets chat about that one artist you don't understand the hype for.</p>
-          </div>
-
-          <div className="aspect-square sm:aspect-auto sm:col-auto lg:col-start-2 lg:row-start-2 group relative">
-            <div className='text-8xl sm:text-7xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🚶</div>
-            <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <p className="text-base sm:text-sm md:text-md lg:text-xl">i like to go on nature walks! snapping pics and enjoying nature is very relaxing off work.</p>
+            <div className='p-4 sm:p-3 bg-beige-200 rounded-lg shadow sm:col-auto lg:col-span-2 lg:col-start-2 lg:row-start-1'>
+              <h1 className='text-2xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>listening and analyzing music</h1>
+              <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl mb-2 lg:mb-4'>I am an avid music lover and listener, and I listen to music a little too much.</p>
+              <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl mb-2 lg:mb-4'>I'm always open to exploring new genres and listening to the latest releases.</p>
+              <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>send me your playlist and lets chat about that one artist you don't understand the hype for.</p>
             </div>
-          </div>
 
-          <div className="aspect-square sm:aspect-auto lg:row-span-2 lg:col-start-3 lg:row-start-2 group relative">
-            <img src={concert} className='w-full h-full object-cover rounded-lg' alt="NIKI concert" />
-            <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">i like to go concerts!</h3>
-              <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">my goal for 2026 is to attend 1 concert per month!</p>
-              <p className="text-base md:text-lg lg:text-xl mb-1">i've seen them live:</p>
-              <ul className='list-disc pl-5 md:p-3'>
-                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Kendrick Lamar in 2017</li>
-                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Backstreet Boys in 2019</li>
-                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Tyler, the Creator in 2022</li>
-                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Nier orchestra, NIKI (pictured), Kiss of Life in 2024</li>
-                <li className='text-base sm:text-sm md:text-lg lg:text-xl'>and soon, ARTMS in 2025</li>
-              </ul>
+            <div className="aspect-square sm:aspect-auto sm:col-auto lg:col-start-2 lg:row-start-2 group relative">
+              <div className='text-8xl sm:text-7xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🚶</div>
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
+                <p className="text-base sm:text-sm md:text-md lg:text-xl">i like to go on nature walks! snapping pics and enjoying nature is very relaxing off work.</p>
+              </div>
             </div>
-          </div>
 
-          <div className="aspect-square sm:aspect-auto lg:row-span-2 lg:col-start-4 lg:row-start-1 group relative">
-            <img src={wrapped} className='w-full h-full object-cover rounded-lg' alt="Spotify wrapped" />
-            <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">do you know how much 120,509 minutes is?</h3>
-              <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">there's 525600 minutes in 1 year.</p>
-              <p className="text-base md:text-lg lg:text-xl">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
+            <div className="aspect-square sm:aspect-auto lg:row-span-2 lg:col-start-3 lg:row-start-2 group relative">
+              <img src={concert} className='w-full h-full object-cover rounded-lg' alt="NIKI concert" />
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
+                <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">i like to go concerts!</h3>
+                <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">my goal for 2026 is to attend 1 concert per month!</p>
+                <p className="text-base md:text-lg lg:text-xl mb-1">i've seen them live:</p>
+                <ul className='list-disc pl-5 md:p-3'>
+                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Kendrick Lamar in 2017</li>
+                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Backstreet Boys in 2019</li>
+                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Tyler, the Creator in 2022</li>
+                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Nier orchestra, NIKI (pictured), Kiss of Life in 2024</li>
+                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>and soon, ARTMS in 2025</li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div className='p-4 sm:p-3 bg-beige-200 rounded-lg shadow sm:col-auto lg:col-span-2 lg:col-start-1 lg:row-start-3'>
-            <h1 className='text-2xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>relaxing in video games</h1>
-            <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl mb-2 lg:mb-4'>if I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
-            <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>video games are an avid part of my life, so let's talk about our favorite games together.</p>
-          </div>
-
-          <div className="aspect-square sm:aspect-auto lg:col-start-4 lg:row-start-3 group relative">
-            <div className='text-8xl sm:text-7xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🏋️</div>
-            <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
-              <p className="text-base sm:text-sm md:text-lg lg:text-xl">i also weight lift to keep the body active. send me leg workouts!</p>
+            <div className="aspect-square sm:aspect-auto lg:row-span-2 lg:col-start-4 lg:row-start-1 group relative">
+              <img src={wrapped} className='w-full h-full object-cover rounded-lg' alt="Spotify wrapped" />
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 md:p-6 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
+                <h3 className="text-xl md:text-xl lg:text-3xl mb-2 sm:mb-3">do you know how much 120,509 minutes is?</h3>
+                <p className="text-base md:text-lg lg:text-xl mb-2 sm:mb-3">there's 525600 minutes in 1 year.</p>
+                <p className="text-base md:text-lg lg:text-xl">doing some math, ive spent around 4 months of 2024 listening to music nonstop.</p>
+              </div>
             </div>
+
+            <div className='p-4 sm:p-3 bg-beige-200 rounded-lg shadow sm:col-auto lg:col-span-2 lg:col-start-1 lg:row-start-3'>
+              <h1 className='text-2xl md:text-2xl lg:text-4xl xl:text-5xl mb-3'>relaxing in video games</h1>
+              <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl mb-2 lg:mb-4'>if I feel it, I play video games to help me wind down after a long day, or wind up if I'm playing Marvel Rivals.</p>
+              <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>video games are an avid part of my life, so let's talk about our favorite games together.</p>
+            </div>
+
+            <div className="aspect-square sm:aspect-auto lg:col-start-4 lg:row-start-3 group relative">
+              <div className='text-8xl sm:text-4xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🏋️</div>
+              <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
+                <p className="text-base sm:text-sm md:text-lg lg:text-xl">i also weight lift to keep the body active. send me leg workouts!</p>
+              </div>
+            </div>
+
           </div>
-          
         </div>
-      </div>
-    </section>
+      </section>
 
     </>
   )

@@ -106,7 +106,7 @@ export default function AboutMe() {
           <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10' data-aos="fade-down">hello again, i'm <span className='font-bold text-beige-500'>Jose</span>.</h1>
           <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3' data-aos="fade-down"> the tldr:</h2>
 
-          <ul className='sm:col-span-3 lg:col-span-2 list-disc  pl-4 justify-center flex flex-col' data-aos="fade-right">
+          <ul className='sm:col-span-3 lg:col-span-2 list-disc pl-4 justify-center flex flex-col' data-aos="fade-right">
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>as a child, i loved interacting and discovering new things. newest pieces of technology, latest video game and music releases, new ways to digitally interact, my environment has shaped me into who i am now, and i'm here as a designer. </li>
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>understanding why things are the way they are have been a core component of myself since i was a child, and has let me adapt, make intuitive designs, and be mindful of the world around me.  </li>
             <li className='sm:text-md md:text-lg lg:text-xl xl:text-3xl mb-5'>i work with html, css/tailwind, javascript, and react. </li>
@@ -127,7 +127,7 @@ export default function AboutMe() {
                 <img
                   src={mainskills.img}
                   alt={mainskills.name}
-                  className="sm:w-12 sm:h-12 md:h-24 md:w-24 lg:w-32 lg:h-32 xl:h-48 xl:w-48 justify-center items-center mx-auto"
+                  className="sm:w-18 sm:h-18 md:h-24 md:w-24 lg:w-32 lg:h-32 xl:h-48 xl:w-48 justify-center items-center mx-auto"
                 />
                 <p className="text-center mt-2 sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
                   {mainskills.name}
@@ -136,13 +136,13 @@ export default function AboutMe() {
             ))}
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10 mb-5">
-            <h1 className='text-center sm:text-2xl lg:text-5xl xl:text-6xl sm:col-span-2 md:col-span-6 lg:col-span-6 mb-5'>while not as much, i work with these as well.</h1>
+            <h1 className='text-center sm:text-3xl lg:text-5xl xl:text-6xl sm:col-span-2 md:col-span-6 lg:col-span-6 mb-5'>while not as much, i work with these as well.</h1>
             {otherskills.map((otherskills) => (
               <div className='sm:col-span-1 md:col-span-1'>
                 <img
                   src={otherskills.img}
                   alt={otherskills.name}
-                  className="sm:w-6 sm:h-6 md:h-12 md:w-12 lg:w-16 lg:h-16 xl:h-24 xl:w-24 justify-center items-center mx-auto"
+                  className="sm:w-12 sm:h-12 md:h-12 md:w-12 lg:w-16 lg:h-16 xl:h-24 xl:w-24 justify-center items-center mx-auto"
                 />
                 <p className="text-center mt-2 sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
                   {otherskills.name}
@@ -188,7 +188,7 @@ export default function AboutMe() {
                   transition={{ duration: 0.7 }}
                   className="back"
                 >
-                  <p className='sm:text-sm md:text-md sm:px-3 md:px-3 lg:text-lg xl:text-3xl'>
+                  <p className='md:text-md sm:px-3 md:px-3 lg:text-lg xl:text-3xl'>
                     the best designs are the one you don't notice, correct?
                     i will make it my priority for *everything* to make sense.
                   </p>
@@ -224,7 +224,7 @@ export default function AboutMe() {
                   className="back"
                 >
 
-                  <p className='sm:text-sm md:text-md sm:px-3 md:px-3 lg:text-lg xl:text-3xl px-3'>
+                  <p className='md:text-md sm:px-3 md:px-3 lg:text-lg xl:text-3xl px-3'>
                     i will always be willing to hear what you have in store for me, and i'll cater my approaches to your needs. a win win for the both of us.
                   </p>
                 </motion.div>
@@ -258,7 +258,7 @@ export default function AboutMe() {
                   transition={{ duration: 0.7 }}
                   className="back"
                 >
-                  <p className='sm:text-sm md:text-sm sm:px-3 md:px-3 lg:text-lg xl:text-3xl'>enjoying what I do allows me to work to the best of my ability. being professional is very important, but we could relax a bit from time to time. </p>
+                  <p className='md:text-sm sm:px-3 md:px-3 lg:text-lg xl:text-3xl'>enjoying what I do allows me to work to the best of my ability. being professional is very important, but we could relax a bit from time to time. </p>
                 </motion.div>
               </button>
             </motion.div>
@@ -297,7 +297,7 @@ export default function AboutMe() {
             </h2>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-4 lg:gap-2'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-4 lg:gap-2 mb-5'>
 
             <div className="w-full lg:row-span-2 group relative">
               <img src={asher} className='w-full h-full object-cover rounded-lg' alt="My corgi Asher" />
@@ -333,7 +333,7 @@ export default function AboutMe() {
                   <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Backstreet Boys in 2019</li>
                   <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Tyler, the Creator in 2022</li>
                   <li className='text-base sm:text-sm md:text-lg lg:text-xl'>Nier orchestra, NIKI (pictured), Kiss of Life in 2024</li>
-                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>and soon, ARTMS in 2025</li>
+                  <li className='text-base sm:text-sm md:text-lg lg:text-xl'>ARTMS in 2025</li>
                 </ul>
               </div>
             </div>
@@ -353,8 +353,8 @@ export default function AboutMe() {
               <p className='text-base sm:text-sm md:text-lg lg:text-xl xl:text-3xl'>video games are an avid part of my life, so let's talk about our favorite games together.</p>
             </div>
 
-            <div className="aspect-square sm:aspect-auto lg:col-start-4 lg:row-start-3 group relative">
-              <div className='text-8xl sm:text-4xl lg:text-9xl flex items-center justify-center h-full bg-beige-100 rounded-lg'>🏋️</div>
+            <div className="aspect-square sm:aspect-auto lg:col-start-4 lg:row-start-3 sm:col-span-2 group relative">
+              <div className='text-8xl sm:text-7xl lg:text-9xl flex items-center justify-center sm:h-32 md:h-full bg-beige-100 rounded-lg'>💪</div>
               <div className="absolute inset-0 bg-beige-200 bg-opacity-25 opacity-0 group-hover:opacity-95 active:opacity-95 transition duration-300 p-4 sm:p-3 lg:p-8 flex flex-col justify-center items-left text-black rounded-lg">
                 <p className="text-base sm:text-sm md:text-lg lg:text-xl">i also weight lift to keep the body active. send me leg workouts!</p>
               </div>

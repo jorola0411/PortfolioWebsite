@@ -43,23 +43,7 @@ function Project() {
 
             <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-col-4 pt-10 overflow-x-hidden">
 
-              <div className="sm:p-5 md:pl-5 lg:p-5 sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-2 lg:order-2 xl:order-2" data-aos="fade-left">
-                <h1 className="sm:text-xl md:text-md lg:text-3xl xl:text-7xl"> <Link to="gofish" className="hover:underline">go fish!</Link></h1>
-                <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl sm:mb-5 lg:my-5'>play go fish and win against the CPU!</p>
-                <div className='flex gap-5 sm:mb-5 md:mb-0'>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>HTML</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>CSS</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>JAVASCRIPT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>REACT</p>
-                  <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border border-black rounded-sm bg-beige-100'>RESTfulAPI</p>
-                </div>
-              </div>
 
-              <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 sm:order-1 md:order-1 lg:order-1 xl:order-1 xl:mb-0" data-aos="fade-left">
-                <Link to="gofish" >
-                  <img src={gofish} alt="Go Fish project" className="xl:w-full xl:h-auto" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
-                </Link>
-              </div>
 
               <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 gap-4 sm:order-7 md:order-8 lg:order-8 xl:order-8" data-aos="fade-right">
                 <Link to="lelem">

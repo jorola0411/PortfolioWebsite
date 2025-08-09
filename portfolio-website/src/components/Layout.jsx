@@ -136,7 +136,7 @@ function Layout() {
 
           <div className='col-span-1 sm:col-span-4 md:col-span-2 flex flex-col sm:items-left sm:text-left md:items-end sm:py-3 md:py-0'>
             <p className="md:text-md lg:text-xl xl:text-3xl">coded with react by yours truly.</p>
-            <p className="md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/0hJloArA2Kb9xNBIv34osS?si=2nvN98rGTW-z_L7L769SvA" target="_blank" className="hover:underline text-beige-500 font-semibold">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline text-beige-500 font-semibold">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline text-beige-500 font-semibold">rap</a> releases.</p>
+            <p className="md:text-md lg:text-xl xl:text-3xl md:text-right">most likely listening to the latest <a href="https://open.spotify.com/album/5h5Ort0gghTn9VgqsUzEvq?si=efcKES2LQ9Gou-u1FPdRCQ" target="_blank" className="hover:underline text-beige-500 font-semibold">kpop</a>, <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=JmkdjAhwSe-A7dgxeGBf4g" target="_blank" className="hover:underline text-beige-500 font-semibold">rnb</a>, and <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=6wc2Xxd0RgaEVl5yaHMKig" target="_blank" className="hover:underline text-beige-500 font-semibold">rap</a> releases.</p>
           </div>
         </div>
       </footer>

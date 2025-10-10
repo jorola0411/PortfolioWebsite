@@ -75,7 +75,6 @@ function Home() {
             and i'm your <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Web Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span>. {/*text-transparent is needed for the gradient to show up*/}
           </h2>
 
-
         </div>
 
         <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
@@ -88,7 +87,7 @@ function Home() {
         <div className="mx-auto space-y-2 md:mt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 mb-10">
           <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center" ref={featuredRef}
             id="feature">featured work</h2>
-          <hr className="border-t-2 border-black mt-2 " />
+          <hr className="border-t-2 border-black mt-2" />
         </div>
 
 

@@ -163,9 +163,6 @@ export default function Styles() {
         </div>
       </section>
 
-
-
-
       <section className='p-10 bg-beige-200 mt-10'>
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-8 mx-auto max-w-[90%] mb-10">
           <div className='col-span-1 sm:col-span-3 md:col-span-1 sm:order-1'>

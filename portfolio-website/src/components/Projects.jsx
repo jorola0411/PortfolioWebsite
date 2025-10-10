@@ -43,8 +43,6 @@ function Project() {
 
             <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-col-4 pt-10 overflow-x-hidden">
 
-
-
               <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 gap-4 sm:order-7 md:order-8 lg:order-8 xl:order-8" data-aos="fade-right">
                 <Link to="lelem">
                   <img src={featuredproject1} className="xl:w-full xl:h-auto" alt="Lelem Natural Park project" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />

@@ -58,7 +58,7 @@ function Layout() {
               </div>
 
               <div className="relative group cursor-pointer flex flex-col items-center">
-                <a href="/joseorolaresume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
+                <a href="/JoseOrolaResume.pdf" className="text-lg md:text-2xl xl:text-5xl hover:underline" target="_blank">resume</a>
                 <span className="absolute top-full w-50 mt-2 lg:text-lg xl:text-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10 text-center pointer-events-none">
                   me, in one page.
                 </span>

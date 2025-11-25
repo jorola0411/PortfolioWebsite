@@ -48,7 +48,7 @@ function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-      <title>Jose Orola - UI/UX Designer & Front-End Developer</title>
+      <title>Jose Orola Front-End Developer</title>
 
       <meta name="description" content="Hello, I'm Jose. I'm a UI/UX designer and Front-End developer located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company." />
 
@@ -72,7 +72,7 @@ function Home() {
             hi. i'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose Orola</span>.
           </h1>
           <h2 className=" sm:text-2xl md:text-6xl xl:text-5xl mt-5" data-aos="fade-left">
-            and i'm your <span className="bg-beige-500 bg-clip-text text-transparent font-bold "> Web Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span>. {/*text-transparent is needed for the gradient to show up*/}
+            and i'm your <span className="bg-beige-500 bg-clip-text text-transparent font-bold ">Web Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span>. {/*text-transparent is needed for the gradient to show up*/}
           </h2>
 
         </div>

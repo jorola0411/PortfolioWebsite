@@ -48,7 +48,7 @@ function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-      <title>Jose Orola, Front-End Developer</title>
+      <title>Jose Orola: Front-End Developer</title>
 
       <meta name="description" content="Hello, I'm Jose. I'm a UI/UX designer and Front-End developer located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company." />
 

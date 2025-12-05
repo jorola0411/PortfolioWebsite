@@ -1,54 +1,49 @@
-import React, { useEffect, useRef } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init(); // we have to initialize aos in the code or else the animations won't work
-import featuredproject4 from '/src/assets/featuredprojects4.jpg';
-import featuredproject2 from '/src/assets/featuredprojects2.jpg';
-import { Link } from "react-router-dom";
+import React from 'react';
 
-import { gsap } from "gsap";
+import html from '../assets/HTML5.svg'
+import css from '../assets/CSS3_logo.svg'
+import tailwind from '../assets/tailwind.svg'
+import javascript from '../assets/javascript.svg'
+import reactlogo from '../assets/React-icon.svg'
+import figma from '../assets/Figma-logo.svg'
+import photoshop from '../assets/photoshop.svg'
+import illustrator from '../assets/illustrator.svg'
+import aftereffects from '../assets/aftereffects.svg'
+import wordpress from '../assets/wordpress.svg'
+import squarespace from '../assets/squarespace.svg'
+import github from '../assets/github.svg'
+import linkedin from '../assets/linkedin.svg'
+import resume from '../assets/resume.svg'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+export default function Home() {
 
-function Home() {
+  const techstack = [
+    { name: "Photoshop", img: photoshop },
+    { name: "Illustrator", img: illustrator },
+    { name: "After Effects", img: aftereffects },
+    { name: "Figma", img: figma },
+    { name: "WordPress", img: wordpress },
+    { name: "SquareSpace", img: squarespace },
+    { name: "HTML", img: html },
+    { name: "CSS", img: css },
+    { name: "JavaScript", img: javascript },
+    { name: "TailwindCSS", img: tailwind },
+    { name: "React", img: reactlogo },
+  ];
 
-  useEffect(() => {
-    AOS.init({
-      duration: 300, // Duration of animation in milliseconds
-      easing: 'ease-in-out', // Easing function
-    });
-  }, []);
-
-
-  const featuredRef = useRef(null);
-
-
-  const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    gsap.from(featuredRef.current, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: featuredRef.current,
-        start: "top 80%",
-      },
-    });
-  }, []);
-
+  const projects = [
+    { id: 1, name: 'OLGC Young Adults Ministry', tags: ['WordPress', 'UI/UX Design'], description: 'Lorem ipsum', img: "https://placehold.co/600x400" },
+    { id: 2, name: 'Smart Beginnings Childcare Center', tags: ['WordPress', 'UI/UX Design'], description: 'Lorem ipsum', img: "https://placehold.co/600x400" },
+    { id: 3, name: 'C Coffee', tags: ['WordPress', 'UI/UX Design'], description: 'Lorem ipsum', img: "https://placehold.co/600x400" },
+    { id: 4, name: 'Coming Soon', tags: ['Coming Soon'], description: 'Lorem ipsum', img: "https://placehold.co/600x400" },
+  ]
   return (
     <>
 
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-      <title>Jose Orola# Front-End Developer</title>
+      <title>Jose Orola | Web Developer</title>
 
       <meta name="description" content="Hello, I'm Jose. I'm a UI/UX designer and Front-End developer located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company." />
 
@@ -64,70 +59,103 @@ function Home() {
       <meta name="twitter:url" content="https://joseorola.ca/" />
 
 
-
-      <div className=" grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 ">
-
-        <div className="md:px-16 md:h-screen lg:h-screen container mx-auto sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4  flex  flex-col justify-center ">
-          <h1 className="sm:text-4xl md:text-7xl lg:text-9xl xl:text-9xl md:mb-10" data-aos="fade-right">
-            hi. i'm <span className="bg-beige-500 bg-clip-text text-transparent font-bold">Jose Orola</span>......
-          </h1>
-          <h2 className=" sm:text-2xl md:text-6xl xl:text-5xl mt-5" data-aos="fade-left">
-            and i'm your <span className="bg-beige-500 bg-clip-text text-transparent font-bold ">Web Developer</span> & <span className="bg-beige-500 bg-clip-text text-transparent font-bold"> Web Designer</span>. {/*text-transparent is needed for the gradient to show up*/}
-          </h2>
-
-        </div>
-
-        <div className="max-md:hidden absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer">
-
-          <FontAwesomeIcon icon={faChevronDown} className=" hover:text-beige-500 transition animate-bounce text-5xl" onClick={() => scrollToSection(featuredRef)} />
-        </div>
-      </div>
-
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:col-span-4 xl:col-span-4 pt-10 overflow-x-hidden">
-        <div className="mx-auto space-y-2 md:mt-10 sm:col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4 mb-10">
-          <h2 className="sm:text-2xl md:text-4xl lg:text-4xl xl:text-6xl text-center" ref={featuredRef}
-            id="feature">featured work</h2>
-          <hr className="border-t-2 border-black mt-2" />
-        </div>
-
-
-        <div className="sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 gap-4">
-          <Link to="projects/monster">
-            <img src={featuredproject4} className="xl:w-full xl:h-auto" alt="Monster Hunter API project" data-aos="fade-right" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Lelem Natural Park, a collaborative and front-end development project." />
-          </Link>
-        </div>
-
-        <div className="sm:p-5 md:pl-5 lg:p-5 sm:col-span-4 md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-center" data-aos="fade-right">
-          <h1 className='sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5 md:px-0'>Monster Hunter World database</h1>
-          <p className='sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5 md:px-0'>search and favorite items using the Monster Hunter API.</p>
-          <div className='flex gap-5 sm:mb-5 md:px-0'>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>HTML</p>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>CSS</p>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>JAVASCRIPT</p>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>REACT</p>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>API</p>
+      <div className="min-h-screen p-8 bg-offwhite dark:bg-caviar">
+        <div className='grid grid-cols-2 gap-4 mb-16'>
+          <div className='col-span-1'>
+            <h1 className="md:text-7xl font-bold mb-2">
+              Jose Orola
+            </h1>
+            <h2 className='md:text-[32px] mb-2'>
+              Web Developer
+            </h2>
+            <h3 className='md:text-md mb-2'>
+              I bridge the gap between design and code to create user experiences that makes life easier with precision and intuition.
+              <br></br>
+              Currently freelancing.
+            </h3>
+            <div className="flex sm:space-x-4">
+              <a href="https://github.com/jorola0411" target="_blank">
+                <img src={github} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
+              </a>
+              <a href="https://linkedin.com/in/jose-orola" target="_blank">
+                <img src={linkedin} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
+              </a>
+              <a href="/joseorolaresume.pdf" target="_blank">
+                <img src={resume} alt="Resume" description="custom logo, used for the user to click to Instagram." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
+              </a>
+            </div>
           </div>
 
-        </div>
-
-        <div className="sm:p-5 md:pl-5 lg:p-5 sm:col-span-4 md:col-span-2 flex flex-col justify-center sm:order-2 md:order-1" data-aos="fade-left">
-          <h1 className="sm:text-xl md:text-md lg:text-3xl xl:text-6xl mb-5 sm:text-left md:text-right lg:text-right md:px-0">styles by jao</h1>
-          <p className="sm:text-sm md:text-sm lg:text-lg xl:text-4xl mb-5 sm:text-left md:text-right lg:text-right md:px-0">virtually try on clothes and browse in styles, a streetwear store app.</p>
-          <div className='flex gap-5 sm:mb-5 sm:justify-start md:justify-end lg:justify-end  md:px-0'>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>UI</p>
-            <p className='sm:text-sm md:text-sm lg:text-md xl:text-3xl sm:p-1 md:p-1 lg:p-1 border rounded-sm border-black bg-beige-100'>UX</p>
+          <div className='bg-gray-200 rounded-lg col-span-1'>
+            <div className="p-4 flex flex-col justify-between col-span-1">
+              <h1 className='md:text-[32px] col-span-1 mx-auto mb-2'>Tech Stack</h1>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 ">
+                {techstack.map((techstack) => (
+                  <div className='sm:col-span-1 md:col-span-1'>
+                    <img
+                      src={techstack.img}
+                      alt={techstack.name}
+                      className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 justify-center items-center mx-auto"
+                    />
+                    <p className="text-center mt-2 ">
+                      {techstack.name}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="sm:col-span-4 md:col-span-2 gap-4 sm:order-1 md:order-2">
-          <Link to="projects/styles" className="relative group">
-            <img src={featuredproject2} className="xl:w-full xl:h-auto" alt="Styles" data-aos="fade-left" data-aos-anchor-placement="top-bottom" description="CTA that leads the user to one of my projects, Styles, a UI/UX focused project." />
-          </Link>
-        </div>
+        <work>
+          <div className='grid grid-cols-4 gap-4'>
+
+            {projects.map((projects) => (
+              <div className="bg-gray-200 rounded-lg  flex flex-col justify-between hover:shadow-lg transition col-span-1 group">
+                <div className='sm:col-span-1 md:col-span-1'>
+                  <img
+                    src={projects.img}
+                    alt={projects.name}
+                    className="w-full justify-center items-center mx-auto object-cover rounded-t-lg"
+                  />
+                  <div className='px-2'>
+                    <p className="mt-2 text-2xl font-medium">
+                      {projects.name}
+                    </p>
+                    <p className="mt-2">
+                      {projects.tags}
+                    </p>
+                    <p className="my-2">
+                      {projects.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </work>
+
+        <footer>
+          <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black sm:pt-8 mt-4">
+            <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-left sm:py-3 md:py-0'>
+              <p className=" md:text-left"><a href="mailto:jorola0411@gmail.com" className="hover:underline">jorola0411@gmail.com</a></p>
+            </div>
+
+            <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:py-3 md:py-0'>
+              <div className="flex sm:space-x-3 lg:space-x-5 sm:justify-left md:justify-center">
+                <p>Need something more traditional? Click me.</p>
+              </div>
+            </div>
+
+            <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:text-left md:items-end sm:py-3 md:py-0'>
+              <p>coded with react</p>
+            </div>
+          </div>
+        </footer>
+
       </div>
 
     </>
   )
 }
-
-export default Home

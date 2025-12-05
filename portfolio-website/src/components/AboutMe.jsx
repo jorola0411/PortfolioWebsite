@@ -13,13 +13,13 @@ import concert from '../assets/concert.jpg'
 import html from '../assets/HTML5.svg'
 import css from '../assets/CSS3_logo.svg'
 import tailwind from '../assets/tailwind.svg'
-import js from '../assets/jslogo.svg'
+import javascript from '../assets/javascript.svg'
 import reactlogo from '../assets/React-icon.svg'
 import figma from '../assets/Figma-logo.svg'
 import photoshop from '../assets/photoshop.svg'
 import illustrator from '../assets/illustrator.svg'
 import aftereffects from '../assets/aftereffects.svg'
-import python from '../assets/python.svg'
+
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -103,7 +103,7 @@ export default function AboutMe() {
 
       <section className="w-full bg-beige-200 py-10 lg:mt-15">
         <div className='grid sm:grid-cols-3 lg:grid-cols-3 mx-auto gap-5 max-w-[80%]'>
-          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10' data-aos="fade-down">hello again, i'm <span className='font-bold text-beige-500'>Jose</span>.</h1>
+          <h1 className='sm:text-5xl lg:text-8xl xl:text-9xl text-center col-span-3 lg:mb-10' data-aos="fade-down">hello again, i'm <span className=' font-modernistbold'>Jose</span>.</h1>
           <h2 className='sm:text-2xl lg:text-5xl xl:text-6xl text-center col-span-3' data-aos="fade-down"> the tldr:</h2>
 
           <ul className='sm:col-span-3 lg:col-span-2 list-disc pl-4 justify-center flex flex-col' data-aos="fade-right">

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link } from "react-router-dom";
 import html from '../assets/HTML5.svg'
 import css from '../assets/CSS3_logo.svg'
 import tailwind from '../assets/tailwind.svg'
@@ -61,10 +61,12 @@ export default function Home() {
 
       <div className="min-h-screen p-8 bg-offwhite dark:bg-caviar">
         <div className='grid grid-cols-2 gap-4 mb-16'>
-          <div className='col-span-1'>
+          <div className='col-span-1 dark:text-offwhite'>
+            <Link to="about">
             <h1 className="md:text-7xl font-bold mb-2">
               Jose Orola
             </h1>
+            </Link>
             <h2 className='md:text-[32px] mb-2'>
               Web Developer
             </h2>
@@ -75,19 +77,19 @@ export default function Home() {
             </h3>
             <div className="flex sm:space-x-4">
               <a href="https://github.com/jorola0411" target="_blank">
-                <img src={github} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
+                <img src={github} alt="GitHub Logo" description="custom logo, used for the user to click to GitHub." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-8 lg:h-8  xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out dark:invert" />
               </a>
               <a href="https://linkedin.com/in/jose-orola" target="_blank">
-                <img src={linkedin} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
+                <img src={linkedin} alt="Linkedin Logo" description="custom logo, used for the user to click to LinkedIn." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-8 lg:h-8  xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
               </a>
               <a href="/joseorolaresume.pdf" target="_blank">
-                <img src={resume} alt="Resume" description="custom logo, used for the user to click to Instagram." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out" />
+                <img src={resume} alt="Resume" description="custom logo, used for the user to click to Instagram." className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-8 lg:h-8 xl:h-32 xl:w-32 hover:scale-110 transition ease-in-out dark:invert" />
               </a>
             </div>
           </div>
 
-          <div className='bg-gray-200 rounded-lg col-span-1'>
-            <div className="p-4 flex flex-col justify-between col-span-1">
+          <div className='border rounded-lg col-span-1 bg-snow dark:bg-shadowgray border-coffee dark:border-cream '>
+            <div className="p-4 flex flex-col justify-between col-span-1 dark:text-offwhite">
               <h1 className='md:text-[32px] col-span-1 mx-auto mb-2'>Tech Stack</h1>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 ">
                 {techstack.map((techstack) => (
@@ -95,7 +97,7 @@ export default function Home() {
                     <img
                       src={techstack.img}
                       alt={techstack.name}
-                      className="sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 justify-center items-center mx-auto"
+                      className={`sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 justify-center items-center mx-auto ${techstack.name === "SquareSpace" ? "dark:invert" : ""}`}
                     />
                     <p className="text-center mt-2 ">
                       {techstack.name}
@@ -111,7 +113,7 @@ export default function Home() {
           <div className='grid grid-cols-4 gap-4'>
 
             {projects.map((projects) => (
-              <div className="bg-gray-200 rounded-lg  flex flex-col justify-between hover:shadow-lg transition col-span-1 group">
+              <div className="border rounded-lg flex flex-col justify-between hover:shadow-lg transition col-span-1 group hover:scale-101 ease-in-out bg-snow dark:bg-shadowgray border-coffee dark:border-cream text-caviar dark:text-offwhite">
                 <div className='sm:col-span-1 md:col-span-1'>
                   <img
                     src={projects.img}
@@ -137,7 +139,7 @@ export default function Home() {
         </work>
 
         <footer>
-          <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t border-black sm:pt-8 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t  sm:pt-8 mt-4 border-caviar dark:border-offwhite text-caviar dark:text-offwhite">
             <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-left sm:py-3 md:py-0'>
               <p className=" md:text-left"><a href="mailto:jorola0411@gmail.com" className="hover:underline">jorola0411@gmail.com</a></p>
             </div>

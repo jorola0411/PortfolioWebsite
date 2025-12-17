@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
    
-          server-dir: /home/Jose_Orola_admin/web/joseorola.ca/public_html
+          server-dir: /home/Jose_Orola/web/joseorola.ca/public_html/

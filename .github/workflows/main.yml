@@ -19,6 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
    
-          server-dir: /home/Jose_Orola_admin/web/joseorola.ca/public_html/
-
-          # Add this to bypass common certificate validation errors on self-signed Hestia certs
+          server-dir: /home/Jose_Orola_admin/web/joseorola.ca/public_html

@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get latest code
-        uses: actions/checkout@v4
+    uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
       - name: Use Node.js 20
         uses: actions/setup-node@v2
         with:
@@ -26,4 +28,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "portfolio-website/dist/"
-          server-dir: /home/Jose_Orola_admin/web/<yur>/public_html/
+          server-dir: /home/Jose_Orola/web/joseorola.ca

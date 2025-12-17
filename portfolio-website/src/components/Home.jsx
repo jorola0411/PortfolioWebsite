@@ -35,8 +35,9 @@ export default function Home() {
           </h2>
 
           <h3 className='md:text-md mb-2 text-center'>
-            Hi, this website is currently under a redesign, please check out the important info & selected works below!
+            Hi, this website is currently going under a redesign, please check out the important info & selected works below!
           </h3>
+
          <div className="flex sm:space-x-4 items-center justify-center mb-2 ">
            <a href='https://www.ccoffee.ca/' target="_blank" className='hover:underline'>
               C Coffee

@@ -19,4 +19,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
+          port: 21
           server-dir: /home/Jose_Orola/web/joseorola.ca/public_html/

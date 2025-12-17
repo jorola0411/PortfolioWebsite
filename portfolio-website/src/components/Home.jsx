@@ -1,47 +1,8 @@
-import { useState, useRef } from 'react';
-import AboutMe from './AboutMe';
-import OLGC from './OLGCYA';
-import SBCC from './SBCC';
-import Ccoffee from './CCoffee';
-
-import html from '../assets/HTML5.svg'
-import css from '../assets/CSS3_logo.svg'
-import tailwind from '../assets/tailwind.svg'
-import javascript from '../assets/javascript.svg'
-import reactlogo from '../assets/React-icon.svg'
-import figma from '../assets/Figma-logo.svg'
-import photoshop from '../assets/photoshop.svg'
-import illustrator from '../assets/illustrator.svg'
-import aftereffects from '../assets/aftereffects.svg'
-import wordpress from '../assets/wordpress.svg'
-import squarespace from '../assets/squarespace.svg'
+import { React } from 'react';
 
 export default function Home() {
 
-  const [mode, setMode] = useState('card')
-  const [activeOverlay, setActiveOverlay] = useState(null);
 
-
-  const techstack = [
-    { name: "Photoshop", img: photoshop },
-    { name: "Illustrator", img: illustrator },
-    { name: "After Effects", img: aftereffects },
-    { name: "Figma", img: figma },
-    { name: "WordPress", img: wordpress },
-    { name: "SquareSpace", img: squarespace },
-    { name: "HTML", img: html },
-    { name: "CSS", img: css },
-    { name: "JavaScript", img: javascript },
-    { name: "TailwindCSS", img: tailwind },
-    { name: "React", img: reactlogo },
-  ];
-
-  const projects = [
-    { id: 1, name: 'OLGC Young Adults Ministry', tags: ['WordPress', 'UI/UX Design'], description: 'Lorem ipsum', img: "https://placehold.co/600x400", component: OLGC },
-    { id: 2, name: 'Smart Beginnings Childcare Center', tags: ['WordPress', 'UI/UX Design'], description: 'Boosting brand exposure and clients with a brand new website.', img: "https://placehold.co/600x400", component: SBCC },
-    { id: 3, name: 'C Coffee', tags: ['WordPress', 'UI/UX Design'], description: 'Lorem ipsum', img: "https://placehold.co/600x400", component: Ccoffee },
-    { id: 4, name: 'Coming Soon', tags: ['Coming Soon'], description: 'Lorem ipsum', img: "https://placehold.co/600x400" },
-  ];
 
   return (
     <>
@@ -64,168 +25,45 @@ export default function Home() {
       <meta name="twitter:description" content="Explore the portfolio of Jose, a UI/UX designer and front-end developer, featuring projects like Lelem Natural Park and Styles." />
       <meta name="twitter:url" content="https://joseorola.ca/" />
 
-      {mode === 'card' ? (
-        <div className="min-h-screen p-8 bg-offwhite dark:bg-caviar">
-          <div className='grid grid-cols-2 gap-4 mb-16'>
-            <div className='col-span-1 text-caviar dark:text-offwhite'>
-              <button onClick={() => setActiveOverlay('about')} className='hover:cursor-pointer'>
-                <h1 className="md:text-7xl font-bold mb-2">
-                  Jose Orola
-                </h1>
-              </button>
-              <h2 className='md:text-[32px] mb-2'>
-                Digital Developer & Designer
-              </h2>
-              <h3 className='md:text-md mb-2'>
-                I bridge the gap between design and code to create intuitive and creative user experiences.
-                <br></br>
-                Currently freelancing.
-              </h3>
-              <div className="flex sm:space-x-4 ">
-                <a href="https://github.com/jorola0411" target="_blank">
-                  <svg className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" /></svg>
-                </a>
-                <a href="https://linkedin.com/in/jose-orola" target="_blank">
-                  <svg className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" /></svg>
-                </a>
-                <a href="/joseorolaresume.pdf" target="_blank">
-                  <svg className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M192 112L304 112L304 200C304 239.8 336.2 272 376 272L464 272L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 128C176 119.2 183.2 112 192 112zM352 131.9L444.1 224L376 224C362.7 224 352 213.3 352 200L352 131.9zM192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 250.5C512 233.5 505.3 217.2 493.3 205.2L370.7 82.7C358.7 70.7 342.5 64 325.5 64L192 64zM248 320C234.7 320 224 330.7 224 344C224 357.3 234.7 368 248 368L392 368C405.3 368 416 357.3 416 344C416 330.7 405.3 320 392 320L248 320zM248 416C234.7 416 224 426.7 224 440C224 453.3 234.7 464 248 464L392 464C405.3 464 416 453.3 416 440C416 426.7 405.3 416 392 416L248 416z" /></svg>
-                </a>
-              </div>
-            </div>
 
-            {activeOverlay === 'about' && (
-              <div
-                className="fixed inset-0 bg-black/15 backdrop-blur-sm z-10 flex items-center justify-center px-16 py-16"
-                onClick={() => setActiveOverlay(null)}
-              >
-                <div
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <AboutMe onClose={() => setActiveOverlay(null)} />
-                </div>
-              </div>
-            )}
+      <div className="min-h-screen p-8 bg-offwhite dark:bg-caviar flex items-center justify-center">
+        <div className='text-caviar dark:text-offwhite'>
+          <h1 className="md:text-7xl font-bold mb-2 text-center">
+            Jose Orola
+          </h1>
 
-            <div className='border rounded-lg col-span-1 bg-snow dark:bg-shadowgray border-coffee dark:border-cream '>
-              <div className="p-4 flex flex-col justify-between col-span-1 text-caviar dark:text-offwhite">
-                <h1 className='md:text-[32px] col-span-1 mx-auto mb-2'>Tech Stack</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 ">
-                  {techstack.map((techstack) => (
-                    <div className='sm:col-span-1 md:col-span-1'>
-                      <img
-                        src={techstack.img}
-                        alt={techstack.name}
-                        className={`sm:w-4 sm:h-4 md:h-6 md:w-16 lg:w-10 lg:h-10 xl:h-32 xl:w-32 justify-center items-center mx-auto ${techstack.name === "SquareSpace" ? "dark:invert" : ""}`}
-                      />
-                      <p className="text-center mt-2 ">
-                        {techstack.name}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <h2 className='md:text-[32px] mb-2 text-center'>
+            Digital Developer & Designer
+          </h2>
+
+          <h3 className='md:text-md mb-2 text-center'>
+            Hi, this website is currently under a redesign, please check out the important info & selected works below!
+          </h3>
+         <div className="flex sm:space-x-4 items-center justify-center mb-2 ">
+           <a href='https://www.ccoffee.ca/' target="_blank" className='hover:underline'>
+              C Coffee
+            </a>
+            <a href='https://www.olgcya.ca' target="_blank" className='hover:underline'>
+              OLGC Young Adults Ministry
+            </a>
+            <a href='https://daintydecors.joseorola.ca/' target="_blank" className='hover:underline'>
+              Dainty Decors
+            </a>
+        </div>
+          <div className="flex sm:space-x-4 items-center justify-center">
+            <a href="https://github.com/jorola0411" target="_blank">
+              <svg className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" /></svg>
+            </a>
+            <a href="https://linkedin.com/in/jose-orola" target="_blank">
+              <svg className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" /></svg>
+            </a>
+            <a href="/joseorolaresume.pdf" target="_blank">
+              <svg className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M192 112L304 112L304 200C304 239.8 336.2 272 376 272L464 272L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 128C176 119.2 183.2 112 192 112zM352 131.9L444.1 224L376 224C362.7 224 352 213.3 352 200L352 131.9zM192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 250.5C512 233.5 505.3 217.2 493.3 205.2L370.7 82.7C358.7 70.7 342.5 64 325.5 64L192 64zM248 320C234.7 320 224 330.7 224 344C224 357.3 234.7 368 248 368L392 368C405.3 368 416 357.3 416 344C416 330.7 405.3 320 392 320L248 320zM248 416C234.7 416 224 426.7 224 440C224 453.3 234.7 464 248 464L392 464C405.3 464 416 453.3 416 440C416 426.7 405.3 416 392 416L248 416z" /></svg>
+            </a>
           </div>
-
-          <work>
-
-            <div className='grid grid-cols-4 gap-4'>
-
-              {projects.map((projects) => (
-                <div onClick={() => setActiveOverlay(projects.id)} className="hover:cursor-pointer border rounded-lg flex flex-col justify-between hover:shadow-lg transition col-span-1 group hover:scale-101 ease-in-out bg-snow dark:bg-shadowgray border-coffee dark:border-cream text-caviar dark:text-offwhite" >
-                  <div className='sm:col-span-1 md:col-span-1'>
-                    <img
-                      src={projects.img}
-                      alt={projects.name}
-                      className="w-full justify-center items-center mx-auto object-cover rounded-t-lg"
-                    />
-                    <div className='px-2'>
-                      <p className="mt-2 text-2xl font-medium">
-                        {projects.name}
-                      </p>
-                      <p className="mt-2">
-                        {projects.tags}
-                      </p>
-                      <p className="my-2">
-                        {projects.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {projects.map((project) => (
-              activeOverlay === project.id && project.component && (
-                <div
-                  className="fixed inset-0 bg-black/15 backdrop-blur-sm z-10 flex items-center justify-center px-16 py-16"
-                  onClick={() => setActiveOverlay(null)}
-                >
-                  <div
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <project.component onClose={() => setActiveOverlay(null)} />
-                  </div>
-                </div>
-              )
-            ))}
-
-          </work>
-
-          <footer>
-            <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t  sm:pt-8 mt-4 border-caviar dark:border-offwhite text-caviar dark:text-offwhite">
-              <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-left sm:py-3 md:py-0'>
-                <p className=" md:text-left"><a href="mailto:jorola0411@gmail.com" className="hover:underline">jorola0411@gmail.com</a></p>
-              </div>
-
-              <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:py-3 md:py-0'>
-                <div className="flex sm:space-x-3 lg:space-x-5 sm:justify-left md:justify-center">
-                  <button onClick={() => setMode('scroll')}>Prefer to scroll? Click me.</button>
-                </div>
-              </div>
-
-              <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:text-left md:items-end sm:py-3 md:py-0'>
-                <p>coded with react</p>
-              </div>
-            </div>
-          </footer>
-
+ 
         </div>
-      ) : (
-        <div className="min-h-screen p-8 bg-offwhite dark:bg-caviar text-caviar dark:text-offwhite">
-          <nav className='sticky top-0 z-10'>
-            <div className="flex justify-center space-x-8">
-            <button>
-              Home
-            </button>
-            <button>
-              About
-            </button>
-            <button>
-              Work
-            </button>
-            </div>
-          </nav>
-          <footer>
-            <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t  sm:pt-8 mt-4 border-caviar dark:border-offwhite text-caviar dark:text-offwhite">
-              <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:text-left sm:py-3 md:py-0'>
-                <p className=" md:text-left"><a href="mailto:jorola0411@gmail.com" className="hover:underline">jorola0411@gmail.com</a></p>
-              </div>
-
-              <div className='col-span-1 sm:col-span-4 md:col-span-1 sm:py-3 md:py-0'>
-                <div className="flex sm:space-x-3 lg:space-x-5 sm:justify-left md:justify-center">
-                  <button onClick={() => setMode('card')}>Don't want to scroll? Click me.</button>
-                </div>
-              </div>
-
-              <div className='col-span-1 sm:col-span-4 md:col-span-1 flex flex-col sm:text-left md:items-end sm:py-3 md:py-0'>
-                <p>coded with react</p>
-              </div>
-            </div>
-          </footer>
-        </div>
-      )}
+      </div>
     </>
   )
 }

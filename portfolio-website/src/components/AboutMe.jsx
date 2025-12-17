@@ -5,12 +5,12 @@ export default function AboutMe({ onClose, showBackButton = true }) {
 
   return (
     <>
-      <div className="p-8 bg-offwhite dark:bg-shadowgray text-2xl text-caviar dark:text-offwhite">
+      <div className="p-8 bg-offwhite dark:bg-shadowgray  text-caviar dark:text-offwhite rounded-4xl border dark:border-cream">
 
         {showBackButton && (
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite cursor-pointer" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="sm:w-4 sm:h-4 md:h-8 md:w-8 lg:w-10 lg:h-10 xl:h-32 xl:w-32 hover:scale-110 transition-transform ease-in-out fill-caviar dark:fill-offwhite cursor-pointer"
             viewBox="0 0 640 640"
             onClick={onClose}
           >
@@ -18,21 +18,58 @@ export default function AboutMe({ onClose, showBackButton = true }) {
           </svg>
         )}
 
-        <div className='grid grid-cols-2'>
-          <h1>Hey again! It's Jose.</h1>
-          <img src={jose} alt="" className='w-16 h-16'/>
+        <div className='grid grid-cols-2 gap-8'>
+          <div className='col-span-1'>
+            <h1 className='font-bold text-3xl pb-8'>Hey again! It's Jose.</h1>
+            <h1 className='font-semibold text-2xl pb-2'>My Philosophy</h1>
+            <p className='pb-8'>I believe that design should always be intuitive - experiences that serves the user in an easy manner. I want to respect the user's time, and not overcomplicate a certain process just because we can. Aesthetics & visual designs pull the user in; but how it works keep them in. It's always about the user first.</p>
+            <h1 className='font-semibold text-2xl pb-2'>My Journey</h1>
+            <p>My interest UI/UX design and web development first started when I studied cyberscurity at BCIT. Coding in a way that helps users and solving problems for them in a digital world. Thinking critically about design systems and user centric design transitioned well into BCIT's New Media Design & Web Development program. From there, the program has taught me everything I need to know on making clean designs that work exactly as users expect them to. </p>
+
+
+
+
+          </div>
+
+          <div className='col-span-1 '>
+            <div className="relative max-w-3xl mx-auto h-96 flex items-center justify-center">
+              {/* Left image */}
+              <img
+                src={jose}
+                alt=""
+                className="absolute left-0 w-64 h-72 object-cover rounded-lg -rotate-12 shadow-lg"
+              />
+
+              {/* Center image */}
+              <img
+                src={jose}
+                alt=""
+                className="relative z-10 w-72 h-80 object-cover rounded-lg shadow-2xl"
+              />
+
+              {/* Right image */}
+              <img
+                src={jose}
+                alt=""
+                className="absolute right-0 w-64 h-72 object-cover rounded-lg rotate-12 shadow-lg"
+              />
+            </div>
+
+          </div>
+          <div className='col-span-2'>
+            <h1 className='font-semibold text-2xl text-center'>Outside of code</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 mx-auto justify-between items-end border-t  sm:pt-4 mt-4 border-caviar dark:border-offwhite text-caviar dark:text-offwhite"></div>
+            <p className='pb-6'>When I'm not adding tailwind css properties, you'll catch me:</p>
+
+            <ul className="space-y-4">
+              <li>Hitting new PRs at the gym</li>
+              <li>Listening to the latest music releases</li>
+              <li>Winding down playing Deadlock or Marvel Rivals</li>
+              <li>Thinking and studying philosophy</li>
+            </ul>
+          </div>
+
         </div>
-        
-        <p>I believe that design should always be intuitive - experiences that serves the user in an easy manner. I want to respect the user's time, and not overcomplicate a certain process just because we can. Aesthetics & visual designs pull the user in; but how it works keep them in.</p>
-        
-        <p>Outside of work you'll catch me:</p>
-        
-        <ul>
-          <li>hitting the gym</li>
-          <li>listening to the latest music releases</li>
-          <li>playing deadlock/marvel rivals</li>
-          <li>studying philosophy</li>
-        </ul>
       </div>
     </>
   )

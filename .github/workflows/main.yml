@@ -1,7 +1,7 @@
 on: 
   push:
     branches: [ deploy ]
-name: 🚀 Deploy website on push
+name: Deploy to Hestia via FTP
 jobs:
   web-deploy:
     name: 🚀 Deploy React
@@ -25,4 +25,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "portfolio-website/dist/"
-          server-dir: "public_html/"
+          server-dir: /home/Jose_Orola_admin/web/<yur>/public_html/

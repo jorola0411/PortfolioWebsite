@@ -1,14 +1,5 @@
 @import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@font-face {
-  font-family: 'Satoshi-Regular';
-  src: url('../src/assets/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('../src/assets/fonts/Satoshi-Regular.woff') format('woff'),
-       url('../src/assets/fonts/Satoshi-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @theme {
   --breakpoint-sm: 320px;
@@ -16,49 +7,14 @@
   --breakpoint-lg: 1025px;
   --breakpoint-xl: 1921px;
 
-  --container-8xl: 96rem;
-  --container-7xl: 85rem;
-  --container-md: 52rem;
-  --container-screen-lg: 64rem;
+  --font-manrope:  Manrope, sans-serif;
 
-  --width-70: 60rem;
-  --width-96: 80rem;
+  --color-offwhite: #FAF9F6;
+  --color-caviar: #2C2F32;
+  --color-coffee: #5A493B;
+  --color-cream: #C8BDB1;
+  --color-shadowgray: #2C2C32;
+  --color-snow: #F6F7FA;
 
-  --height-70: 60rem;
-  --height-96: 80rem;
-
-  --font-dmsans:  DM Sans, sans-serif;
-  --font-satoshi: Satoshi, 'Satoshi-Regular', sans-serif;
-
-  --color-light-grey: #f2f2f2;
-  --color-beige-50: #fff8ef;
-  --color-beige-100: #ffedd5;
-  --color-beige-200: #fed8aa;
-  --color-beige-300: #fdbb74;
-  --color-beige-400: #fb933c;
-  --color-beige-500: #f97516;
-  --color-beige-600: #ea5a0c;
-  --color-beige-700: #c2420c;
-  --color-beige-800: #9a3512;
-  --color-beige-900: #7c2e12;
+  --text-3xl: 32px;
 }
-
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-

@@ -28,7 +28,7 @@ const [dark, setDark] = useState(() => {
                             </button>
                         </Link>
                         <button className='hover:cursor-pointer dark:hover:text-cream hover:text-coffee hover:scale-95 transition-transform ease-in-out'>
-                            <a href="/JoseOrolaResume.pdf" target='_blank'>
+                            <a href="/joseorolaresume.pdf" target='_blank'>
                                 Resume
                             </a>
                         </button>

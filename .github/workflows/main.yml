@@ -9,23 +9,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 2
-      - name: Use Node.js 20
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
-      - name: ⛏️Build Project
-        run: |
-          cd portfolio-website
-          npm install
-          npm run build     
+          node-version: '18'
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build and export Next.js
+        run: npm run prod    
+        
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./portfolio-website/dist/
-          server-dir: /home/Jose_Orola/web/joseorola.ca/
+          local-dir: out/
+          server-dir: /home/Jose_Orola/web/joseorola.ca/public_html/

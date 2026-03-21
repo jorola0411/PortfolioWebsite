@@ -9,8 +9,8 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className='grid grid-cols-2 gap-8'>
-        <div className='col-span-1'>
+      <section className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-8'>
+        <div className='col-span-1  order-last md:order-first'>
           <h1 className='font-bold text-lg pb-8'>Hey again!</h1>
 
           <p className='pb-8'>I’m Jose, digital developer with a focus on front-end development and interaction design.</p>
@@ -19,19 +19,20 @@ export default function AboutMe() {
 
         </div>
 
-        <div className='col-span-1 '>
+        <div className='col-span-1 order-first md:order-last'>
           <div className="flex items-center justify-center">
 
             <img
               src={jose}
               alt=""
-              className="relative z-10 w-72 h-80 object-cover rounded-lg shadow-2xl"
+              className="w-72 h-80 object-cover rounded-lg shadow-2xl"
             />
 
           </div>
         </div>
-      </div>
-      <section class="flex gap-6 mb-8">
+      </section>
+
+      <section class="flex flex-col md:flex-row gap-6 mb-8">
         <div className='flex flex-col flex-1'> 
           <h1 className='text-lg mb-2 font-semibold'>Tech Stack</h1>
           <div className="px-8 py-4  h-full justify-between  border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">

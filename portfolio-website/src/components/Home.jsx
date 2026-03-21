@@ -36,26 +36,26 @@ export default function Home() {
       <div>
 
         <section className='flex-row mx-auto text-center'>
-          <h1 className='text-lg mb-8'>
+          <h1 className='md:text-lg mb-8'>
             Hello, I'm Jose; <span className='font-medium'>Digital Developer.</span>
           </h1>
-          <h2 className='md:text-3xl m-8 font-medium'>
+          <h2 className='sm:text-xl md:text-3xl mb-8 font-medium'>
             Design & Dev in one.
             <br />
             Let's create something together.
               </h2>
-            <p className='text-lg'>
+            <p className='md:text-lg'>
             Currently freelancing.
             </p>
         
         </section>
 
 
-        <section className='max-w-11/12 mx-auto mb-8'>
+        <section className='md:max-w-11/12 mx-auto mb-8'>
 
-          <div className='grid grid-cols-2 gap-4 mt-10'>
+          <div className='grid md:grid-cols-2 gap-4 mt-10'>
             {projects.map((project) => (
-              <div key={project.id} className='sm:col-span-1 md:col-span-1 group  transition  ease-in-out'>
+              <div key={project.id} className='sm:col-span-1 md:col-span-1 group transition ease-in-out'>
                 <Link
                   to={project.path}
 
@@ -76,7 +76,7 @@ export default function Home() {
                           </span>
                         ))}
                       </div>
-                      <h4 className="text-xl font-semibold">
+                      <h4 className="sm:text-lg md:text-xl font-semibold">
                         {project.name}
                       </h4>
                       <p className="mb-1 font-light">

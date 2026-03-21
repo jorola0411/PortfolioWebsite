@@ -93,13 +93,13 @@ export default function Layout() {
                 </main>
 
                 <footer className='dark:bg-shadowgray bg-snow sm:px-8 md:px-32 md:py-2'>
-                    <div className="md:grid-cols-2 mx-auto justify-between sm:gap-10 md:gap-20 items-end sm:py-3 md:py-0">
+                    <div className="grid md:grid-cols-2 mx-auto justify-between sm:gap-10 md:gap-20 items-end sm:py-3 md:py-0">
                         <div className='col-span-1 sm:text-left '>
                             <h5 className='sm:text-lg md:text-xl mb-2'>Let's get in touch.</h5>
                             <p className="font-bold sm:text-2xl md:text-4xl md:text-left"><a href="mailto:jorola0411@gmail.com" className="hover:underline">jorola0411@gmail.com</a></p>
                         </div>
 
-                        <div className='col-span-1 flex flex-col md:items-end sm:text-lg md:text-xl sm:py-3 md:py-0'>
+                        <div className='md:col-span-1 sm:flex sm:flex-col md:items-end sm:text-lg md:text-xl sm:py-3 md:py-0'>
                             <ul>
                                 <li className='hover:scale-95 transition-transform ease-in-out dark:hover:text-cream hover:text-coffee'>
                                     <a href="https://github.com/jorola0411" target="_blank" className="flex items-center gap-2 ">
@@ -122,7 +122,7 @@ export default function Layout() {
                             </ul>
                         </div>
 
-                        <div className='col-span-1 sm:py-3 md:py-0'>
+                        <div className='col-span-1 '>
                             <p>Copyright 2026 Jose Orola.</p>
                         </div>
                         <div className='col-span-1 flex flex-col md:items-end'>

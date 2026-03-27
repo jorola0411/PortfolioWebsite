@@ -1,7 +1,7 @@
 import { Outlet, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 
-import { FaXmark, FaBars } from "react-icons/fa6";
+import { FaXmark, FaBars, FaSun, FaMoon } from "react-icons/fa6";
 
 export default function Layout() {
 
@@ -39,7 +39,7 @@ export default function Layout() {
     return (
         <>
 
-            <div className='bg-offwhite dark:bg-caviar text-caviar dark:text-offwhite'>
+            <div className='bg-offwhite dark:bg-caviar text-caviar dark:text-offwhite transition-colors duration-300'>
                 <nav className='md:text-lg sm:px-8 md:px-32 pt-6 sm:mb-10 md:mb-20'>
                     <div className='flex justify-between'>
                         <Link to="/">
@@ -59,13 +59,19 @@ export default function Layout() {
                                     Resume
                                 </a>
                             </button>
-                            <button onClick={toggleDark} className='hover:cursor-pointer'>
-                                {dark ? "☀️" : "🌙"}
+
+                            <button onClick={toggleDark} className={`hover:cursor-pointer relative w-14 h-7 transition-colors duration-300 ease-in-out rounded-full   ${dark ? 'bg-coffee' : 'bg-caviar'}`} aria-label="Toggle dark mode">
+                                <span className={`absolute top-0.5 left-0.5 w-6 h-6 rounded-full shadow-md flex items-center justify-center text-sm transition-transform duration-300 ease-in-out bg-snow ${dark ? 'translate-x-7' : 'translate-x-0'}`}>
+                                    {dark ? <FaSun className="text-caviar" /> : <FaMoon className="text-caviar" />}
+                                </span>
                             </button>
+                    
                         </div>
                         <div className="flex md:hidden gap-4">
-                            <button onClick={toggleDark} className='hover:cursor-pointer'>
-                                {dark ? "☀️" : "🌙"}
+                           <button onClick={toggleDark} className={`hover:cursor-pointer relative w-14 h-7 transition-colors duration-300 ease-in-out rounded-full   ${dark ? 'bg-coffee' : 'bg-caviar'}`} aria-label="Toggle dark mode">
+                                <span className={`absolute top-0.5 left-0.5 w-6 h-6 rounded-full shadow-md flex items-center justify-center text-sm transition-transform duration-300 ease-in-out bg-snow ${dark ? 'translate-x-7' : 'translate-x-0'}`}>
+                                    {dark ? <FaSun className="text-caviar" /> : <FaMoon className="text-caviar" />}
+                                </span>
                             </button>
                             <button
                                 className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}
@@ -92,7 +98,7 @@ export default function Layout() {
                     <Outlet />
                 </main>
 
-                <footer className='dark:bg-shadowgray bg-snow sm:px-8 md:px-32 md:py-2'>
+                <footer className='dark:bg-shadowgray bg-snow sm:px-8 md:px-32 md:py-2 scroll-smooth'>
                     <div className="grid md:grid-cols-2 mx-auto justify-between sm:gap-10 md:gap-20 items-end sm:py-3 md:py-0">
                         <div className='col-span-1 sm:text-left '>
                             <h5 className='sm:text-lg md:text-xl mb-2'>Let's get in touch.</h5>
@@ -126,10 +132,8 @@ export default function Layout() {
                             <p>Copyright 2026 Jose Orola.</p>
                         </div>
                         <div className='col-span-1 flex flex-col md:items-end'>
-                            <p className='md:text-right'>Made with React.
-                                <br />
-                                This website complies with WCAG 2.2 Accessibiility.
-                                <br />
+                            <p className='md:text-right'>
+                                This website was made with React and complies with WCAG 2.2 Accessibiility.
                             </p>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { motion } from "motion/react";
 import charismahome from "../assets/charismahome.webp"
 import brandguide1 from "../assets/charismabrandguide1.webp"
 import brandguide2 from "../assets/charismabrandguide2.webp"
@@ -14,7 +14,9 @@ export default function CharismaCafe() {
     <>
 
 
-      <div className="flexbox justify-center items-center mx-auto max-w-9/12">
+      <motion.div className="flexbox justify-center items-center mx-auto max-w-9/12" initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}>
         <section className="md:max-w-9/12 mx-auto">
 
           <h1 className="font-bold sm:text-2xl md:text-3xl text-center ">Charisma Cafe</h1>
@@ -41,6 +43,7 @@ export default function CharismaCafe() {
               <ul>
                 <li>UX Designer</li>
                 <li>UX Researcher</li>
+                <li>Content Writer</li>
               </ul>
             </div>
             <div>
@@ -154,7 +157,7 @@ export default function CharismaCafe() {
           <h2 className='sm:text-xl md:text-2xl font-bold mb-2 '>Reflection</h2>
           <p className="mb-2 ">Despite the time constraints, our team did a job well done under the 3 day period. What I (not the team) would've done differently is spend a little bit more time on user research rather than jump to the UI development quickly and communicate better with the team on what needs to be. Regardless, this event was a good learning opportunity and showcases our adaptabilty and able to work under pressure with tight deadlines. </p>
         </section>
-      </div >
+      </motion.div >
 
     </>
   )

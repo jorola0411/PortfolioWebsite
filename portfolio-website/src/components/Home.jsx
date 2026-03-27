@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import { motion } from "motion/react";
 import ccoffeetitle from "../assets/ccoffeetitle.webp"
 import charismatitle from "../assets/charismatitle.webp"
 
@@ -18,7 +18,7 @@ export default function Home() {
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <title>Jose Orola | Web Developer</title>
+      <title>Jose Orola | Digital Designer & Dev</title>
 
       <meta name="description" content="Hello, I'm Jose. I'm a UI/UX designer and Front-End developer located in the expensive city of Vancouver, BC. My aim is to create passionate and meaningful solutions with my clients/company." />
 
@@ -33,8 +33,11 @@ export default function Home() {
       <meta name="twitter:description" content="Explore the portfolio of Jose, a UI/UX designer and front-end developer, featuring projects like Lelem Natural Park and Styles." />
       <meta name="twitter:url" content="https://joseorola.ca/" />
 
-      <div>
-
+     
+      <motion.div initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
         <section className='flex-row mx-auto text-center'>
           <h1 className='md:text-lg mb-8'>
             Hello, I'm Jose; <span className='font-medium'>Digital Developer.</span>
@@ -94,9 +97,10 @@ export default function Home() {
               </div>
             ))}
           </div>
+          
         </section>
 
-      </div>
+      </motion.div>
 
     </>
   )

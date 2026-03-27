@@ -1,9 +1,11 @@
 import { useCallback, useRef, useState, useEffect } from "react";
+import { motion } from "motion/react";
 import beforeImg from "../assets/ccoffeehomebefore.webp";
 import afterImg from "../assets/ccoffeehomeafter.webp";
 import ccoffeeia from "../assets/ccoffeeia.webp";
 import responsivenessccoffee from "../assets/responsivenessccoffee.webp";
 import ccoffeedonate from "../assets/ccoffeedonate.webp";
+
 export default function Ccoffee() {
 
   useEffect(() => {
@@ -70,7 +72,10 @@ export default function Ccoffee() {
     <>
 
 
-      <div className="flexbox justify-center items-center mx-auto md:max-w-9/12">
+      <motion.div className="flexbox justify-center items-center mx-auto md:max-w-9/12" initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}>
+
         <section className="md:max-w-9/12 mx-auto">
 
           <h1 className="font-bold sm:text-2xl md:text-3xl text-center ">C Coffee</h1>
@@ -199,7 +204,7 @@ export default function Ccoffee() {
 
           <p className="mb-10">Designing for a B2B is often built on credibility and details for their brand, compared to B2C, which focuses on engaging visuals and the emotional aspect of things.</p>
         </section>
-      </div >
+      </motion.div >
 
     </>
   )

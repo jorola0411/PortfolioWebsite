@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import { motion } from "motion/react";
+import { Helmet } from 'react-helmet-async';
+
 import jose from '../assets/jose.jpg'
 
 export default function AboutMe() {
@@ -10,10 +12,30 @@ export default function AboutMe() {
 
   return (
     <>
+
+      <Helmet>
+        <title>About Me - Jose Orola | Digital Designer & Dev</title>
+
+        <link rel="canonical" href="https://joseorola.ca/about" />
+
+        <meta name="description" content="Learn more about his tool stack, history, values and mission of Digital Designer & Developer Jose Orola." />
+        <meta name="keywords" content="Jose, UI/UX Designer, Front-End Developer, Design, Web Development, User Interface Designer, User Experience Designer, Portfolio, SEO, Tech Stack, Vancouver, Surrey" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About Me - Jose Orola | Digital Designer & Dev" />
+        <meta property="og:description" content="Learn more about his tool stack, history, values and mission of Digital Designer & Developer Jose Orola." />
+        <meta property="og:url" content="https://joseorola.ca/about" />
+
+        <meta name="twitter:title" content="About Me - Jose Orola | Digital Designer & Dev" />
+        <meta name="twitter:description" content="Learn more about his tool stack, history, values and mission of Digital Designer & Developer Jose Orola." />
+        <meta name="twitter:url" content="https://joseorola.ca/about" />
+      </Helmet>
+
+
       <motion.div initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}>
-        <section className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-8'>
+        <section aria-label="About Jose" className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-8'>
           <div className='col-span-1  order-last md:order-first'>
             <h1 className='font-bold text-lg pb-8'>Hey again!</h1>
 
@@ -28,7 +50,7 @@ export default function AboutMe() {
 
               <img
                 src={jose}
-                alt=""
+                alt="Picture of Jose Orola smiling and wearing a white polo t-shirt in front of a neutral background"
                 className="w-72 h-80 object-cover rounded-lg shadow-2xl"
               />
 
@@ -36,21 +58,21 @@ export default function AboutMe() {
           </div>
         </section>
 
-        <section class="flex flex-col md:flex-row gap-6 mb-8">
+        <section aria-label="Tech Stack" className="flex flex-col md:flex-row gap-6 mb-8">
           <div className='flex flex-col flex-1'>
-            <h1 className='text-lg mb-2 font-semibold'>Tech Stack</h1>
-            <div className="px-8 py-4  h-full justify-between  border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
+            <h2 className='text-lg mb-2 font-semibold'>Tech Stack</h2>
+            <div className="px-8 py-4  h-full border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
               <ul className='list-disc'>
                 <li>Adobe Creative Cloud (Photoshop, Illustrator, InDesign)</li>
                 <li>Figma</li>
                 <li>Canva</li>
               </ul>
-
             </div>
           </div>
+
           <div className='flex flex-col flex-1 '>
-            <h1 className='text-lg mb-2 font-semibold'>Development Tools </h1>
-            <div className="px-8 py-4 justify-between border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
+            <h2 className='text-lg mb-2 font-semibold'>Development Tools </h2>
+            <div className="px-8 py-4 border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
               <ul className='list-disc'>
                 <li>HTML5</li>
                 <li>CSS & Tailwind CSS</li>
@@ -60,19 +82,17 @@ export default function AboutMe() {
                 <li>React.js</li>
                 <li>Express.js</li>
               </ul>
-
             </div>
           </div>
+
           <div className='flex flex-col flex-1'>
             <h1 className='text-lg mb-2 font-semibold'>Platforms</h1>
-            <div className="px-8 py-4 h-full justify-between  border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
+            <div className="px-8 py-4 h-full border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
               <ul className='list-disc'>
                 <li>Microsoft Office (Word, Excel, Powerpoint)</li>
                 <li>Wordpress</li>
                 <li>Squarespace</li>
               </ul>
-
-
             </div>
           </div>
 

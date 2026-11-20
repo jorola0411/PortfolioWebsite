@@ -71,7 +71,7 @@ export default function AboutMe() {
           </div>
 
           <div className='flex flex-col flex-1 '>
-            <h2 className='text-lg mb-2 font-semibold'>Development Tools </h2>
+            <h2 className='text-lg mb-2 font-semibold'>Development Tools</h2>
             <div className="px-8 py-4 border rounded-lg border-coffee dark:border-cream bg-snow dark:bg-shadowgray">
               <ul className='list-disc'>
                 <li>HTML5</li>

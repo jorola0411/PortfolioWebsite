@@ -52,7 +52,7 @@ export default function Home() {
             Let's create something together.
           </p>
           <p className='md:text-lg'>
-            Currently freelancing.
+            Currently working at Lordco Auto Parts.
           </p>
 
         </section>

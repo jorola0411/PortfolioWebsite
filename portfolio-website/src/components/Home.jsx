@@ -58,7 +58,7 @@ export default function Home() {
         </section>
 
 
-        <section aria-label="Selected Work" className='md:max-w-11/12 mx-auto mb-8 mt-10'>
+        <section aria-label="Selected Work" className='mx-auto mb-8 mt-10'>
 
           <h2 className="sr-only">Selected Work</h2>
 
